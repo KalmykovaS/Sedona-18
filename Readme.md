@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Светлана Калмыкова](https://up.htmlacademy.ru/adaptive/18/user/18838).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Григорьев](https://up.htmlacademy.ru/adaptive/18/user/43108).
 
 ---
 
