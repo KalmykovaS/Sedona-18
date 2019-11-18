@@ -34,7 +34,7 @@
 </header>
 
 <main class="page__main main">
-  <section class="intro">
+  <section class="main__intro intro">
     <h1 class="intro__title title title--black title--size--megium">Оставьте свой отзыв</h1>
     <img class="intro__image intro__image--smaller" src="https://via.placeholder.com/321x389" width="321" height="389" alt="Welcome to Sedona">
     <p class="intro__text text text--black text--lead--medium">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
@@ -47,32 +47,30 @@
     <form class="feedback__wrapper feedback-form" action="https://echo.htmlacademy.ru" method="post">
       <div class="feedback-form__inner form form--name">
         <h3 class="form__title title title--black">Представьтесь:</h3>
-        <p class="form__text input">
-          <label class="text text--black text--lead">Имя*:
+        <p class="form__text field">
+          <label class="field__label text text--black text--lead">Имя*:
             <input type="text" name="name" placeholder="Петр"></label>
         </p>
-        <p class="form__text input">
-          <label class="text text--black text--lead">Фамилия*:
+        <p class="form__text field">
+          <label class="field__label text text--black text--lead">Фамилия*:
             <input type="text" name="last-name" placeholder="Иванов"></label>
         </p>
-        <p class="form__text input">
-          <label class="text text--black text--lead">Отчество:
+        <p class="form__text field">
+          <label class="field__label text text--black text--lead">Отчество:
             <input type="text" name="second-name" placeholder="Александрович"></label>
         </p>
       </div>
 
       <div class="feedback-form__inner form form--information">
         <h3 class="form__title title title--black">Контактная информация</h3>
-        <p class="form__text input">
-          <label class="text text--black text--lead">Контактный телефон*:
+        <p class="form__text field">
+          <label class="field__label text text--black text--lead">Контактный телефон*:
             <input type="text" placeholder="Введите телефон">
-            <span class="form__icon"></span>
           </label>
         </p>
-        <p class="form__text input">
-          <label class="text text--black text--lead">Электронная почта*:
+        <p class="form__text field">
+          <label class="field__label text text--black text--lead">Электронная почта*:
             <input type="text" placeholder="Введите e-mail">
-            <span class="form__icon"></span>
           </label>
         </p>
       </div>
@@ -80,26 +78,20 @@
       <div class="feedback-form__inner form form--impression">
         <h3 class="form__title title title--black">Ваше общее впечатление:</h3>
         <ul class="form__list form__list--radio">
-          <li class="form__item">
-            <p class="form__text input">
-              <label>Скорее положительное
-                <input type="radio" name="impression" value="rather-yes" checked>
-              </label>
-            </p>
+          <li class="form__item field">
+            <label class="field__label">Скорее положительное
+              <input class="field__input" type="radio" name="impression" value="rather-yes" checked>
+            </label>
           </li>
-          <li class="form__item">
-            <p class="form__text input">
-              <label>Скорее отрицательное
-                <input type="radio" name="impression" value="rather-no">
-              </label>
-            </p>
+          <li class="form__item field">
+            <label class="field__label">Скорее отрицательное
+              <input class="field__input" type="radio" name="impression" value="rather-no">
+            </label>
           </li>
-          <li class="form__item">
-            <p class="form__text input">
-              <label>Затрудняюсь ответить
-                <input type="radio" name="impression" value="difficult-to-answer">
-              </label>
-            </p>
+          <li class="form__item field">
+            <label class="field__label">Затрудняюсь ответить
+              <input class="field__input" type="radio" name="impression" value="difficult-to-answer">
+            </label>
           </li>
         </ul>
       </div>
@@ -107,40 +99,31 @@
       <div class="feedback-form__inner form form--attractions">
         <h3 class="form__title title title--black">Посещенные достопримечательности:</h3>
         <ul class="form__list form__list--checkbox">
-          <li class="form__item">
-            <p class="form__text input">
-              <label>Мост Дьявола
-                <input type="checkbox" name="bridge" checked>
-              </label>
-            </p>
+          <li class="form__item field">
+            <label class="field__label">Мост Дьявола
+              <input class="field__input" type="checkbox" name="bridge" checked>
+            </label>
           </li>
-          <li class="form__item">
-            <p class="form__text input">
-              <label>Гора Колокол
-                <input type="checkbox" name="mountain" checked>
-              </label>
-            </p>
+          <li class="form__item field">
+            <label class="field__label">Гора Колокол
+              <input class="field__input" type="checkbox" name="mountain" checked>
+            </label>
           </li>
-          <li class="form__item">
-            <p class="form__text input">
-              <label>Слайд-парк
-                <input type="checkbox" name="slide-park" checked>
-              </label>
-            </p>
+          <li class="form__item field">
+            <label class="field__label">Слайд-парк
+              <input class="field__input" type="checkbox" name="slide-park" checked>
+            </label>
           </li>
-          <li class="form__item">
-            <p class="form__text input">
-              <label>Красные скалы
-                <input type="checkbox" name="red-rock">
-              </label>
-            </p>
+          <li class="form__item field">
+            <label class="field__label">Красные скалы
+              <input class="field__input" type="checkbox" name="red-rock">
+            </label>
           </li>
         </ul>
       </div>
 
       <div class="feedback-form__inner form form--emotions">
-        <h3 class="form__title title title--black title--size--megium">Опишите свои эмоции:</h3>
-        <label>
+        <label class="field__label title title--black title--size--megium">Опишите свои эмоции:
           <textarea placeholder="Опишите все свои восторги"></textarea>
         </label>
       </div>
