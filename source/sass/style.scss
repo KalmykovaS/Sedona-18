@@ -1,12 +1,12 @@
-$font-stack: 'PT Sans', 'Arial', sans-serif;
+$font-stack: "PT Sans", "Arial", sans-serif;
 $light-blue: #81b3d2;
-$light-black: #333;
-$grey: #eee;
+$light-black: #333333;
+$grey: #eeeeee;
 
 body {
   margin: 0 auto;
   font-family: $font-stack;
-  color: #000;
+  color: #000000;
   box-sizing: border-box;
 }
 
