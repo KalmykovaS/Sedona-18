@@ -1,0 +1,24 @@
+.text {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.text--black {
+  color: $light-black;
+}
+
+.text--white {
+  color: #fff;
+}
+
+.text--lead--small {
+  line-height: 21px;
+}
+
+.text--lead--medium {
+  line-height: 24px;
+}
+
+.text--lead--large {
+  line-height: 26px;
+}

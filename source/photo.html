@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
 </head>
 <body class="page">
 <header class="page__header header">
@@ -21,10 +23,10 @@
         <a class="main-nav__link" href="index.html">Главная</a>
       </li>
       <li class="main-nav__item">
-        <a class="main-nav__link" href="photo.html">Фото и видео</a>
+        <a class="main-nav__link">Фото и видео</a>
       </li>
       <li class="main-nav__item">
-        <a class="main-nav__link">Форма отзыва</a>
+        <a class="main-nav__link" href="form.html">Форма отзыва</a>
       </li>
       <li class="main-nav__item">
         <a class="main-nav__link" href="https://htmlacademy.ru/">HTML academy</a>
@@ -35,9 +37,9 @@
 
 <main class="page__main main">
   <section class="main__intro intro">
-    <h1 class="intro__title title title--black title--size--megium">Фото и видео</h1>
+    <h1 class="intro__title title title--black title--size--medium">Фото и видео</h1>
     <img class="intro__image intro__image--smaller" src="https://via.placeholder.com/321x389" width="321" height="389" alt="Welcome to Sedona">
-    <p class="intro__text text text--black text--lead-medium">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и
+    <p class="intro__text text text--black text--lead--medium">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и
       экономике.</p>
   </section>
 
@@ -49,31 +51,31 @@
             <h3 class="photo__title">Народные просторы</h3>
             <img class="photo__image" src="https://via.placeholder.com/280x280" width="280" height="280" alt="Народные просторы">
             <p class="photo__text">Автор фото: Борис</p>
-            <p class="photo__text-likes gallery-icon">1350</p>
+            <p class="photo__text-likes photo__text-likes--icon">1350</p>
           </article>
         </li>
         <li class="gallery-list__item">
           <article class="gallery-list__inner photo">
-            <h3 class="gallery__title">Местная растительность</h3>
-            <img class="gallery__image" src="https://via.placeholder.com/280x280" width="280" height="280" alt="Местная растительность">
-            <p class="gallery__text">Автор фото: Сергей</p>
-            <p class="gallery__text-likes gallery-icon">143</p>
+            <h3 class="photo__title">Местная растительность</h3>
+            <img class="photo__image" src="https://via.placeholder.com/280x280" width="280" height="280" alt="Местная растительность">
+            <p class="photo__text">Автор фото: Сергей</p>
+            <p class="photo__text-likes photo__text-likes--icon">143</p>
           </article>
         </li>
         <li class="gallery-list__item">
           <article class="gallery-list__inner photo">
-            <h3 class="gallery__title">Дорога на север</h3>
-            <img class="gallery__image" src="https://via.placeholder.com/280x280" width="280" height="280" alt="Дорога на север">
-            <p class="gallery__text">Автор фото: Петр</p>
-            <p class="gallery__text-likes gallery-icon">96</p>
+            <h3 class="photo__title">Дорога на север</h3>
+            <img class="photo__image" src="https://via.placeholder.com/280x280" width="280" height="280" alt="Дорога на север">
+            <p class="photo__text">Автор фото: Петр</p>
+            <p class="photo__text-likes photo__text-likes--icon">96</p>
           </article>
         </li>
         <li class="gallery-list__item">
           <article class="gallery-list__inner photo">
-            <h3 class="gallery__title">Мост дьявола</h3>
-            <img class="gallery__image" src="https://via.placeholder.com/280x280" width="280" height="280" alt="Мост дьявола">
-            <p class="gallery__text">Автор фото: Антон</p>
-            <p class="gallery__text-likes gallery-icon">254</p>
+            <h3 class="photo__title">Мост дьявола</h3>
+            <img class="photo__image" src="https://via.placeholder.com/280x280" width="280" height="280" alt="Мост дьявола">
+            <p class="photo__text">Автор фото: Антон</p>
+            <p class="photo__text-likes photo__text-likes--icon">254</p>
           </article>
         </li>
       </ul>
@@ -82,8 +84,8 @@
 
   <section class="main__presentation presentation">
     <header class="presentation__header">
-      <h2 class="presentation__title title title--black title--size--megium">Все еще сомневаетесь?</h2>
-      <p class="presentation__text text text--black text--lead-medium">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной
+      <h2 class="presentation__title title title--black title--size--medium">Все еще сомневаетесь?</h2>
+      <p class="presentation__text text text--black text--lead--medium">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной
         раз!</p>
     </header>
     <img class="presentation__image" width="321" height="201" src="https://via.placeholder.com/321x201" alt="Превью">
@@ -119,7 +121,7 @@
     </li>
   </ul>
 
-  <p class="footer__text copyright">Разработано
+  <p class="footer__text copyright text text--black text--lead--large">Разработано
     <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
   </p>
 </footer>

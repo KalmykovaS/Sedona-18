@@ -1,0 +1,42 @@
+$font-stack: 'PT Sans', 'Arial', sans-serif;
+$light-blue: #81b3d2;
+$light-black: #333;
+$grey: #eee;
+
+body {
+  margin: 0 auto;
+  font-family: $font-stack;
+  color: #000;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@import "main-nav.scss";
+@import "site-list.scss";
+@import "title.scss";
+@import "text.scss";
+@import "advantages.scss";
+@import "button.scss";
+@import "photo.scss";
+@import "copyright.scss";
+
+
+

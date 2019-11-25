@@ -1,0 +1,19 @@
+.photo {
+  font-family: $font-stack;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.photo__title {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.photo__text {
+  color: $light-black;
+}
+
+.photo__text-likes {
+  font-weight: bold;
+}
