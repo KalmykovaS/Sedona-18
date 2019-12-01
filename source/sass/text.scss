@@ -1,24 +1,23 @@
 .text {
   font-size: 14px;
-  text-transform: uppercase;
-}
-
-.text--black {
-  color: $light-black;
-}
-
-.text--white {
-  color: #ffffff;
-}
-
-.text--lead--small {
-  line-height: 21px;
-}
-
-.text--lead--medium {
   line-height: 24px;
-}
+  text-transform: uppercase;
+  color: #333333;
 
-.text--lead--large {
-  line-height: 26px;
+  &--white {
+    color: #ffffff;
+  }
+
+  &--lead--medium {
+    line-height: 24px;
+  }
+
+  &--transform--none {
+    text-transform: none;
+  }
+
+  &--bold {
+    font-family: $font-important;
+    color: #000000;
+  }
 }

@@ -1,13 +1,30 @@
 $font-stack: "PT Sans", "Arial", sans-serif;
+$font-important: "PT Sans Bold", "Arial Black", sans-serif;
 $light-blue: #81b3d2;
-$light-black: #333333;
 $grey: #eeeeee;
+
+* {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0 auto;
   font-family: $font-stack;
   color: #000000;
-  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 400;
+  src: url("../fonts/ptsans.woff2") format("woff2"),
+    url("../fonts/ptsans.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PT Sans Bold";
+  font-weight: 700;
+  src: url("../fonts/ptsansbold.woff2") format("woff2"),
+    url("../fonts/ptsansbold.woff") format("woff");
 }
 
 a {
@@ -35,5 +52,8 @@ input[type="radio"].visually-hidden {
 @import "text.scss";
 @import "advantages.scss";
 @import "button.scss";
-@import "photo.scss";
 @import "copyright.scss";
+@import "logo.scss";
+@import "intro.scss";
+@import "hashtag.scss";
+@import "photo.scss";
