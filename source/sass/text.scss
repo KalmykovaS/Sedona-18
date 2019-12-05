@@ -1,6 +1,6 @@
 .text {
   font-size: 14px;
-  line-height: 24px;
+  line-height: 21px;
   text-transform: uppercase;
   color: #333333;
 
@@ -10,6 +10,10 @@
 
   &--lead--medium {
     line-height: 24px;
+  }
+
+  &--lead--large {
+    line-height: 26px;
   }
 
   &--transform--none {

@@ -4,16 +4,29 @@
   border-bottom: 1px solid #e5e5e5;
 }
 
+.photo-flex {
+  display: flex;
+  flex-direction: column;
+}
+
 .photo__image {
+  margin-top: 20px;
   display: block;
+  order: -1;
+}
+
+.photo__title {
+  margin: 0;
+  margin-top: 20px;
 }
 
 .photo__text {
   margin: 0;
-  margin-top: 5px;
+  margin-top: 3px;
 }
 
 .photo__text-likes {
   margin: 0;
   margin-top: 10px;
+  padding-left: 36px;
 }

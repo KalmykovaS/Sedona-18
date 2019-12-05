@@ -7,14 +7,16 @@
 </head>
 <body class="page">
 <header class="page__header header">
-  <div class="logo">
+  <div class="header__logo logo container">
     <a class="logo__link">
-      <img class="logo__image" src="img/logo-sedona-mobile.svg" alt="Седона">
+      <img class="logo__image" width="102" height="83" src="img/logo-sedona-mobile.svg" alt="Седона">
     </a>
   </div>
 
-  <button class="header__button header__button--open" type="button">Открыть меню</button>
-  <button class="header__button header__button--close" type="button">Закрыть</button>
+  <div class="container">
+    <button class="header__button header__button--open" type="button">Открыть меню</button>
+    <button class="header__button header__button--close" type="button">Закрыть</button>
+  </div>
 
   <nav class="header__nav main-nav">
     <ul class="main-nav__list site-list">
@@ -35,14 +37,14 @@
 </header>
 
 <main class="page__main main">
-  <section class="main__intro intro">
+  <section class="main__intro intro intro--smaller">
     <h1 class="intro__title title">Оставьте свой отзыв</h1>
-    <img class="intro__image intro__image--smaller" src="https://via.placeholder.com/321x389" width="321" height="389" alt="Welcome to Sedona">
-    <p class="intro__text text text--lead--medium">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
+    <img class="intro__image intro__image--smaller" width="320" height="389" src="img/bg-back-mobile@1x.jpg" alt="Welcome to Sedona">
+    <p class="intro__text intro__text--smaller intro__text--padding text text--lead--medium container">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
       достопримечательностях</p>
   </section>
 
-  <section class="main__feedback feedback">
+  <section class="main__feedback feedback container">
     <h2 class="visually-hidden">Обратная связь</h2>
 
     <form class="feedback__wrapper feedback-form" action="https://echo.htmlacademy.ru" method="post">
@@ -152,7 +154,7 @@
   </ul>
 
   <p class="footer__text copyright text text--black text--lead--large">Разработано
-    <a class="copyright__link title" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
   </p>
 </footer>
 

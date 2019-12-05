@@ -7,12 +7,6 @@ $grey: #eeeeee;
   box-sizing: border-box;
 }
 
-body {
-  margin: 0 auto;
-  font-family: $font-stack;
-  color: #000000;
-}
-
 @font-face {
   font-family: "PT Sans";
   font-weight: 400;
@@ -46,6 +40,9 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
+@import "page.scss";
+@import "container.scss";
+@import "header.scss";
 @import "main-nav.scss";
 @import "site-list.scss";
 @import "title.scss";
@@ -55,5 +52,8 @@ input[type="radio"].visually-hidden {
 @import "copyright.scss";
 @import "logo.scss";
 @import "intro.scss";
+@import "checkin.scss";
+@import "map.scss";
 @import "hashtag.scss";
 @import "photo.scss";
+@import "footer.scss";

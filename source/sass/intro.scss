@@ -1,10 +1,38 @@
+.intro {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+  &--smaller {
+    position: relative;
+    bottom: 232px;
+    margin-bottom: -230px;
+  }
+}
+
 .intro__title {
-  margin: 0;
-  margin-top: 40px;
+  margin-top: 38px;
+  letter-spacing: 0.2px;
+  order: 2;
 }
 
 .intro__text {
-  margin: 0;
-  margin-top: 35px;
-  margin-bottom: 30px;
+  margin-top: 28px;
+  margin-bottom: 26px;
+  letter-spacing: 0.2px;
+  order: 3;
+
+  &--smaller {
+    margin-top: 10px;
+  }
+
+  &--padding {
+    padding: 0 10px;
+  }
+}
+
+.intro__image {
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
 }
