@@ -2,56 +2,56 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page">
-<header class="page__header header">
-  <div class="header__logo logo container">
-    <a class="logo__link">
-      <img class="logo__image" width="102" height="83" src="img/logo-sedona-mobile.svg" alt="Седона">
-    </a>
-  </div>
+<div class="container">
 
-  <div class="container">
-    <button class="header__button header__button--open" type="button">Открыть меню</button>
-    <button class="header__button header__button--close" type="button">Закрыть</button>
-  </div>
+  <header class="page__header header header--image">
+    <div class="header__logo logo">
+      <a class="logo__link">
+        <img class="logo__image" src="img/logo-sedona-mobile.svg" alt="Седона">
+      </a>
+    </div>
 
-  <nav class="header__nav main-nav">
-    <ul class="main-nav__list site-list">
-      <li class="main-nav__item">
-        <a class="main-nav__link title title--white title--lead--large" href="index.html">Главная</a>
-      </li>
-      <li class="main-nav__item">
-        <a class="main-nav__link title title--white title--lead--large">Фото и видео</a>
-      </li>
-      <li class="main-nav__item">
-        <a class="main-nav__link title title--white title--lead--large" href="form.html">Форма отзыва</a>
-      </li>
-      <li class="main-nav__item">
-        <a class="main-nav__link title title--white title--lead--large" href="https://htmlacademy.ru/">HTML academy</a>
-      </li>
-    </ul>
-  </nav>
-</header>
+    <nav class="header__nav main-nav">
+      <button class="main-nav__button main-nav__button--open main-nav__button--close" type="button">Открыть и закрыть меню</button>
+      <ul class="main-nav__list site-list">
+        <li class="main-nav__item">
+          <a class="main-nav__link title title--white title--lead--large" href="index.html">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link title title--white title--lead--large">Фото и видео</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link title title--white title--lead--large" href="form.html">Форма отзыва</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link title title--white title--lead--large" href="https://htmlacademy.ru/">HTML academy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-<main class="page__main main">
-  <section class="main__intro intro intro--smaller">
-    <h1 class="intro__title title">Фото и видео</h1>
+  <main class="page__main main">
+    <section class="main__intro intro intro--smaller">
+      <h1 class="intro__title title wrapper">Фото и видео</h1>
       <img class="intro__image intro__image--smaller" width="320" height="389" src="img/bg-back-mobile@1x.jpg" alt="Welcome to Sedona">
-      <p class="intro__text intro__text--smaller text text--lead--medium container">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и
+      <p class="intro__text intro__text--smaller text text--lead--medium wrapper">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и
         экономике.</p>
-  </section>
+    </section>
 
-  <section class="main__gallery gallery">
-    <h2 class="visually-hidden">Галлерея</h2>
+    <section class="main__gallery gallery">
+      <h2 class="visually-hidden">Галлерея</h2>
       <ul class="gallery__list gallery-list site-list">
         <li class="gallery-list__item">
           <article class="gallery-list__inner photo">
-            <div class="container photo-flex">
+            <div class="wrapper photo-flex">
               <h3 class="photo__title text text--bold">Народные просторы</h3>
-              <img class="photo__image" src="img/photo-sunset-mobile@1x.jpg" alt="Народные просторы">
+              <img class="photo__image" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Народные просторы">
               <p class="photo__text text text text--transform--none">Автор фото: Борис</p>
               <p class="photo__text-likes text text--bold">1350</p>
             </div>
@@ -59,9 +59,9 @@
         </li>
         <li class="gallery-list__item">
           <article class="gallery-list__inner photo">
-            <div class="container photo-flex">
+            <div class="wrapper photo-flex">
               <h3 class="photo__title text text--bold">Местная растительность</h3>
-              <img class="photo__image" src="img/photo-cactus-mobile@1x.jpg" alt="Местная растительность">
+              <img class="photo__image" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Местная растительность">
               <p class="photo__text text text--transform--none">Автор фото: Сергей</p>
               <p class="photo__text-likes text text--bold">143</p>
             </div>
@@ -69,9 +69,9 @@
         </li>
         <li class="gallery-list__item">
           <article class="gallery-list__inner photo">
-            <div class="container photo-flex">
+            <div class="wrapper photo-flex">
               <h3 class="photo__title text text--bold">Дорога на север</h3>
-              <img class="photo__image" src="img/photo-roads-mobile@1x.jpg" alt="Дорога на север">
+              <img class="photo__image" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Дорога на север">
               <p class="photo__text text text--transform--none">Автор фото: Петр</p>
               <p class="photo__text-likes text text--bold">96</p>
             </div>
@@ -79,60 +79,60 @@
         </li>
         <li class="gallery-list__item">
           <article class="gallery-list__inner photo">
-            <div class="container photo-flex">
+            <div class="wrapper photo-flex">
               <h3 class="photo__title text text--bold">Мост дьявола</h3>
-              <img class="photo__image" src="img/photo-bridge-mobile@1x.jpg" alt="Мост дьявола">
+              <img class="photo__image" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Мост дьявола">
               <p class="photo__text text text--transform--none">Автор фото: Антон</p>
               <p class="photo__text-likes text text--bold">254</p>
             </div>
           </article>
         </li>
       </ul>
-    </div>
-  </section>
+    </section>
 
-  <section class="main__presentation presentation container">
-    <header class="presentation__header">
-      <h2 class="presentation__title title">Все еще сомневаетесь?</h2>
-      <p class="presentation__text text text--lead--medium">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной
-        раз!</p>
-    </header>
-    <img class="presentation__image" width="321" height="201" src="https://via.placeholder.com/321x201" alt="Превью">
-    <div class="presentation__slider slider">
-      <div class="presentation__slider-range range">
-        <button class="range__cursor"></button>
-      </div>
-      <div class="presentation__slider-control control">
-        <button class="control__replay"></button>
-        <div class="control__inner">
-          <button class="control__quality"></button>
-          <button class="control__open"></button>
+    <section class="main__presentation presentation">
+      <header class="presentation__header wrapper">
+        <h2 class="presentation__title title">Все еще сомневаетесь?</h2>
+        <p class="presentation__text text text--lead--medium">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной
+          раз!</p>
+      </header>
+      <img class="presentation__image" width="320" height="201" src="https://via.placeholder.com/320x201" alt="Превью">
+      <div class="presentation__slider slider wrapper">
+        <div class="presentation__slider-range range">
+          <button class="range__cursor"></button>
+        </div>
+        <div class="presentation__slider-control control">
+          <button class="control__replay"></button>
+          <div class="control__inner">
+            <button class="control__quality"></button>
+            <button class="control__open"></button>
+          </div>
         </div>
       </div>
-      </footer>
-  </section>
-</main>
+    </section>
+  </main>
 
-<footer class="page__footer footer">
-  <p class="footer__hashtag hashtag">
-    <a class="hashtag__link title title--size--large" href="#">#visitsedona</a>
-  </p>
+  <footer class="page__footer footer wrapper">
+    <p class="footer__hashtag hashtag">
+      <a class="hashtag__link title title--size--large" href="#">#visitsedona</a>
+    </p>
 
-  <ul class="footer__list social site-list">
-    <li class="social__item">
-      <a class="social__link social__link--vkontakte" href="https://vk.com/" aria-label="Мы в Контакте">Мы в Контакте</a>
-    </li>
-    <li class="social__item">
-      <a class="social__link social__link--facebook" href="https://www.facebook.com/" aria-label="Мы в Фейсбуке">Мы в Фейсбуке</a>
-    </li>
-    <li class="social__item">
-      <a class="social__link social__link--instagram" href="https://instagram.com/" aria-label="Мы в Инстаграме">Мы в Инстаграме</a>
-    </li>
-  </ul>
+    <ul class="footer__list social site-list">
+      <li class="social__item">
+        <a class="social__link social__link--vkontakte" href="https://vk.com/" aria-label="Мы в Контакте">Мы в Контакте</a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--facebook" href="https://www.facebook.com/" aria-label="Мы в Фейсбуке">Мы в Фейсбуке</a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--instagram" href="https://instagram.com/" aria-label="Мы в Инстаграме">Мы в Инстаграме</a>
+      </li>
+    </ul>
 
-  <p class="footer__text copyright text text--lead--large">Разработано
-    <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-  </p>
-</footer>
+    <p class="footer__text copyright text text--lead--large">Разработано
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    </p>
+  </footer>
+</div>
 </body>
 </html>

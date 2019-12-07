@@ -2,6 +2,8 @@ $font-stack: "PT Sans", "Arial", sans-serif;
 $font-important: "PT Sans Bold", "Arial Black", sans-serif;
 $light-blue: #81b3d2;
 $grey: #eeeeee;
+$tablet-width: 768px;
+$desktop-width: 1200px;
 
 * {
   box-sizing: border-box;
@@ -40,8 +42,10 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-@import "page.scss";
+@import "mixins.scss";
 @import "container.scss";
+@import "wrapper.scss";
+@import "page.scss";
 @import "header.scss";
 @import "main-nav.scss";
 @import "site-list.scss";
@@ -56,4 +60,5 @@ input[type="radio"].visually-hidden {
 @import "map.scss";
 @import "hashtag.scss";
 @import "photo.scss";
+@import "presentation.scss";
 @import "footer.scss";

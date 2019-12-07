@@ -1,20 +1,14 @@
-.header__button {
-  font-size: 0;
-  border: 0;
-  background-color: transparent;
-}
-
 .logo {
-  text-align: center;
-
+  width: 320px;
   height: 56px;
-  background-color: #ffffff;
+
   order: 2;
   z-index: 1;
+
+  margin: 0 auto;
+  background-color: #ffffff;
 }
 
 .logo__image {
-  position: absolute;
-  top: 244px;
-  left: 901px;
+  @include centered-block;
 }

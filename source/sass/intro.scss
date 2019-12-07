@@ -2,12 +2,6 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-
-  &--smaller {
-    position: relative;
-    bottom: 232px;
-    margin-bottom: -230px;
-  }
 }
 
 .intro__title {
@@ -33,6 +27,6 @@
 
 .intro__image {
   object-fit: cover;
-  display: block;
-  margin: 0 auto;
+
+  @include centered-block;
 }

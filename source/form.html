@@ -2,23 +2,23 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page">
-<header class="page__header header">
-  <div class="header__logo logo container">
+<div class="container">
+
+<header class="page__header header header--image">
+  <div class="header__logo logo">
     <a class="logo__link">
-      <img class="logo__image" width="102" height="83" src="img/logo-sedona-mobile.svg" alt="Седона">
+      <img class="logo__image" src="img/logo-sedona-mobile.svg" alt="Седона">
     </a>
   </div>
 
-  <div class="container">
-    <button class="header__button header__button--open" type="button">Открыть меню</button>
-    <button class="header__button header__button--close" type="button">Закрыть</button>
-  </div>
-
   <nav class="header__nav main-nav">
+    <button class="main-nav__button main-nav__button--open main-nav__button--close" type="button">Открыть и закрыть меню</button>
     <ul class="main-nav__list site-list">
       <li class="main-nav__item">
         <a class="main-nav__link title title--white title--lead--large" href="index.html">Главная</a>
@@ -38,13 +38,13 @@
 
 <main class="page__main main">
   <section class="main__intro intro intro--smaller">
-    <h1 class="intro__title title">Оставьте свой отзыв</h1>
+    <h1 class="intro__title title wrapper">Оставьте свой отзыв</h1>
     <img class="intro__image intro__image--smaller" width="320" height="389" src="img/bg-back-mobile@1x.jpg" alt="Welcome to Sedona">
-    <p class="intro__text intro__text--smaller intro__text--padding text text--lead--medium container">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
+    <p class="intro__text intro__text--smaller intro__text--padding text text--lead--medium wrapper">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
       достопримечательностях</p>
   </section>
 
-  <section class="main__feedback feedback container">
+  <section class="main__feedback feedback wrapper">
     <h2 class="visually-hidden">Обратная связь</h2>
 
     <form class="feedback__wrapper feedback-form" action="https://echo.htmlacademy.ru" method="post">
@@ -136,7 +136,7 @@
   </section>
 </main>
 
-<footer class="page__footer footer">
+<footer class="page__footer footer wrapper">
   <p class="footer__hashtag hashtag">
     <a class="hashtag__link title title--size--large" href="#">#visitsedona</a>
   </p>
@@ -158,18 +158,19 @@
   </p>
 </footer>
 
-<div class="modal-popup modal-popup--false">
+<div class="modal-popup modal-popup--false wrapper">
   <h2 class="modal-popup__title title">Что-то пошло не так!</h2>
   <p class="modal-popup__text text text--black text--lead--medium">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
   <button class="modal-popup__button button title title--white" type="button">Ок</button>
 </div>
 
-<div class="modal-popup modal-popup--true">
+<div class="modal-popup modal-popup--true wrapper">
   <h2 class="modal-popup__title title">Ваш отзыв отправлен!</h2>
   <p class="modal-popup__text text text--black text--lead--medium">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем
 его на сайте.</p>
   <button class="modal-popup__button button title title--white" type="button">Закрыть окно</button>
 </div>
 
+</div>
 </body>
 </html>
