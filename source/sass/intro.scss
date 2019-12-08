@@ -1,0 +1,32 @@
+.intro {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.intro__title {
+  margin-top: 38px;
+  letter-spacing: 0.2px;
+  order: 2;
+}
+
+.intro__text {
+  margin-top: 28px;
+  margin-bottom: 26px;
+  letter-spacing: 0.2px;
+  order: 3;
+
+  &--smaller {
+    margin-top: 10px;
+  }
+
+  &--padding {
+    padding: 0 10px;
+  }
+}
+
+.intro__image {
+  object-fit: cover;
+
+  @include centered-block;
+}

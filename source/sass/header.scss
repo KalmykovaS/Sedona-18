@@ -1,0 +1,10 @@
+.header {
+  display: flex;
+  flex-direction: column;
+
+  &--image {
+    position: relative;
+    top: 0;
+    height: 48px;
+  }
+}

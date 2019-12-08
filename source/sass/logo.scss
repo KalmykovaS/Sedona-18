@@ -1,0 +1,14 @@
+.logo {
+  width: 320px;
+  height: 56px;
+
+  order: 2;
+  z-index: 1;
+
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+.logo__image {
+  @include centered-block;
+}

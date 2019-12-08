@@ -1,0 +1,19 @@
+.title {
+  font-family: $font-important;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #000000;
+
+  &--white {
+    color: #ffffff;
+  }
+
+  &--size--large {
+    font-size: 21px;
+  }
+
+  &--lead--large {
+    line-height: 40px;
+  }
+}

@@ -2,81 +2,84 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page">
-<header class="page__header header">
-  <div class="logo">
+<div class="container">
+
+<header class="page__header header header--image">
+  <div class="header__logo logo">
     <a class="logo__link">
-      <img class="logo__image" src="https://via.placeholder.com/102x83" width="102" height="83" alt="Седона">
+      <img class="logo__image" src="img/logo-sedona-mobile.svg" alt="Седона">
     </a>
   </div>
 
-  <button class="header__button header__button--open" type="button">Открыть меню</button>
-  <button class="header__button header__button--close" type="button">Закрыть</button>
-
   <nav class="header__nav main-nav">
+    <button class="main-nav__button main-nav__button--open main-nav__button--close" type="button">Открыть и закрыть меню</button>
     <ul class="main-nav__list site-list">
       <li class="main-nav__item">
-        <a class="main-nav__link" href="index.html">Главная</a>
+        <a class="main-nav__link title title--white title--lead--large" href="index.html">Главная</a>
       </li>
       <li class="main-nav__item">
-        <a class="main-nav__link" href="photo.html">Фото и видео</a>
+        <a class="main-nav__link title title--white title--lead--large" href="photo.html">Фото и видео</a>
       </li>
       <li class="main-nav__item">
-        <a class="main-nav__link">Форма отзыва</a>
+        <a class="main-nav__link title title--white title--lead--large">Форма отзыва</a>
       </li>
       <li class="main-nav__item">
-        <a class="main-nav__link" href="https://htmlacademy.ru/">HTML academy</a>
+        <a class="main-nav__link title title--white title--lead--large" href="https://htmlacademy.ru/">HTML academy</a>
       </li>
     </ul>
   </nav>
 </header>
 
 <main class="page__main main">
-  <section class="main__intro intro">
-    <h1 class="intro__title title title--black title--size--megium">Оставьте свой отзыв</h1>
-    <img class="intro__image intro__image--smaller" src="https://via.placeholder.com/321x389" width="321" height="389" alt="Welcome to Sedona">
-    <p class="intro__text text text--black text--lead--medium">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
+  <section class="main__intro intro intro--smaller">
+    <h1 class="intro__title title wrapper">Оставьте свой отзыв</h1>
+    <img class="intro__image intro__image--smaller" width="320" height="389" src="img/bg-back-mobile@1x.jpg" alt="Welcome to Sedona">
+    <p class="intro__text intro__text--smaller intro__text--padding text text--lead--medium wrapper">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
       достопримечательностях</p>
   </section>
 
-  <section class="main__feedback feedback">
+  <section class="main__feedback feedback wrapper">
     <h2 class="visually-hidden">Обратная связь</h2>
 
     <form class="feedback__wrapper feedback-form" action="https://echo.htmlacademy.ru" method="post">
       <div class="feedback-form__inner form form--name">
-        <h3 class="form__title title title--black">Представьтесь:</h3>
+        <h3 class="form__title title">Представьтесь:</h3>
         <p class="form__text field">
-          <label class="field__label text text--black text--lead">Имя*:
+          <label class="field__label text text--lead--large">Имя*:
             <input type="text" name="name" placeholder="Петр"></label>
         </p>
         <p class="form__text field">
-          <label class="field__label text text--black text--lead">Фамилия*:
+          <label class="field__label text text--lead--large">Фамилия*:
             <input type="text" name="last-name" placeholder="Иванов"></label>
         </p>
         <p class="form__text field">
-          <label class="field__label text text--black text--lead">Отчество:
+          <label class="field__label text text--lead--large">Отчество:
             <input type="text" name="second-name" placeholder="Александрович"></label>
         </p>
       </div>
 
       <div class="feedback-form__inner form form--information">
-        <h3 class="form__title title title--black">Контактная информация</h3>
+        <h3 class="form__title title">Контактная информация</h3>
         <p class="form__text field">
-          <label class="field__label text text--black text--lead">Контактный телефон*:
+          <label class="field__label text text--lead--large">Контактный телефон*:
             <input type="text" placeholder="Введите телефон">
           </label>
         </p>
         <p class="form__text field">
-          <label class="field__label text text--black text--lead">Электронная почта*:
+          <label class="field__label text text--lead--large">Электронная почта*:
             <input type="text" placeholder="Введите e-mail">
           </label>
         </p>
       </div>
 
       <div class="feedback-form__inner form form--impression">
-        <h3 class="form__title title title--black">Ваше общее впечатление:</h3>
+        <h3 class="form__title title">Ваше общее впечатление:</h3>
         <ul class="form__list form__list--radio">
           <li class="form__item field">
             <label class="field__label">Скорее положительное
@@ -97,7 +100,7 @@
       </div>
 
       <div class="feedback-form__inner form form--attractions">
-        <h3 class="form__title title title--black">Посещенные достопримечательности:</h3>
+        <h3 class="form__title title">Посещенные достопримечательности:</h3>
         <ul class="form__list form__list--checkbox">
           <li class="form__item field">
             <label class="field__label">Мост Дьявола
@@ -123,7 +126,7 @@
       </div>
 
       <div class="feedback-form__inner form form--emotions">
-          <label class="form__label title title--black title--size--megium">Опишите свои эмоции:
+          <label class="form__label title">Опишите свои эмоции:
             <textarea placeholder="Опишите все свои восторги"></textarea>
           </label>
       </div>
@@ -133,40 +136,41 @@
   </section>
 </main>
 
-<footer class="page__footer footer">
+<footer class="page__footer footer wrapper">
   <p class="footer__hashtag hashtag">
-    <a class="hashtag__link title title--black title--size--large" href="#">#visitsedona</a>
+    <a class="hashtag__link title title--size--large" href="#">#visitsedona</a>
   </p>
 
   <ul class="footer__list social site-list">
     <li class="social__item">
-      <a class="social__link social__link--vkontakte" href="https://vk.com/">Мы в Вконтакте</a>
+      <a class="social__link social__link--vkontakte" href="https://vk.com/" aria-label="Мы в Контакте">Мы в Контакте</a>
     </li>
     <li class="social__item">
-      <a class="social__link social__link--facebook" href="https://www.facebook.com/">Мы в Фейсбуке</a>
+      <a class="social__link social__link--facebook" href="https://www.facebook.com/" aria-label="Мы в Фейсбуке">Мы в Фейсбуке</a>
     </li>
     <li class="social__item">
-      <a class="social__link social__link--instagram" href="https://instagram.com/">Мы в Инстаграме</a>
+      <a class="social__link social__link--instagram" href="https://instagram.com/" aria-label="Мы в Инстаграме">Мы в Инстаграме</a>
     </li>
   </ul>
 
-  <p class="footer__text copyright">Разработано
-    <a class="copyright__link title title--black" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+  <p class="footer__text copyright text text--black text--lead--large">Разработано
+    <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
   </p>
 </footer>
 
-<div class="modal-popup modal-popup--false">
-  <h2 class="modal-popup__title title title--black title--size--medium">Что-то пошло не так!</h2>
+<div class="modal-popup modal-popup--false wrapper">
+  <h2 class="modal-popup__title title">Что-то пошло не так!</h2>
   <p class="modal-popup__text text text--black text--lead--medium">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-  <button class="modal-popup__button button text text--white text--lead--large" type="button">Отправить отзыв</button>
+  <button class="modal-popup__button button title title--white" type="button">Ок</button>
 </div>
 
-<div class="modal-popup modal-popup--true">
-  <h2 class="modal-popup__title title title--black title--size--medium">Ваш отзыв отправлен!</h2>
-  <p class="modal-popup__text text text--black text--lead-medium">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем
+<div class="modal-popup modal-popup--true wrapper">
+  <h2 class="modal-popup__title title">Ваш отзыв отправлен!</h2>
+  <p class="modal-popup__text text text--black text--lead--medium">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем
 его на сайте.</p>
-  <button class="modal-popup__button button text text--white text--lead--large" type="button">Отправить отзыв</button>
+  <button class="modal-popup__button button title title--white" type="button">Закрыть окно</button>
 </div>
 
+</div>
 </body>
 </html>

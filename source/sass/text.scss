@@ -1,0 +1,27 @@
+.text {
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #333333;
+
+  &--white {
+    color: #ffffff;
+  }
+
+  &--lead--medium {
+    line-height: 24px;
+  }
+
+  &--lead--large {
+    line-height: 26px;
+  }
+
+  &--transform--none {
+    text-transform: none;
+  }
+
+  &--bold {
+    font-family: $font-important;
+    color: #000000;
+  }
+}
