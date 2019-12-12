@@ -1,0 +1,7 @@
+.main__intro {
+  margin-top: 390px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 480px;
+  }
+}

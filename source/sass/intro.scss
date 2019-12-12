@@ -2,6 +2,36 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 475px;
+
+    &--smaller {
+      margin-top: 335px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 475px;
+
+    &--smaller {
+      margin-top: 380px;
+    }
+  }
+}
+
+.intro__wrapper {
+  @include mobile-container;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-container;
+    padding: 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-container;
+    padding: 0 250px;
+  }
 }
 
 .intro__title {
@@ -16,6 +46,10 @@
   letter-spacing: 0.2px;
   order: 3;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+  }
+
   &--smaller {
     margin-top: 10px;
   }
@@ -23,10 +57,4 @@
   &--padding {
     padding: 0 10px;
   }
-}
-
-.intro__image {
-  object-fit: cover;
-
-  @include centered-block;
 }
