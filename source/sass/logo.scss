@@ -1,12 +1,17 @@
 .logo {
-  width: 320px;
   height: 56px;
 
   order: 2;
-  z-index: 1;
-
-  margin: 0 auto;
+  z-index: 2;
   background-color: #ffffff;
+
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    background-color: transparent;
+    top: -56px;
+  }
 }
 
 .logo__image {

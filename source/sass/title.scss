@@ -5,6 +5,10 @@
   text-transform: uppercase;
   color: #000000;
 
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
+
   &--white {
     color: #ffffff;
   }
@@ -15,5 +19,11 @@
 
   &--lead--large {
     line-height: 40px;
+  }
+
+  &--large--screen {
+    @media (min-width: $tablet-width) {
+      font-size: 30px;
+    }
   }
 }

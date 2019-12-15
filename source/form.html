@@ -7,7 +7,7 @@
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="page">
+<body class="page page--img--small">
 <div class="container">
 
 <header class="page__header header header--image">
@@ -19,29 +19,32 @@
 
   <nav class="header__nav main-nav">
     <button class="main-nav__button main-nav__button--open main-nav__button--close" type="button">Открыть и закрыть меню</button>
-    <ul class="main-nav__list site-list">
-      <li class="main-nav__item">
-        <a class="main-nav__link title title--white title--lead--large" href="index.html">Главная</a>
-      </li>
-      <li class="main-nav__item">
-        <a class="main-nav__link title title--white title--lead--large" href="photo.html">Фото и видео</a>
-      </li>
-      <li class="main-nav__item">
-        <a class="main-nav__link title title--white title--lead--large">Форма отзыва</a>
-      </li>
-      <li class="main-nav__item">
-        <a class="main-nav__link title title--white title--lead--large" href="https://htmlacademy.ru/">HTML academy</a>
-      </li>
-    </ul>
+    <div class="main-nav__wrapper">
+      <ul class="main-nav__list site-list nav-flex">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="index.html">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="photo.html">Фото и видео</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link">Форма отзыва</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="https://htmlacademy.ru/">HTML academy</a>
+        </li>
+      </ul>
+    </div>
   </nav>
 </header>
 
 <main class="page__main main">
   <section class="main__intro intro intro--smaller">
-    <h1 class="intro__title title wrapper">Оставьте свой отзыв</h1>
-    <img class="intro__image intro__image--smaller" width="320" height="389" src="img/bg-back-mobile@1x.jpg" alt="Welcome to Sedona">
-    <p class="intro__text intro__text--smaller intro__text--padding text text--lead--medium wrapper">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
-      достопримечательностях</p>
+    <div class="intro__wrapper--smaller">
+      <h1 class="intro__title title title--large--screen">Оставьте свой отзыв</h1>
+      <p class="intro__text intro__text--smaller text text--lead--medium">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
+        достопримечательностях</p>
+    </div>
   </section>
 
   <section class="main__feedback feedback wrapper">
@@ -136,27 +139,29 @@
   </section>
 </main>
 
-<footer class="page__footer footer wrapper">
-  <p class="footer__hashtag hashtag">
-    <a class="hashtag__link title title--size--large" href="#">#visitsedona</a>
-  </p>
+  <footer class="page__footer footer footer__wrapper">
+    <div class="footer__flex">
+      <p class="footer__hashtag hashtag">
+        <a class="hashtag__link title title--size--large" href="#">#visitsedona</a>
+      </p>
 
-  <ul class="footer__list social site-list">
-    <li class="social__item">
-      <a class="social__link social__link--vkontakte" href="https://vk.com/" aria-label="Мы в Контакте">Мы в Контакте</a>
-    </li>
-    <li class="social__item">
-      <a class="social__link social__link--facebook" href="https://www.facebook.com/" aria-label="Мы в Фейсбуке">Мы в Фейсбуке</a>
-    </li>
-    <li class="social__item">
-      <a class="social__link social__link--instagram" href="https://instagram.com/" aria-label="Мы в Инстаграме">Мы в Инстаграме</a>
-    </li>
-  </ul>
+      <ul class="footer__list social site-list">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="https://vk.com/" aria-label="Мы в Контакте">Мы в Контакте</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/" aria-label="Мы в Фейсбуке">Мы в Фейсбуке</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="https://instagram.com/" aria-label="Мы в Инстаграме">Мы в Инстаграме</a>
+        </li>
+      </ul>
 
-  <p class="footer__text copyright text text--black text--lead--large">Разработано
-    <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-  </p>
-</footer>
+      <p class="footer__text copyright text text--black text--lead--large">Разработано
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </p>
+    </div>
+  </footer>
 
 <div class="modal-popup modal-popup--false wrapper">
   <h2 class="modal-popup__title title">Что-то пошло не так!</h2>

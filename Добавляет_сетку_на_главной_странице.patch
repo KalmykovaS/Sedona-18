@@ -1,0 +1,3101 @@
+Index: package-lock.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- package-lock.json	(date 1575743650000)
++++ package-lock.json	(date 1576172506000)
+@@ -361,13 +361,30 @@
+       "dev": true
+     },
+     "accepts": {
+-      "version": "1.3.5",
+-      "resolved": "https://registry.npmjs.org/accepts/-/accepts-1.3.5.tgz",
+-      "integrity": "sha1-63d99gEXI6OxTopywIBcjoZ0a9I=",
++      "version": "1.3.7",
++      "resolved": "https://registry.npmjs.org/accepts/-/accepts-1.3.7.tgz",
++      "integrity": "sha512-Il80Qs2WjYlJIBNzNkK6KYqlVMTbZLXgHx2oT0pU/fjRHyEp+PEfEPY0R3WCwAGVOtauxh1hOxNgIf5bv7dQpA==",
+       "dev": true,
+       "requires": {
+-        "mime-types": "~2.1.18",
+-        "negotiator": "0.6.1"
++        "mime-types": "~2.1.24",
++        "negotiator": "0.6.2"
++      },
++      "dependencies": {
++        "mime-db": {
++          "version": "1.42.0",
++          "resolved": "https://registry.npmjs.org/mime-db/-/mime-db-1.42.0.tgz",
++          "integrity": "sha512-UbfJCR4UAVRNgMpfImz05smAXK7+c+ZntjaA26ANtkXLlOe947Aag5zdIcKQULAiF9Cq4WxBi9jUs5zkA84bYQ==",
++          "dev": true
++        },
++        "mime-types": {
++          "version": "2.1.25",
++          "resolved": "https://registry.npmjs.org/mime-types/-/mime-types-2.1.25.tgz",
++          "integrity": "sha512-5KhStqB5xpTAeGqKBAMgwaYMnQik7teQN4IAzC7npDv6kzeU6prfkR67bc87J1kWMPGkoaZSq1npmexMgkmEVg==",
++          "dev": true,
++          "requires": {
++            "mime-db": "1.42.0"
++          }
++        }
+       }
+     },
+     "acorn": {
+@@ -467,27 +484,6 @@
+         "normalize-path": "^2.1.1"
+       },
+       "dependencies": {
+-        "micromatch": {
+-          "version": "3.1.10",
+-          "resolved": "https://registry.npmjs.org/micromatch/-/micromatch-3.1.10.tgz",
+-          "integrity": "sha512-MWikgl9n9M3w+bpsY3He8L+w9eF9338xRl8IAO5viDizwSzziFEyUzo2xrrloB64ADbTf8uA8vRqqttDTOmccg==",
+-          "dev": true,
+-          "requires": {
+-            "arr-diff": "^4.0.0",
+-            "array-unique": "^0.3.2",
+-            "braces": "^2.3.1",
+-            "define-property": "^2.0.2",
+-            "extend-shallow": "^3.0.2",
+-            "extglob": "^2.0.4",
+-            "fragment-cache": "^0.2.1",
+-            "kind-of": "^6.0.2",
+-            "nanomatch": "^1.2.9",
+-            "object.pick": "^1.3.0",
+-            "regex-not": "^1.0.0",
+-            "snapdragon": "^0.8.1",
+-            "to-regex": "^3.0.2"
+-          }
+-        },
+         "normalize-path": {
+           "version": "2.1.1",
+           "resolved": "https://registry.npmjs.org/normalize-path/-/normalize-path-2.1.1.tgz",
+@@ -714,29 +710,21 @@
+       "dev": true
+     },
+     "async-done": {
+-      "version": "1.3.1",
+-      "resolved": "https://registry.npmjs.org/async-done/-/async-done-1.3.1.tgz",
+-      "integrity": "sha512-R1BaUeJ4PMoLNJuk+0tLJgjmEqVsdN118+Z8O+alhnQDQgy0kmD5Mqi0DNEmMx2LM0Ed5yekKu+ZXYvIHceicg==",
++      "version": "1.3.2",
++      "resolved": "https://registry.npmjs.org/async-done/-/async-done-1.3.2.tgz",
++      "integrity": "sha512-uYkTP8dw2og1tu1nmza1n1CMW0qb8gWWlwqMmLb7MhBVs4BXrFziT6HXUd+/RlRA/i4H9AkofYloUbs1fwMqlw==",
+       "dev": true,
+       "requires": {
+         "end-of-stream": "^1.1.0",
+         "once": "^1.3.2",
+-        "process-nextick-args": "^1.0.7",
++        "process-nextick-args": "^2.0.0",
+         "stream-exhaust": "^1.0.1"
+-      },
+-      "dependencies": {
+-        "process-nextick-args": {
+-          "version": "1.0.7",
+-          "resolved": "https://registry.npmjs.org/process-nextick-args/-/process-nextick-args-1.0.7.tgz",
+-          "integrity": "sha1-FQ4gt1ZZCtP5EJPyWk8q2L/zC6M=",
+-          "dev": true
+-        }
+       }
+     },
+     "async-each": {
+-      "version": "1.0.2",
+-      "resolved": "https://registry.npmjs.org/async-each/-/async-each-1.0.2.tgz",
+-      "integrity": "sha512-6xrbvN0MOBKSJDdonmSSz2OwFSgxRaVtBDes26mj9KIGtDo+g9xosFRSC+i1gQh2oAN/tQ62AI/pGZGQjVOiRg==",
++      "version": "1.0.3",
++      "resolved": "https://registry.npmjs.org/async-each/-/async-each-1.0.3.tgz",
++      "integrity": "sha512-z/WhQ5FPySLdvREByI2vZiTWwCnF0moMJ1hK9YQwDTHKh6I7/uSckMetoRGb5UBZPC1z0jlw+n/XCgjeH7y1AQ==",
+       "dev": true
+     },
+     "async-each-series": {
+@@ -752,9 +740,9 @@
+       "dev": true
+     },
+     "async-limiter": {
+-      "version": "1.0.0",
+-      "resolved": "https://registry.npmjs.org/async-limiter/-/async-limiter-1.0.0.tgz",
+-      "integrity": "sha512-jp/uFnooOiO+L211eZOoSyzpOITMXx1rBITauYykG3BRYPu8h0UcxsPNB04RR5vo4Tyz3+ay17tR6JVf9qzYWg==",
++      "version": "1.0.1",
++      "resolved": "https://registry.npmjs.org/async-limiter/-/async-limiter-1.0.1.tgz",
++      "integrity": "sha512-csOlWGAcRFJaI6m+F2WKdnMKr4HhdhFVBk0H/QbJFMCr+uO2kwohwXQPxw/9OCxp05r5ghVBFSyioixx3gfkNQ==",
+       "dev": true
+     },
+     "async-settle": {
+@@ -779,13 +767,13 @@
+       "dev": true
+     },
+     "autoprefixer": {
+-      "version": "9.5.0",
+-      "resolved": "https://registry.npmjs.org/autoprefixer/-/autoprefixer-9.5.0.tgz",
+-      "integrity": "sha512-hMKcyHsZn5+qL6AUeP3c8OyuteZ4VaUlg+fWbyl8z7PqsKHF/Bf8/px3K6AT8aMzDkBo8Bc11245MM+itDBOxQ==",
++      "version": "9.5.1",
++      "resolved": "https://registry.npmjs.org/autoprefixer/-/autoprefixer-9.5.1.tgz",
++      "integrity": "sha512-KJSzkStUl3wP0D5sdMlP82Q52JLy5+atf2MHAre48+ckWkXgixmfHyWmA77wFDy6jTHU6mIgXv6hAQ2mf1PjJQ==",
+       "dev": true,
+       "requires": {
+-        "browserslist": "^4.4.2",
+-        "caniuse-lite": "^1.0.30000947",
++        "browserslist": "^4.5.4",
++        "caniuse-lite": "^1.0.30000957",
+         "normalize-range": "^0.1.2",
+         "num2fraction": "^1.2.2",
+         "postcss": "^7.0.14",
+@@ -805,13 +793,21 @@
+       "dev": true
+     },
+     "axios": {
+-      "version": "0.17.1",
+-      "resolved": "https://registry.npmjs.org/axios/-/axios-0.17.1.tgz",
+-      "integrity": "sha1-LY4+XQvb1zJ/kbyBT1xXZg+Bgk0=",
++      "version": "0.19.0",
++      "resolved": "https://registry.npmjs.org/axios/-/axios-0.19.0.tgz",
++      "integrity": "sha512-1uvKqKQta3KBxIz14F2v06AEHZ/dIoeKfbTRkK1E5oqjDnuEerLmYTgJB5AiQZHJcljpg1TuRzdjDR06qNk0DQ==",
+       "dev": true,
+       "requires": {
+-        "follow-redirects": "^1.2.5",
+-        "is-buffer": "^1.1.5"
++        "follow-redirects": "1.5.10",
++        "is-buffer": "^2.0.2"
++      },
++      "dependencies": {
++        "is-buffer": {
++          "version": "2.0.4",
++          "resolved": "https://registry.npmjs.org/is-buffer/-/is-buffer-2.0.4.tgz",
++          "integrity": "sha512-Kq1rokWXOPXWuaMAqZiJW4XxsmD9zGx9q4aePabbn3qCRGedtH7Cm+zV8WETitMfu1wdh+Rvd6w5egwSngUX2A==",
++          "dev": true
++        }
+       }
+     },
+     "bach": {
+@@ -1007,13 +1003,13 @@
+       }
+     },
+     "browser-sync": {
+-      "version": "2.26.3",
+-      "resolved": "https://registry.npmjs.org/browser-sync/-/browser-sync-2.26.3.tgz",
+-      "integrity": "sha512-VLzpjCA4uXqfzkwqWtMM6hvPm2PNHp2RcmzBXcbi6C9WpkUhhFb8SVAr4CFrCsFxDg+oY6HalOjn8F+egyvhag==",
++      "version": "2.26.7",
++      "resolved": "https://registry.npmjs.org/browser-sync/-/browser-sync-2.26.7.tgz",
++      "integrity": "sha512-lY3emme0OyvA2ujEMpRmyRy9LY6gHLuTr2/ABxhIm3lADOiRXzP4dgekvnDrQqZ/Ec2Fz19lEjm6kglSG5766w==",
+       "dev": true,
+       "requires": {
+-        "browser-sync-client": "^2.26.2",
+-        "browser-sync-ui": "^2.26.2",
++        "browser-sync-client": "^2.26.6",
++        "browser-sync-ui": "^2.26.4",
+         "bs-recipes": "1.3.4",
+         "bs-snippet-injector": "^2.0.1",
+         "chokidar": "^2.0.4",
+@@ -1027,8 +1023,8 @@
+         "fs-extra": "3.0.1",
+         "http-proxy": "1.15.2",
+         "immutable": "^3",
+-        "localtunnel": "1.9.1",
+-        "micromatch": "2.3.11",
++        "localtunnel": "1.9.2",
++        "micromatch": "^3.1.10",
+         "opn": "5.3.0",
+         "portscanner": "2.1.1",
+         "qs": "6.2.3",
+@@ -1045,9 +1041,9 @@
+       }
+     },
+     "browser-sync-client": {
+-      "version": "2.26.2",
+-      "resolved": "https://registry.npmjs.org/browser-sync-client/-/browser-sync-client-2.26.2.tgz",
+-      "integrity": "sha512-FEuVJD41fI24HJ30XOT2RyF5WcnEtdJhhTqeyDlnMk/8Ox9MZw109rvk9pdfRWye4soZLe+xcAo9tHSMxvgAdw==",
++      "version": "2.26.6",
++      "resolved": "https://registry.npmjs.org/browser-sync-client/-/browser-sync-client-2.26.6.tgz",
++      "integrity": "sha512-mGrkZdNzttKdf/16I+y+2dTQxoMCIpKbVIMJ/uP8ZpnKu9f9qa/2CYVtLtbjZG8nsM14EwiCrjuFTGBEnT3Gjw==",
+       "dev": true,
+       "requires": {
+         "etag": "1.8.1",
+@@ -1057,9 +1053,9 @@
+       }
+     },
+     "browser-sync-ui": {
+-      "version": "2.26.2",
+-      "resolved": "https://registry.npmjs.org/browser-sync-ui/-/browser-sync-ui-2.26.2.tgz",
+-      "integrity": "sha512-LF7GMWo8ELOE0eAlxuRCfnGQT1ZxKP9flCfGgZdXFc6BwmoqaJHlYe7MmVvykKkXjolRXTz8ztXAKGVqNwJ3EQ==",
++      "version": "2.26.4",
++      "resolved": "https://registry.npmjs.org/browser-sync-ui/-/browser-sync-ui-2.26.4.tgz",
++      "integrity": "sha512-u20P3EsZoM8Pt+puoi3BU3KlbQAH1lAcV+/O4saF26qokrBqIDotmGonfWwoRbUmdxZkM9MBmA0K39ZTG1h4sA==",
+       "dev": true,
+       "requires": {
+         "async-each-series": "0.1.1",
+@@ -1071,14 +1067,14 @@
+       }
+     },
+     "browserslist": {
+-      "version": "4.5.3",
+-      "resolved": "https://registry.npmjs.org/browserslist/-/browserslist-4.5.3.tgz",
+-      "integrity": "sha512-Tx/Jtrmh6vFg24AelzLwCaCq1IUJiMDM1x/LPzqbmbktF8Zo7F9ONUpOWsFK6TtdON95mSMaQUWqi0ilc8xM6g==",
++      "version": "4.8.2",
++      "resolved": "https://registry.npmjs.org/browserslist/-/browserslist-4.8.2.tgz",
++      "integrity": "sha512-+M4oeaTplPm/f1pXDw84YohEv7B1i/2Aisei8s4s6k3QsoSHa7i5sz8u/cGQkkatCPxMASKxPualR4wwYgVboA==",
+       "dev": true,
+       "requires": {
+-        "caniuse-lite": "^1.0.30000955",
+-        "electron-to-chromium": "^1.3.122",
+-        "node-releases": "^1.1.12"
++        "caniuse-lite": "^1.0.30001015",
++        "electron-to-chromium": "^1.3.322",
++        "node-releases": "^1.1.42"
+       }
+     },
+     "bs-recipes": {
+@@ -1106,9 +1102,9 @@
+       "dev": true
+     },
+     "bytes": {
+-      "version": "3.0.0",
+-      "resolved": "https://registry.npmjs.org/bytes/-/bytes-3.0.0.tgz",
+-      "integrity": "sha1-0ygVQE1olpn4Wk6k+odV3ROpYEg=",
++      "version": "3.1.0",
++      "resolved": "https://registry.npmjs.org/bytes/-/bytes-3.1.0.tgz",
++      "integrity": "sha512-zauLjrfCG+xvoyaqLoV8bLVXXNGC4JqlxFCutSDWA6fJrTo2ZuvLYTqZ7aHBLZSMOopbzwv8f+wZcVzfVTI2Dg==",
+       "dev": true
+     },
+     "cache-base": {
+@@ -1189,9 +1185,9 @@
+       }
+     },
+     "caniuse-lite": {
+-      "version": "1.0.30000955",
+-      "resolved": "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30000955.tgz",
+-      "integrity": "sha512-6AwmIKgqCYfDWWadRkAuZSHMQP4Mmy96xAXEdRBlN/luQhlRYOKgwOlZ9plpCOsVbBuqbTmGqDK3JUM/nlr8CA==",
++      "version": "1.0.30001015",
++      "resolved": "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001015.tgz",
++      "integrity": "sha512-/xL2AbW/XWHNu1gnIrO8UitBGoFthcsDgU9VLK1/dpsoxbaD5LscHozKze05R6WLsBvLhqv78dAPozMFQBYLbQ==",
+       "dev": true
+     },
+     "caseless": {
+@@ -1253,9 +1249,9 @@
+       "dev": true
+     },
+     "chokidar": {
+-      "version": "2.1.5",
+-      "resolved": "https://registry.npmjs.org/chokidar/-/chokidar-2.1.5.tgz",
+-      "integrity": "sha512-i0TprVWp+Kj4WRPtInjexJ8Q+BqTE909VpH8xVhXrJkoc5QC8VO9TryGOqTr+2hljzc1sC62t22h5tZePodM/A==",
++      "version": "2.1.8",
++      "resolved": "https://registry.npmjs.org/chokidar/-/chokidar-2.1.8.tgz",
++      "integrity": "sha512-ZmZUazfOzf0Nve7duiCKD23PFSCs4JPoYyccjUFF3aQkQadqBhfzhjkwBH2mNOG9cTBwhamM37EIsIkZw3nRgg==",
+       "dev": true,
+       "requires": {
+         "anymatch": "^2.0.0",
+@@ -1334,9 +1330,9 @@
+       "dev": true
+     },
+     "cloneable-readable": {
+-      "version": "1.1.2",
+-      "resolved": "https://registry.npmjs.org/cloneable-readable/-/cloneable-readable-1.1.2.tgz",
+-      "integrity": "sha512-Bq6+4t+lbM8vhTs/Bef5c5AdEMtapp/iFb6+s4/Hh9MVTt8OLKH7ZOOZSCT+Ys7hsHvqv0GuMPJ1lnQJVHvxpg==",
++      "version": "1.1.3",
++      "resolved": "https://registry.npmjs.org/cloneable-readable/-/cloneable-readable-1.1.3.tgz",
++      "integrity": "sha512-2EF8zTQOxYq70Y4XKtorQupqF0m49MBz2/yf5Bj+MHjvpG3Hy7sImifnqD6UA+TKYxeSV+u6qqQPawN5UvnpKQ==",
+       "dev": true,
+       "requires": {
+         "inherits": "^2.0.1",
+@@ -1365,17 +1361,6 @@
+         "arr-map": "^2.0.2",
+         "for-own": "^1.0.0",
+         "make-iterator": "^1.0.0"
+-      },
+-      "dependencies": {
+-        "for-own": {
+-          "version": "1.0.0",
+-          "resolved": "https://registry.npmjs.org/for-own/-/for-own-1.0.0.tgz",
+-          "integrity": "sha1-xjMy9BXO3EsE2/5wz4NklMU8tEs=",
+-          "dev": true,
+-          "requires": {
+-            "for-in": "^1.0.1"
+-          }
+-        }
+       }
+     },
+     "collection-visit": {
+@@ -1942,9 +1927,9 @@
+       "dev": true
+     },
+     "electron-to-chromium": {
+-      "version": "1.3.122",
+-      "resolved": "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.3.122.tgz",
+-      "integrity": "sha512-3RKoIyCN4DhP2dsmleuFvpJAIDOseWH88wFYBzb22CSwoFDSWRc4UAMfrtc9h8nBdJjTNIN3rogChgOy6eFInw==",
++      "version": "1.3.322",
++      "resolved": "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.3.322.tgz",
++      "integrity": "sha512-Tc8JQEfGQ1MzfSzI/bTlSr7btJv/FFO7Yh6tanqVmIWOuNCu6/D1MilIEgLtmWqIrsv+o4IjpLAhgMBr/ncNAA==",
+       "dev": true
+     },
+     "emoji-regex": {
+@@ -1960,9 +1945,9 @@
+       "dev": true
+     },
+     "end-of-stream": {
+-      "version": "1.4.1",
+-      "resolved": "https://registry.npmjs.org/end-of-stream/-/end-of-stream-1.4.1.tgz",
+-      "integrity": "sha512-1MkrZNvWTKCaigbn+W15elq2BB/L22nqrSY5DKlo3X6+vclJm8Bb5djXJBmEX6fS3+zCh/F4VBK5Z2KxJt4s2Q==",
++      "version": "1.4.4",
++      "resolved": "https://registry.npmjs.org/end-of-stream/-/end-of-stream-1.4.4.tgz",
++      "integrity": "sha512-+uw1inIHVPQoaVuHzRyXd21icM+cnt4CzD5rW+NC1wjOUSTOs+Te7FOv7AhN7vS9x/oIyhLP5PR1H+phQAHu5Q==",
+       "dev": true,
+       "requires": {
+         "once": "^1.4.0"
+@@ -1982,6 +1967,19 @@
+         "ws": "~3.3.1"
+       },
+       "dependencies": {
++        "engine.io-parser": {
++          "version": "2.1.3",
++          "resolved": "https://registry.npmjs.org/engine.io-parser/-/engine.io-parser-2.1.3.tgz",
++          "integrity": "sha512-6HXPre2O4Houl7c4g7Ic/XzPnHBvaEmN90vtRO9uLmwtRqQmTOw0QMevL1TOfL2Cpu1VzsaTmMotQgMdkzGkVA==",
++          "dev": true,
++          "requires": {
++            "after": "0.8.2",
++            "arraybuffer.slice": "~0.0.7",
++            "base64-arraybuffer": "0.1.5",
++            "blob": "0.0.5",
++            "has-binary2": "~1.0.2"
++          }
++        },
+         "ws": {
+           "version": "3.3.3",
+           "resolved": "https://registry.npmjs.org/ws/-/ws-3.3.3.tgz",
+@@ -1996,15 +1994,15 @@
+       }
+     },
+     "engine.io-client": {
+-      "version": "3.3.2",
+-      "resolved": "https://registry.npmjs.org/engine.io-client/-/engine.io-client-3.3.2.tgz",
+-      "integrity": "sha512-y0CPINnhMvPuwtqXfsGuWE8BB66+B6wTtCofQDRecMQPYX3MYUZXFNKDhdrSe3EVjgOu4V3rxdeqN/Tr91IgbQ==",
++      "version": "3.4.0",
++      "resolved": "https://registry.npmjs.org/engine.io-client/-/engine.io-client-3.4.0.tgz",
++      "integrity": "sha512-a4J5QO2k99CM2a0b12IznnyQndoEvtA4UAldhGzKqnHf42I3Qs2W5SPnDvatZRcMaNZs4IevVicBPayxYt6FwA==",
+       "dev": true,
+       "requires": {
+         "component-emitter": "1.2.1",
+         "component-inherit": "0.0.3",
+-        "debug": "~3.1.0",
+-        "engine.io-parser": "~2.1.1",
++        "debug": "~4.1.0",
++        "engine.io-parser": "~2.2.0",
+         "has-cors": "1.1.0",
+         "indexof": "0.0.1",
+         "parseqs": "0.0.5",
+@@ -2012,12 +2010,29 @@
+         "ws": "~6.1.0",
+         "xmlhttprequest-ssl": "~1.5.4",
+         "yeast": "0.1.2"
++      },
++      "dependencies": {
++        "debug": {
++          "version": "4.1.1",
++          "resolved": "https://registry.npmjs.org/debug/-/debug-4.1.1.tgz",
++          "integrity": "sha512-pYAIzeRo8J6KPEaJ0VWOh5Pzkbw/RetuzehGM7QRRX5he4fPHx2rdKMB256ehJCkX+XRQm16eZLqLNS8RSZXZw==",
++          "dev": true,
++          "requires": {
++            "ms": "^2.1.1"
++          }
++        },
++        "ms": {
++          "version": "2.1.2",
++          "resolved": "https://registry.npmjs.org/ms/-/ms-2.1.2.tgz",
++          "integrity": "sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==",
++          "dev": true
++        }
+       }
+     },
+     "engine.io-parser": {
+-      "version": "2.1.3",
+-      "resolved": "https://registry.npmjs.org/engine.io-parser/-/engine.io-parser-2.1.3.tgz",
+-      "integrity": "sha512-6HXPre2O4Houl7c4g7Ic/XzPnHBvaEmN90vtRO9uLmwtRqQmTOw0QMevL1TOfL2Cpu1VzsaTmMotQgMdkzGkVA==",
++      "version": "2.2.0",
++      "resolved": "https://registry.npmjs.org/engine.io-parser/-/engine.io-parser-2.2.0.tgz",
++      "integrity": "sha512-6I3qD9iUxotsC5HEMuuGsKA0cXerGz+4uGcXQEkfBidgKf0amsjrrtwcbwK/nzpZBxclXlV7gGl9dgWvu4LF6w==",
+       "dev": true,
+       "requires": {
+         "after": "0.8.2",
+@@ -2185,63 +2200,6 @@
+         }
+       }
+     },
+-    "expand-range": {
+-      "version": "1.8.2",
+-      "resolved": "https://registry.npmjs.org/expand-range/-/expand-range-1.8.2.tgz",
+-      "integrity": "sha1-opnv/TNf4nIeuujiV+x5ZE/IUzc=",
+-      "dev": true,
+-      "requires": {
+-        "fill-range": "^2.1.0"
+-      },
+-      "dependencies": {
+-        "fill-range": {
+-          "version": "2.2.4",
+-          "resolved": "https://registry.npmjs.org/fill-range/-/fill-range-2.2.4.tgz",
+-          "integrity": "sha512-cnrcCbj01+j2gTG921VZPnHbjmdAf8oQV/iGeV2kZxGSyfYjjTyY79ErsK1WJWMpw6DaApEX72binqJE+/d+5Q==",
+-          "dev": true,
+-          "requires": {
+-            "is-number": "^2.1.0",
+-            "isobject": "^2.0.0",
+-            "randomatic": "^3.0.0",
+-            "repeat-element": "^1.1.2",
+-            "repeat-string": "^1.5.2"
+-          }
+-        },
+-        "is-number": {
+-          "version": "2.1.0",
+-          "resolved": "https://registry.npmjs.org/is-number/-/is-number-2.1.0.tgz",
+-          "integrity": "sha1-Afy7s5NGOlSPL0ZszhbezknbkI8=",
+-          "dev": true,
+-          "requires": {
+-            "kind-of": "^3.0.2"
+-          }
+-        },
+-        "isarray": {
+-          "version": "1.0.0",
+-          "resolved": "https://registry.npmjs.org/isarray/-/isarray-1.0.0.tgz",
+-          "integrity": "sha1-u5NdSFgsuhaMBoNJV6VKPgcSTxE=",
+-          "dev": true
+-        },
+-        "isobject": {
+-          "version": "2.1.0",
+-          "resolved": "https://registry.npmjs.org/isobject/-/isobject-2.1.0.tgz",
+-          "integrity": "sha1-8GVWEJaj8dou9GJy+BXIQNh+DIk=",
+-          "dev": true,
+-          "requires": {
+-            "isarray": "1.0.0"
+-          }
+-        },
+-        "kind-of": {
+-          "version": "3.2.2",
+-          "resolved": "https://registry.npmjs.org/kind-of/-/kind-of-3.2.2.tgz",
+-          "integrity": "sha1-MeohpzS6ubuw8yRm2JOupR5KPGQ=",
+-          "dev": true,
+-          "requires": {
+-            "is-buffer": "^1.1.5"
+-          }
+-        }
+-      }
+-    },
+     "expand-tilde": {
+       "version": "2.0.2",
+       "resolved": "https://registry.npmjs.org/expand-tilde/-/expand-tilde-2.0.2.tgz",
+@@ -2419,12 +2377,6 @@
+         "flat-cache": "^2.0.1"
+       }
+     },
+-    "filename-regex": {
+-      "version": "2.0.1",
+-      "resolved": "https://registry.npmjs.org/filename-regex/-/filename-regex-2.0.1.tgz",
+-      "integrity": "sha1-wcS5vuPglyXdsQa3XB4wH+LxiyY=",
+-      "dev": true
+-    },
+     "fill-range": {
+       "version": "4.0.0",
+       "resolved": "https://registry.npmjs.org/fill-range/-/fill-range-4.0.0.tgz",
+@@ -2494,35 +2446,12 @@
+         "is-glob": "^4.0.0",
+         "micromatch": "^3.0.4",
+         "resolve-dir": "^1.0.1"
+-      },
+-      "dependencies": {
+-        "micromatch": {
+-          "version": "3.1.10",
+-          "resolved": "https://registry.npmjs.org/micromatch/-/micromatch-3.1.10.tgz",
+-          "integrity": "sha512-MWikgl9n9M3w+bpsY3He8L+w9eF9338xRl8IAO5viDizwSzziFEyUzo2xrrloB64ADbTf8uA8vRqqttDTOmccg==",
+-          "dev": true,
+-          "requires": {
+-            "arr-diff": "^4.0.0",
+-            "array-unique": "^0.3.2",
+-            "braces": "^2.3.1",
+-            "define-property": "^2.0.2",
+-            "extend-shallow": "^3.0.2",
+-            "extglob": "^2.0.4",
+-            "fragment-cache": "^0.2.1",
+-            "kind-of": "^6.0.2",
+-            "nanomatch": "^1.2.9",
+-            "object.pick": "^1.3.0",
+-            "regex-not": "^1.0.0",
+-            "snapdragon": "^0.8.1",
+-            "to-regex": "^3.0.2"
+-          }
+-        }
+       }
+     },
+     "fined": {
+-      "version": "1.1.1",
+-      "resolved": "https://registry.npmjs.org/fined/-/fined-1.1.1.tgz",
+-      "integrity": "sha512-jQp949ZmEbiYHk3gkbdtpJ0G1+kgtLQBNdP5edFP7Fh+WAYceLQz6yO1SBj72Xkg8GVyTB3bBzAYrHJVh5Xd5g==",
++      "version": "1.2.0",
++      "resolved": "https://registry.npmjs.org/fined/-/fined-1.2.0.tgz",
++      "integrity": "sha512-ZYDqPLGxDkDhDZBjZBb+oD1+j0rA4E0pXY50eplAAOPg2N/gUBSSk5IM1/QhPfyVo19lJ+CvXpqfvk+b2p/8Ng==",
+       "dev": true,
+       "requires": {
+         "expand-tilde": "^2.0.2",
+@@ -2566,29 +2495,12 @@
+       }
+     },
+     "follow-redirects": {
+-      "version": "1.7.0",
+-      "resolved": "https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.7.0.tgz",
+-      "integrity": "sha512-m/pZQy4Gj287eNy94nivy5wchN3Kp+Q5WgUPNy5lJSZ3sgkVKSYV/ZChMAQVIgx1SqfZ2zBZtPA2YlXIWxxJOQ==",
++      "version": "1.5.10",
++      "resolved": "https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.5.10.tgz",
++      "integrity": "sha512-0V5l4Cizzvqt5D44aTXbFZz+FtyXV1vrDN6qrelxtfYQKW0KO0W2T/hkE8xvGa/540LkZlkaUjO4ailYTFtHVQ==",
+       "dev": true,
+       "requires": {
+-        "debug": "^3.2.6"
+-      },
+-      "dependencies": {
+-        "debug": {
+-          "version": "3.2.6",
+-          "resolved": "https://registry.npmjs.org/debug/-/debug-3.2.6.tgz",
+-          "integrity": "sha512-mel+jf7nrtEl5Pn1Qx46zARXKDpBbvzezse7p7LqINmdoIk8PYP5SySaxEmYv6TZ0JyEKA1hsCId6DIhgITtWQ==",
+-          "dev": true,
+-          "requires": {
+-            "ms": "^2.1.1"
+-          }
+-        },
+-        "ms": {
+-          "version": "2.1.1",
+-          "resolved": "https://registry.npmjs.org/ms/-/ms-2.1.1.tgz",
+-          "integrity": "sha512-tgp+dl5cGk28utYktBsrFqA7HKgrhgPsg6Z/EfhWI4gl1Hwq8B/GmY/0oXZ6nF8hDVesS/FpnYaD/kOWhYQvyg==",
+-          "dev": true
+-        }
++        "debug": "=3.1.0"
+       }
+     },
+     "for-in": {
+@@ -2598,9 +2510,9 @@
+       "dev": true
+     },
+     "for-own": {
+-      "version": "0.1.5",
+-      "resolved": "https://registry.npmjs.org/for-own/-/for-own-0.1.5.tgz",
+-      "integrity": "sha1-UmXGgaTylNq78XyVCbZ2OqhFEM4=",
++      "version": "1.0.0",
++      "resolved": "https://registry.npmjs.org/for-own/-/for-own-1.0.0.tgz",
++      "integrity": "sha1-xjMy9BXO3EsE2/5wz4NklMU8tEs=",
+       "dev": true,
+       "requires": {
+         "for-in": "^1.0.1"
+@@ -2666,14 +2578,14 @@
+       "dev": true
+     },
+     "fsevents": {
+-      "version": "1.2.7",
+-      "resolved": "https://registry.npmjs.org/fsevents/-/fsevents-1.2.7.tgz",
+-      "integrity": "sha512-Pxm6sI2MeBD7RdD12RYsqaP0nMiwx8eZBXCa6z2L+mRHm2DYrOYwihmhjpkdjUHwQhslWQjRpEgNq4XvBmaAuw==",
++      "version": "1.2.9",
++      "resolved": "https://registry.npmjs.org/fsevents/-/fsevents-1.2.9.tgz",
++      "integrity": "sha512-oeyj2H3EjjonWcFjD5NvZNE9Rqe4UW+nQBU2HNeKw0koVLEFIhtyETyAakeAM3de7Z/SW5kcA+fZUait9EApnw==",
+       "dev": true,
+       "optional": true,
+       "requires": {
+-        "nan": "^2.9.2",
+-        "node-pre-gyp": "^0.10.0"
++        "nan": "^2.12.1",
++        "node-pre-gyp": "^0.12.0"
+       },
+       "dependencies": {
+         "abbrev": {
+@@ -2751,12 +2663,12 @@
+           "optional": true
+         },
+         "debug": {
+-          "version": "2.6.9",
++          "version": "4.1.1",
+           "bundled": true,
+           "dev": true,
+           "optional": true,
+           "requires": {
+-            "ms": "2.0.0"
++            "ms": "^2.1.1"
+           }
+         },
+         "deep-extend": {
+@@ -2927,24 +2839,24 @@
+           }
+         },
+         "ms": {
+-          "version": "2.0.0",
++          "version": "2.1.1",
+           "bundled": true,
+           "dev": true,
+           "optional": true
+         },
+         "needle": {
+-          "version": "2.2.4",
++          "version": "2.3.0",
+           "bundled": true,
+           "dev": true,
+           "optional": true,
+           "requires": {
+-            "debug": "^2.1.2",
++            "debug": "^4.1.0",
+             "iconv-lite": "^0.4.4",
+             "sax": "^1.2.4"
+           }
+         },
+         "node-pre-gyp": {
+-          "version": "0.10.3",
++          "version": "0.12.0",
+           "bundled": true,
+           "dev": true,
+           "optional": true,
+@@ -2972,13 +2884,13 @@
+           }
+         },
+         "npm-bundled": {
+-          "version": "1.0.5",
++          "version": "1.0.6",
+           "bundled": true,
+           "dev": true,
+           "optional": true
+         },
+         "npm-packlist": {
+-          "version": "1.2.0",
++          "version": "1.4.1",
+           "bundled": true,
+           "dev": true,
+           "optional": true,
+@@ -3117,7 +3029,7 @@
+           "optional": true
+         },
+         "semver": {
+-          "version": "5.6.0",
++          "version": "5.7.0",
+           "bundled": true,
+           "dev": true,
+           "optional": true
+@@ -3297,42 +3209,6 @@
+         "path-is-absolute": "^1.0.0"
+       }
+     },
+-    "glob-base": {
+-      "version": "0.3.0",
+-      "resolved": "https://registry.npmjs.org/glob-base/-/glob-base-0.3.0.tgz",
+-      "integrity": "sha1-27Fk9iIbHAscz4Kuoyi0l98Oo8Q=",
+-      "dev": true,
+-      "requires": {
+-        "glob-parent": "^2.0.0",
+-        "is-glob": "^2.0.0"
+-      },
+-      "dependencies": {
+-        "glob-parent": {
+-          "version": "2.0.0",
+-          "resolved": "https://registry.npmjs.org/glob-parent/-/glob-parent-2.0.0.tgz",
+-          "integrity": "sha1-gTg9ctsFT8zPUzbaqQLxgvbtuyg=",
+-          "dev": true,
+-          "requires": {
+-            "is-glob": "^2.0.0"
+-          }
+-        },
+-        "is-extglob": {
+-          "version": "1.0.0",
+-          "resolved": "https://registry.npmjs.org/is-extglob/-/is-extglob-1.0.0.tgz",
+-          "integrity": "sha1-rEaBd8SUNAWgkvyPKXYMb/xiBsA=",
+-          "dev": true
+-        },
+-        "is-glob": {
+-          "version": "2.0.1",
+-          "resolved": "https://registry.npmjs.org/is-glob/-/is-glob-2.0.1.tgz",
+-          "integrity": "sha1-0Jb5JqPe1WAPP9/ZEZjLCIjC2GM=",
+-          "dev": true,
+-          "requires": {
+-            "is-extglob": "^1.0.0"
+-          }
+-        }
+-      }
+-    },
+     "glob-parent": {
+       "version": "3.1.0",
+       "resolved": "https://registry.npmjs.org/glob-parent/-/glob-parent-3.1.0.tgz",
+@@ -3528,21 +3404,21 @@
+       "dev": true
+     },
+     "gulp": {
+-      "version": "4.0.0",
+-      "resolved": "https://registry.npmjs.org/gulp/-/gulp-4.0.0.tgz",
+-      "integrity": "sha1-lXZsYB2t5Kd+0+eyttwDiBtZY2Y=",
++      "version": "4.0.2",
++      "resolved": "https://registry.npmjs.org/gulp/-/gulp-4.0.2.tgz",
++      "integrity": "sha512-dvEs27SCZt2ibF29xYgmnwwCYZxdxhQ/+LFWlbAW8y7jt68L/65402Lz3+CKy0Ov4rOs+NERmDq7YlZaDqUIfA==",
+       "dev": true,
+       "requires": {
+-        "glob-watcher": "^5.0.0",
+-        "gulp-cli": "^2.0.0",
+-        "undertaker": "^1.0.0",
++        "glob-watcher": "^5.0.3",
++        "gulp-cli": "^2.2.0",
++        "undertaker": "^1.2.1",
+         "vinyl-fs": "^3.0.0"
+       },
+       "dependencies": {
+         "gulp-cli": {
+-          "version": "2.1.0",
+-          "resolved": "https://registry.npmjs.org/gulp-cli/-/gulp-cli-2.1.0.tgz",
+-          "integrity": "sha512-txzgdFVlEPShBZus6JJyGyKJoBVDq6Do0ZQgIgx5RAsmhNVTDjymmOxpQvo3c20m66FldilS68ZXj2Q9w5dKbA==",
++          "version": "2.2.0",
++          "resolved": "https://registry.npmjs.org/gulp-cli/-/gulp-cli-2.2.0.tgz",
++          "integrity": "sha512-rGs3bVYHdyJpLqR0TUBnlcZ1O5O++Zs4bA0ajm+zr3WFCfiSLjGwoCBqFs18wzN+ZxahT9DkOK5nDf26iDsWjA==",
+           "dev": true,
+           "requires": {
+             "ansi-colors": "^1.0.1",
+@@ -3783,9 +3659,9 @@
+       "dev": true
+     },
+     "has-symbols": {
+-      "version": "1.0.0",
+-      "resolved": "https://registry.npmjs.org/has-symbols/-/has-symbols-1.0.0.tgz",
+-      "integrity": "sha1-uhqPGvKg/DllD1yFA2dwQSIGO0Q=",
++      "version": "1.0.1",
++      "resolved": "https://registry.npmjs.org/has-symbols/-/has-symbols-1.0.1.tgz",
++      "integrity": "sha512-PLcsoqu++dmEIZB+6totNFKq/7Do+Z0u4oT0zKOJNl3lYK6vGwwu2hjHs+68OEZbTjiUE9bgOABXbP/GvrS0Kg==",
+       "dev": true
+     },
+     "has-unicode": {
+@@ -3875,17 +3751,24 @@
+       }
+     },
+     "http-errors": {
+-      "version": "1.6.3",
+-      "resolved": "https://registry.npmjs.org/http-errors/-/http-errors-1.6.3.tgz",
+-      "integrity": "sha1-i1VoC7S+KDoLW/TqLjhYC+HZMg0=",
++      "version": "1.7.3",
++      "resolved": "https://registry.npmjs.org/http-errors/-/http-errors-1.7.3.tgz",
++      "integrity": "sha512-ZTTX0MWrsQ2ZAhA1cejAwDLycFsd7I7nVtnkT3Ol0aqodaKW+0CTZDQ1uBv5whptCnc8e8HeRRJxRs0kmm/Qfw==",
+       "dev": true,
+       "requires": {
+         "depd": "~1.1.2",
+-        "inherits": "2.0.3",
+-        "setprototypeof": "1.1.0",
+-        "statuses": ">= 1.4.0 < 2"
++        "inherits": "2.0.4",
++        "setprototypeof": "1.1.1",
++        "statuses": ">= 1.5.0 < 2",
++        "toidentifier": "1.0.0"
+       },
+       "dependencies": {
++        "inherits": {
++          "version": "2.0.4",
++          "resolved": "https://registry.npmjs.org/inherits/-/inherits-2.0.4.tgz",
++          "integrity": "sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==",
++          "dev": true
++        },
+         "statuses": {
+           "version": "1.5.0",
+           "resolved": "https://registry.npmjs.org/statuses/-/statuses-1.5.0.tgz",
+@@ -3916,9 +3799,9 @@
+       }
+     },
+     "iconv-lite": {
+-      "version": "0.4.23",
+-      "resolved": "https://registry.npmjs.org/iconv-lite/-/iconv-lite-0.4.23.tgz",
+-      "integrity": "sha512-neyTUVFtahjf0mB3dZT77u+8O0QB89jFdnBkd5P1JgYPbPaia3gXXOVL2fq8VyU2gMMD7SaN7QukTB/pmXYvDA==",
++      "version": "0.4.24",
++      "resolved": "https://registry.npmjs.org/iconv-lite/-/iconv-lite-0.4.24.tgz",
++      "integrity": "sha512-v3MXnZAcvnywkTUEZomIActle7RXXeedOR31wwl7VlyoXO4Qi9arvSenNQWne1TcRwhCL1HwLI21bEqdpj8/rA==",
+       "dev": true,
+       "requires": {
+         "safer-buffer": ">= 2.1.2 < 3"
+@@ -4161,21 +4044,6 @@
+       "integrity": "sha1-YTObbyR1/Hcv2cnYP1yFddwVSuE=",
+       "dev": true
+     },
+-    "is-dotfile": {
+-      "version": "1.0.3",
+-      "resolved": "https://registry.npmjs.org/is-dotfile/-/is-dotfile-1.0.3.tgz",
+-      "integrity": "sha1-pqLzL/0t+wT1yiXs0Pa4PPeYoeE=",
+-      "dev": true
+-    },
+-    "is-equal-shallow": {
+-      "version": "0.1.3",
+-      "resolved": "https://registry.npmjs.org/is-equal-shallow/-/is-equal-shallow-0.1.3.tgz",
+-      "integrity": "sha1-IjgJj8Ih3gvPpdnqxMRdY4qhxTQ=",
+-      "dev": true,
+-      "requires": {
+-        "is-primitive": "^2.0.0"
+-      }
+-    },
+     "is-extendable": {
+       "version": "0.1.1",
+       "resolved": "https://registry.npmjs.org/is-extendable/-/is-extendable-0.1.1.tgz",
+@@ -4277,18 +4145,6 @@
+         "isobject": "^3.0.1"
+       }
+     },
+-    "is-posix-bracket": {
+-      "version": "0.1.1",
+-      "resolved": "https://registry.npmjs.org/is-posix-bracket/-/is-posix-bracket-0.1.1.tgz",
+-      "integrity": "sha1-MzTceXdDaOkvAW5vvAqI9c1ua8Q=",
+-      "dev": true
+-    },
+-    "is-primitive": {
+-      "version": "2.0.0",
+-      "resolved": "https://registry.npmjs.org/is-primitive/-/is-primitive-2.0.0.tgz",
+-      "integrity": "sha1-IHurkWOEmcB7Kt8kCkGochADRXU=",
+-      "dev": true
+-    },
+     "is-promise": {
+       "version": "2.1.0",
+       "resolved": "https://registry.npmjs.org/is-promise/-/is-promise-2.1.0.tgz",
+@@ -4587,25 +4443,31 @@
+       }
+     },
+     "localtunnel": {
+-      "version": "1.9.1",
+-      "resolved": "https://registry.npmjs.org/localtunnel/-/localtunnel-1.9.1.tgz",
+-      "integrity": "sha512-HWrhOslklDvxgOGFLxi6fQVnvpl6XdX4sPscfqMZkzi3gtt9V7LKBWYvNUcpHSVvjwCQ6xzXacVvICNbNcyPnQ==",
++      "version": "1.9.2",
++      "resolved": "https://registry.npmjs.org/localtunnel/-/localtunnel-1.9.2.tgz",
++      "integrity": "sha512-NEKF7bDJE9U3xzJu3kbayF0WTvng6Pww7tzqNb/XtEARYwqw7CKEX7BvOMg98FtE9es2CRizl61gkV3hS8dqYg==",
+       "dev": true,
+       "requires": {
+-        "axios": "0.17.1",
+-        "debug": "2.6.9",
++        "axios": "0.19.0",
++        "debug": "4.1.1",
+         "openurl": "1.1.1",
+         "yargs": "6.6.0"
+       },
+       "dependencies": {
+         "debug": {
+-          "version": "2.6.9",
+-          "resolved": "https://registry.npmjs.org/debug/-/debug-2.6.9.tgz",
+-          "integrity": "sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==",
++          "version": "4.1.1",
++          "resolved": "https://registry.npmjs.org/debug/-/debug-4.1.1.tgz",
++          "integrity": "sha512-pYAIzeRo8J6KPEaJ0VWOh5Pzkbw/RetuzehGM7QRRX5he4fPHx2rdKMB256ehJCkX+XRQm16eZLqLNS8RSZXZw==",
+           "dev": true,
+           "requires": {
+-            "ms": "2.0.0"
++            "ms": "^2.1.1"
+           }
++        },
++        "ms": {
++          "version": "2.1.2",
++          "resolved": "https://registry.npmjs.org/ms/-/ms-2.1.2.tgz",
++          "integrity": "sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==",
++          "dev": true
+         },
+         "yargs": {
+           "version": "6.6.0",
+@@ -4783,35 +4645,8 @@
+           "requires": {
+             "is-extglob": "^2.1.0"
+           }
+-        },
+-        "micromatch": {
+-          "version": "3.1.10",
+-          "resolved": "https://registry.npmjs.org/micromatch/-/micromatch-3.1.10.tgz",
+-          "integrity": "sha512-MWikgl9n9M3w+bpsY3He8L+w9eF9338xRl8IAO5viDizwSzziFEyUzo2xrrloB64ADbTf8uA8vRqqttDTOmccg==",
+-          "dev": true,
+-          "requires": {
+-            "arr-diff": "^4.0.0",
+-            "array-unique": "^0.3.2",
+-            "braces": "^2.3.1",
+-            "define-property": "^2.0.2",
+-            "extend-shallow": "^3.0.2",
+-            "extglob": "^2.0.4",
+-            "fragment-cache": "^0.2.1",
+-            "kind-of": "^6.0.2",
+-            "nanomatch": "^1.2.9",
+-            "object.pick": "^1.3.0",
+-            "regex-not": "^1.0.0",
+-            "snapdragon": "^0.8.1",
+-            "to-regex": "^3.0.2"
+-          }
+         }
+       }
+-    },
+-    "math-random": {
+-      "version": "1.0.4",
+-      "resolved": "https://registry.npmjs.org/math-random/-/math-random-1.0.4.tgz",
+-      "integrity": "sha512-rUxjysqif/BZQH2yhd5Aaq7vXMSx9NdEsQcyA07uEzIvxgI7zIr33gGsh+RU0/XjmQpCW7RsVof1vlkvQVCK5A==",
+-      "dev": true
+     },
+     "mathml-tag-names": {
+       "version": "2.1.1",
+@@ -4875,103 +4710,24 @@
+       "dev": true
+     },
+     "micromatch": {
+-      "version": "2.3.11",
+-      "resolved": "https://registry.npmjs.org/micromatch/-/micromatch-2.3.11.tgz",
+-      "integrity": "sha1-hmd8l9FyCzY0MdBNDRUpO9OMFWU=",
++      "version": "3.1.10",
++      "resolved": "https://registry.npmjs.org/micromatch/-/micromatch-3.1.10.tgz",
++      "integrity": "sha512-MWikgl9n9M3w+bpsY3He8L+w9eF9338xRl8IAO5viDizwSzziFEyUzo2xrrloB64ADbTf8uA8vRqqttDTOmccg==",
+       "dev": true,
+       "requires": {
+-        "arr-diff": "^2.0.0",
+-        "array-unique": "^0.2.1",
+-        "braces": "^1.8.2",
+-        "expand-brackets": "^0.1.4",
+-        "extglob": "^0.3.1",
+-        "filename-regex": "^2.0.0",
+-        "is-extglob": "^1.0.0",
+-        "is-glob": "^2.0.1",
+-        "kind-of": "^3.0.2",
+-        "normalize-path": "^2.0.1",
+-        "object.omit": "^2.0.0",
+-        "parse-glob": "^3.0.4",
+-        "regex-cache": "^0.4.2"
+-      },
+-      "dependencies": {
+-        "arr-diff": {
+-          "version": "2.0.0",
+-          "resolved": "https://registry.npmjs.org/arr-diff/-/arr-diff-2.0.0.tgz",
+-          "integrity": "sha1-jzuCf5Vai9ZpaX5KQlasPOrjVs8=",
+-          "dev": true,
+-          "requires": {
+-            "arr-flatten": "^1.0.1"
+-          }
+-        },
+-        "array-unique": {
+-          "version": "0.2.1",
+-          "resolved": "https://registry.npmjs.org/array-unique/-/array-unique-0.2.1.tgz",
+-          "integrity": "sha1-odl8yvy8JiXMcPrc6zalDFiwGlM=",
+-          "dev": true
+-        },
+-        "braces": {
+-          "version": "1.8.5",
+-          "resolved": "https://registry.npmjs.org/braces/-/braces-1.8.5.tgz",
+-          "integrity": "sha1-uneWLhLf+WnWt2cR6RS3N4V79qc=",
+-          "dev": true,
+-          "requires": {
+-            "expand-range": "^1.8.1",
+-            "preserve": "^0.2.0",
+-            "repeat-element": "^1.1.2"
+-          }
+-        },
+-        "expand-brackets": {
+-          "version": "0.1.5",
+-          "resolved": "https://registry.npmjs.org/expand-brackets/-/expand-brackets-0.1.5.tgz",
+-          "integrity": "sha1-3wcoTjQqgHzXM6xa9yQR5YHRF3s=",
+-          "dev": true,
+-          "requires": {
+-            "is-posix-bracket": "^0.1.0"
+-          }
+-        },
+-        "extglob": {
+-          "version": "0.3.2",
+-          "resolved": "https://registry.npmjs.org/extglob/-/extglob-0.3.2.tgz",
+-          "integrity": "sha1-Lhj/PS9JqydlzskCPwEdqo2DSaE=",
+-          "dev": true,
+-          "requires": {
+-            "is-extglob": "^1.0.0"
+-          }
+-        },
+-        "is-extglob": {
+-          "version": "1.0.0",
+-          "resolved": "https://registry.npmjs.org/is-extglob/-/is-extglob-1.0.0.tgz",
+-          "integrity": "sha1-rEaBd8SUNAWgkvyPKXYMb/xiBsA=",
+-          "dev": true
+-        },
+-        "is-glob": {
+-          "version": "2.0.1",
+-          "resolved": "https://registry.npmjs.org/is-glob/-/is-glob-2.0.1.tgz",
+-          "integrity": "sha1-0Jb5JqPe1WAPP9/ZEZjLCIjC2GM=",
+-          "dev": true,
+-          "requires": {
+-            "is-extglob": "^1.0.0"
+-          }
+-        },
+-        "kind-of": {
+-          "version": "3.2.2",
+-          "resolved": "https://registry.npmjs.org/kind-of/-/kind-of-3.2.2.tgz",
+-          "integrity": "sha1-MeohpzS6ubuw8yRm2JOupR5KPGQ=",
+-          "dev": true,
+-          "requires": {
+-            "is-buffer": "^1.1.5"
+-          }
+-        },
+-        "normalize-path": {
+-          "version": "2.1.1",
+-          "resolved": "https://registry.npmjs.org/normalize-path/-/normalize-path-2.1.1.tgz",
+-          "integrity": "sha1-GrKLVW4Zg2Oowab35vogE3/mrtk=",
+-          "dev": true,
+-          "requires": {
+-            "remove-trailing-separator": "^1.0.1"
+-          }
+-        }
++        "arr-diff": "^4.0.0",
++        "array-unique": "^0.3.2",
++        "braces": "^2.3.1",
++        "define-property": "^2.0.2",
++        "extend-shallow": "^3.0.2",
++        "extglob": "^2.0.4",
++        "fragment-cache": "^0.2.1",
++        "kind-of": "^6.0.2",
++        "nanomatch": "^1.2.9",
++        "object.pick": "^1.3.0",
++        "regex-not": "^1.0.0",
++        "snapdragon": "^0.8.1",
++        "to-regex": "^3.0.2"
+       }
+     },
+     "mime": {
+@@ -5021,9 +4777,9 @@
+       }
+     },
+     "mitt": {
+-      "version": "1.1.3",
+-      "resolved": "https://registry.npmjs.org/mitt/-/mitt-1.1.3.tgz",
+-      "integrity": "sha512-mUDCnVNsAi+eD6qA0HkRkwYczbLHJ49z17BGe2PYRhZL4wpZUFZGJHU7/5tmvohoma+Hdn0Vh/oJTiPEmgSruA==",
++      "version": "1.2.0",
++      "resolved": "https://registry.npmjs.org/mitt/-/mitt-1.2.0.tgz",
++      "integrity": "sha512-r6lj77KlwqLhIUku9UWYes7KJtsczvolZkzp8hbaDPPaE24OmWl5s539Mytlj22siEQKosZ26qCBgda2PKwoJw==",
+       "dev": true
+     },
+     "mixin-deep": {
+@@ -5102,9 +4858,9 @@
+       }
+     },
+     "negotiator": {
+-      "version": "0.6.1",
+-      "resolved": "https://registry.npmjs.org/negotiator/-/negotiator-0.6.1.tgz",
+-      "integrity": "sha1-KzJxhOiZIQEXeyhWP7XnECrNDKk=",
++      "version": "0.6.2",
++      "resolved": "https://registry.npmjs.org/negotiator/-/negotiator-0.6.2.tgz",
++      "integrity": "sha512-hZXc7K2e+PgeI1eDBe/10Ard4ekbfrrqG8Ep+8Jmf4JID2bNg7NvCPOZN+kfF574pFQI7mum2AUqDidoKqcTOw==",
+       "dev": true
+     },
+     "next-tick": {
+@@ -5142,12 +4898,20 @@
+       }
+     },
+     "node-releases": {
+-      "version": "1.1.12",
+-      "resolved": "https://registry.npmjs.org/node-releases/-/node-releases-1.1.12.tgz",
+-      "integrity": "sha512-Y+AQ1xdjcgaEzpL65PBEF3fnl1FNKnDh9Zm+AUQLIlyyqtSc4u93jyMN4zrjMzdwKQ10RTr3tgY1x7qpsfF/xg==",
++      "version": "1.1.42",
++      "resolved": "https://registry.npmjs.org/node-releases/-/node-releases-1.1.42.tgz",
++      "integrity": "sha512-OQ/ESmUqGawI2PRX+XIRao44qWYBBfN54ImQYdWVTQqUckuejOg76ysSqDBK8NG3zwySRVnX36JwDQ6x+9GxzA==",
+       "dev": true,
+       "requires": {
+-        "semver": "^5.3.0"
++        "semver": "^6.3.0"
++      },
++      "dependencies": {
++        "semver": {
++          "version": "6.3.0",
++          "resolved": "https://registry.npmjs.org/semver/-/semver-6.3.0.tgz",
++          "integrity": "sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw==",
++          "dev": true
++        }
+       }
+     },
+     "node-sass": {
+@@ -5248,9 +5012,9 @@
+       "dev": true
+     },
+     "now-and-later": {
+-      "version": "2.0.0",
+-      "resolved": "https://registry.npmjs.org/now-and-later/-/now-and-later-2.0.0.tgz",
+-      "integrity": "sha1-vGHLtFbXnLMiB85HygUTb/Ln1u4=",
++      "version": "2.0.1",
++      "resolved": "https://registry.npmjs.org/now-and-later/-/now-and-later-2.0.1.tgz",
++      "integrity": "sha512-KGvQ0cB70AQfg107Xvs/Fbu+dGmZoTRJp2TaPwcwQm3/7PteUyN2BCgk8KBMPGBUXZdVwyWS8fDCGFygBm19UQ==",
+       "dev": true,
+       "requires": {
+         "once": "^1.3.2"
+@@ -5330,9 +5094,9 @@
+       }
+     },
+     "object-keys": {
+-      "version": "1.1.0",
+-      "resolved": "https://registry.npmjs.org/object-keys/-/object-keys-1.1.0.tgz",
+-      "integrity": "sha512-6OO5X1+2tYkNyNEx6TsCxEqFfRWaqx6EtMiSbGrw8Ob8v9Ne+Hl8rBAgLBZn5wjEz3s/s6U1WXFUFOcxxAwUpg==",
++      "version": "1.1.1",
++      "resolved": "https://registry.npmjs.org/object-keys/-/object-keys-1.1.1.tgz",
++      "integrity": "sha512-NuAESUOUMrlIXOfHKzD6bpPu3tYt3xvjNdRIQ+FeT0lNb4K8WR70CaDxhuNguS2XG+GjkyMwOzsN5ZktImfhLA==",
+       "dev": true
+     },
+     "object-path": {
+@@ -5372,17 +5136,6 @@
+         "array-slice": "^1.0.0",
+         "for-own": "^1.0.0",
+         "isobject": "^3.0.0"
+-      },
+-      "dependencies": {
+-        "for-own": {
+-          "version": "1.0.0",
+-          "resolved": "https://registry.npmjs.org/for-own/-/for-own-1.0.0.tgz",
+-          "integrity": "sha1-xjMy9BXO3EsE2/5wz4NklMU8tEs=",
+-          "dev": true,
+-          "requires": {
+-            "for-in": "^1.0.1"
+-          }
+-        }
+       }
+     },
+     "object.map": {
+@@ -5393,27 +5146,6 @@
+       "requires": {
+         "for-own": "^1.0.0",
+         "make-iterator": "^1.0.0"
+-      },
+-      "dependencies": {
+-        "for-own": {
+-          "version": "1.0.0",
+-          "resolved": "https://registry.npmjs.org/for-own/-/for-own-1.0.0.tgz",
+-          "integrity": "sha1-xjMy9BXO3EsE2/5wz4NklMU8tEs=",
+-          "dev": true,
+-          "requires": {
+-            "for-in": "^1.0.1"
+-          }
+-        }
+-      }
+-    },
+-    "object.omit": {
+-      "version": "2.0.1",
+-      "resolved": "https://registry.npmjs.org/object.omit/-/object.omit-2.0.1.tgz",
+-      "integrity": "sha1-Gpx0SCnznbuFjHbKNXmuKlTr0fo=",
+-      "dev": true,
+-      "requires": {
+-        "for-own": "^0.1.4",
+-        "is-extendable": "^0.1.1"
+       }
+     },
+     "object.pick": {
+@@ -5433,17 +5165,6 @@
+       "requires": {
+         "for-own": "^1.0.0",
+         "make-iterator": "^1.0.0"
+-      },
+-      "dependencies": {
+-        "for-own": {
+-          "version": "1.0.0",
+-          "resolved": "https://registry.npmjs.org/for-own/-/for-own-1.0.0.tgz",
+-          "integrity": "sha1-xjMy9BXO3EsE2/5wz4NklMU8tEs=",
+-          "dev": true,
+-          "requires": {
+-            "for-in": "^1.0.1"
+-          }
+-        }
+       }
+     },
+     "on-finished": {
+@@ -5568,35 +5289,6 @@
+         "path-root": "^0.1.1"
+       }
+     },
+-    "parse-glob": {
+-      "version": "3.0.4",
+-      "resolved": "https://registry.npmjs.org/parse-glob/-/parse-glob-3.0.4.tgz",
+-      "integrity": "sha1-ssN2z7EfNVE7rdFz7wu246OIORw=",
+-      "dev": true,
+-      "requires": {
+-        "glob-base": "^0.3.0",
+-        "is-dotfile": "^1.0.0",
+-        "is-extglob": "^1.0.0",
+-        "is-glob": "^2.0.0"
+-      },
+-      "dependencies": {
+-        "is-extglob": {
+-          "version": "1.0.0",
+-          "resolved": "https://registry.npmjs.org/is-extglob/-/is-extglob-1.0.0.tgz",
+-          "integrity": "sha1-rEaBd8SUNAWgkvyPKXYMb/xiBsA=",
+-          "dev": true
+-        },
+-        "is-glob": {
+-          "version": "2.0.1",
+-          "resolved": "https://registry.npmjs.org/is-glob/-/is-glob-2.0.1.tgz",
+-          "integrity": "sha1-0Jb5JqPe1WAPP9/ZEZjLCIjC2GM=",
+-          "dev": true,
+-          "requires": {
+-            "is-extglob": "^1.0.0"
+-          }
+-        }
+-      }
+-    },
+     "parse-json": {
+       "version": "2.2.0",
+       "resolved": "https://registry.npmjs.org/parse-json/-/parse-json-2.2.0.tgz",
+@@ -5637,9 +5329,9 @@
+       }
+     },
+     "parseurl": {
+-      "version": "1.3.2",
+-      "resolved": "https://registry.npmjs.org/parseurl/-/parseurl-1.3.2.tgz",
+-      "integrity": "sha1-/CidTtiZMRlGDBViUyYs3I3mW/M=",
++      "version": "1.3.3",
++      "resolved": "https://registry.npmjs.org/parseurl/-/parseurl-1.3.3.tgz",
++      "integrity": "sha512-CiyeOxFT/JZyN5m0z9PfXw4SCBJ6Sygz1Dpl0wqjlhDEGGBP1GnsUVEL0p63hoG1fcj3fHynXi9NYO4nWOL+qQ==",
+       "dev": true
+     },
+     "pascalcase": {
+@@ -5945,12 +5637,6 @@
+       "resolved": "https://registry.npmjs.org/postcss-value-parser/-/postcss-value-parser-3.3.1.tgz",
+       "integrity": "sha512-pISE66AbVkp4fDQ7VHBwRNXzAAKJjw4Vw7nWI/+Q3vuly7SNfgYXvm6i5IgFylHGK5sP/xHAbB7N49OS4gWNyQ==",
+       "dev": true
+-    },
+-    "preserve": {
+-      "version": "0.2.0",
+-      "resolved": "https://registry.npmjs.org/preserve/-/preserve-0.2.0.tgz",
+-      "integrity": "sha1-gV7R9uvGWSb4ZbMQwHE7yzMVzks=",
+-      "dev": true
+     },
+     "pretty-hrtime": {
+       "version": "1.0.3",
+@@ -6014,41 +5700,22 @@
+       "resolved": "https://registry.npmjs.org/quick-lru/-/quick-lru-1.1.0.tgz",
+       "integrity": "sha1-Q2CxfGETatOAeDl/8RQW4Ybc+7g=",
+       "dev": true
+-    },
+-    "randomatic": {
+-      "version": "3.1.1",
+-      "resolved": "https://registry.npmjs.org/randomatic/-/randomatic-3.1.1.tgz",
+-      "integrity": "sha512-TuDE5KxZ0J461RVjrJZCJc+J+zCkTb1MbH9AQUq68sMhOMcy9jLcb3BrZKgp9q9Ncltdg4QVqWrH02W2EFFVYw==",
+-      "dev": true,
+-      "requires": {
+-        "is-number": "^4.0.0",
+-        "kind-of": "^6.0.0",
+-        "math-random": "^1.0.1"
+-      },
+-      "dependencies": {
+-        "is-number": {
+-          "version": "4.0.0",
+-          "resolved": "https://registry.npmjs.org/is-number/-/is-number-4.0.0.tgz",
+-          "integrity": "sha512-rSklcAIlf1OmFdyAqbnWTLVelsQ58uvZ66S/ZyawjWqIviTWCjg2PzVGw8WUA+nNuPTqb4wgA+NszrJ+08LlgQ==",
+-          "dev": true
+-        }
+-      }
+     },
+     "range-parser": {
+-      "version": "1.2.0",
+-      "resolved": "https://registry.npmjs.org/range-parser/-/range-parser-1.2.0.tgz",
+-      "integrity": "sha1-9JvmtIeJTdxA3MlKMi9hEJLgDV4=",
++      "version": "1.2.1",
++      "resolved": "https://registry.npmjs.org/range-parser/-/range-parser-1.2.1.tgz",
++      "integrity": "sha512-Hrgsx+orqoygnmhFbKaHE6c296J+HTAQXoxEF6gNupROmmGJRoyzfG3ccAveqCBrwr/2yxQ5BVd/GTl5agOwSg==",
+       "dev": true
+     },
+     "raw-body": {
+-      "version": "2.3.3",
+-      "resolved": "https://registry.npmjs.org/raw-body/-/raw-body-2.3.3.tgz",
+-      "integrity": "sha512-9esiElv1BrZoI3rCDuOuKCBRbuApGGaDPQfjSflGxdy4oyzqghxu6klEkkVIvBje+FF0BX9coEv8KqW6X/7njw==",
++      "version": "2.4.1",
++      "resolved": "https://registry.npmjs.org/raw-body/-/raw-body-2.4.1.tgz",
++      "integrity": "sha512-9WmIKF6mkvA0SLmA2Knm9+qj89e+j1zqgyn8aXGd7+nAduPoqgI9lO57SAZNn/Byzo5P7JhXTyg9PzaJbH73bA==",
+       "dev": true,
+       "requires": {
+-        "bytes": "3.0.0",
+-        "http-errors": "1.6.3",
+-        "iconv-lite": "0.4.23",
++        "bytes": "3.1.0",
++        "http-errors": "1.7.3",
++        "iconv-lite": "0.4.24",
+         "unpipe": "1.0.0"
+       }
+     },
+@@ -6117,29 +5784,6 @@
+         "graceful-fs": "^4.1.11",
+         "micromatch": "^3.1.10",
+         "readable-stream": "^2.0.2"
+-      },
+-      "dependencies": {
+-        "micromatch": {
+-          "version": "3.1.10",
+-          "resolved": "https://registry.npmjs.org/micromatch/-/micromatch-3.1.10.tgz",
+-          "integrity": "sha512-MWikgl9n9M3w+bpsY3He8L+w9eF9338xRl8IAO5viDizwSzziFEyUzo2xrrloB64ADbTf8uA8vRqqttDTOmccg==",
+-          "dev": true,
+-          "requires": {
+-            "arr-diff": "^4.0.0",
+-            "array-unique": "^0.3.2",
+-            "braces": "^2.3.1",
+-            "define-property": "^2.0.2",
+-            "extend-shallow": "^3.0.2",
+-            "extglob": "^2.0.4",
+-            "fragment-cache": "^0.2.1",
+-            "kind-of": "^6.0.2",
+-            "nanomatch": "^1.2.9",
+-            "object.pick": "^1.3.0",
+-            "regex-not": "^1.0.0",
+-            "snapdragon": "^0.8.1",
+-            "to-regex": "^3.0.2"
+-          }
+-        }
+       }
+     },
+     "rechoir": {
+@@ -6161,15 +5805,6 @@
+         "strip-indent": "^1.0.1"
+       }
+     },
+-    "regex-cache": {
+-      "version": "0.4.4",
+-      "resolved": "https://registry.npmjs.org/regex-cache/-/regex-cache-0.4.4.tgz",
+-      "integrity": "sha512-nVIZwtCjkC9YgvWkpM55B5rBhBYRZhAaJbgcFYXXsHnbZ9UZI9nnVWYZpBlCqv9ho2eZryPnWrZGsOdPwVWXWQ==",
+-      "dev": true,
+-      "requires": {
+-        "is-equal-shallow": "^0.1.3"
+-      }
+-    },
+     "regex-not": {
+       "version": "1.0.2",
+       "resolved": "https://registry.npmjs.org/regex-not/-/regex-not-1.0.2.tgz",
+@@ -6599,6 +6234,24 @@
+             "ms": "2.0.0"
+           }
+         },
++        "http-errors": {
++          "version": "1.6.3",
++          "resolved": "https://registry.npmjs.org/http-errors/-/http-errors-1.6.3.tgz",
++          "integrity": "sha1-i1VoC7S+KDoLW/TqLjhYC+HZMg0=",
++          "dev": true,
++          "requires": {
++            "depd": "~1.1.2",
++            "inherits": "2.0.3",
++            "setprototypeof": "1.1.0",
++            "statuses": ">= 1.4.0 < 2"
++          }
++        },
++        "setprototypeof": {
++          "version": "1.1.0",
++          "resolved": "https://registry.npmjs.org/setprototypeof/-/setprototypeof-1.1.0.tgz",
++          "integrity": "sha512-BvE/TwpZX4FXExxOxZyRGQQv651MSwmWKZGqvmPcRIjDqWub67kTKuIMx43cZZrS/cBBzwBcNDWoFxt2XEFIpQ==",
++          "dev": true
++        },
+         "statuses": {
+           "version": "1.4.0",
+           "resolved": "https://registry.npmjs.org/statuses/-/statuses-1.4.0.tgz",
+@@ -6630,6 +6283,30 @@
+           "requires": {
+             "ms": "2.0.0"
+           }
++        },
++        "http-errors": {
++          "version": "1.6.3",
++          "resolved": "https://registry.npmjs.org/http-errors/-/http-errors-1.6.3.tgz",
++          "integrity": "sha1-i1VoC7S+KDoLW/TqLjhYC+HZMg0=",
++          "dev": true,
++          "requires": {
++            "depd": "~1.1.2",
++            "inherits": "2.0.3",
++            "setprototypeof": "1.1.0",
++            "statuses": ">= 1.4.0 < 2"
++          }
++        },
++        "setprototypeof": {
++          "version": "1.1.0",
++          "resolved": "https://registry.npmjs.org/setprototypeof/-/setprototypeof-1.1.0.tgz",
++          "integrity": "sha512-BvE/TwpZX4FXExxOxZyRGQQv651MSwmWKZGqvmPcRIjDqWub67kTKuIMx43cZZrS/cBBzwBcNDWoFxt2XEFIpQ==",
++          "dev": true
++        },
++        "statuses": {
++          "version": "1.5.0",
++          "resolved": "https://registry.npmjs.org/statuses/-/statuses-1.5.0.tgz",
++          "integrity": "sha1-Fhx9rBd2Wf2YEfQ3cfqZOBR4Yow=",
++          "dev": true
+         }
+       }
+     },
+@@ -6681,9 +6358,9 @@
+       }
+     },
+     "setprototypeof": {
+-      "version": "1.1.0",
+-      "resolved": "https://registry.npmjs.org/setprototypeof/-/setprototypeof-1.1.0.tgz",
+-      "integrity": "sha512-BvE/TwpZX4FXExxOxZyRGQQv651MSwmWKZGqvmPcRIjDqWub67kTKuIMx43cZZrS/cBBzwBcNDWoFxt2XEFIpQ==",
++      "version": "1.1.1",
++      "resolved": "https://registry.npmjs.org/setprototypeof/-/setprototypeof-1.1.1.tgz",
++      "integrity": "sha512-JvdAWfbXeIGaZ9cILp38HntZSFSo3mWg6xGcJJsd+d4aRMOqauag1C63dJfDw7OaMYwEbHMOxEZ1lqVRYP2OAw==",
+       "dev": true
+     },
+     "sigmund": {
+@@ -6878,6 +6555,19 @@
+             "yeast": "0.1.2"
+           }
+         },
++        "engine.io-parser": {
++          "version": "2.1.3",
++          "resolved": "https://registry.npmjs.org/engine.io-parser/-/engine.io-parser-2.1.3.tgz",
++          "integrity": "sha512-6HXPre2O4Houl7c4g7Ic/XzPnHBvaEmN90vtRO9uLmwtRqQmTOw0QMevL1TOfL2Cpu1VzsaTmMotQgMdkzGkVA==",
++          "dev": true,
++          "requires": {
++            "after": "0.8.2",
++            "arraybuffer.slice": "~0.0.7",
++            "base64-arraybuffer": "0.1.5",
++            "blob": "0.0.5",
++            "has-binary2": "~1.0.2"
++          }
++        },
+         "socket.io-client": {
+           "version": "2.1.1",
+           "resolved": "https://registry.npmjs.org/socket.io-client/-/socket.io-client-2.1.1.tgz",
+@@ -6925,23 +6615,23 @@
+       }
+     },
+     "socket.io-adapter": {
+-      "version": "1.1.1",
+-      "resolved": "https://registry.npmjs.org/socket.io-adapter/-/socket.io-adapter-1.1.1.tgz",
+-      "integrity": "sha1-KoBeihTWNyEk3ZFZrUUC+MsH8Gs=",
++      "version": "1.1.2",
++      "resolved": "https://registry.npmjs.org/socket.io-adapter/-/socket.io-adapter-1.1.2.tgz",
++      "integrity": "sha512-WzZRUj1kUjrTIrUKpZLEzFZ1OLj5FwLlAFQs9kuZJzJi5DKdU7FsWc36SNmA8iDOtwBQyT8FkrriRM8vXLYz8g==",
+       "dev": true
+     },
+     "socket.io-client": {
+-      "version": "2.2.0",
+-      "resolved": "https://registry.npmjs.org/socket.io-client/-/socket.io-client-2.2.0.tgz",
+-      "integrity": "sha512-56ZrkTDbdTLmBIyfFYesgOxsjcLnwAKoN4CiPyTVkMQj3zTUh0QAx3GbvIvLpFEOvQWu92yyWICxB0u7wkVbYA==",
++      "version": "2.3.0",
++      "resolved": "https://registry.npmjs.org/socket.io-client/-/socket.io-client-2.3.0.tgz",
++      "integrity": "sha512-cEQQf24gET3rfhxZ2jJ5xzAOo/xhZwK+mOqtGRg5IowZsMgwvHwnf/mCRapAAkadhM26y+iydgwsXGObBB5ZdA==",
+       "dev": true,
+       "requires": {
+         "backo2": "1.0.2",
+         "base64-arraybuffer": "0.1.5",
+         "component-bind": "1.0.0",
+         "component-emitter": "1.2.1",
+-        "debug": "~3.1.0",
+-        "engine.io-client": "~3.3.1",
++        "debug": "~4.1.0",
++        "engine.io-client": "~3.4.0",
+         "has-binary2": "~1.0.2",
+         "has-cors": "1.1.0",
+         "indexof": "0.0.1",
+@@ -6950,6 +6640,23 @@
+         "parseuri": "0.0.5",
+         "socket.io-parser": "~3.3.0",
+         "to-array": "0.1.4"
++      },
++      "dependencies": {
++        "debug": {
++          "version": "4.1.1",
++          "resolved": "https://registry.npmjs.org/debug/-/debug-4.1.1.tgz",
++          "integrity": "sha512-pYAIzeRo8J6KPEaJ0VWOh5Pzkbw/RetuzehGM7QRRX5he4fPHx2rdKMB256ehJCkX+XRQm16eZLqLNS8RSZXZw==",
++          "dev": true,
++          "requires": {
++            "ms": "^2.1.1"
++          }
++        },
++        "ms": {
++          "version": "2.1.2",
++          "resolved": "https://registry.npmjs.org/ms/-/ms-2.1.2.tgz",
++          "integrity": "sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==",
++          "dev": true
++        }
+       }
+     },
+     "socket.io-parser": {
+@@ -7671,9 +7378,9 @@
+       }
+     },
+     "stylelint-config-htmlacademy": {
+-      "version": "0.1.3",
+-      "resolved": "https://registry.npmjs.org/stylelint-config-htmlacademy/-/stylelint-config-htmlacademy-0.1.3.tgz",
+-      "integrity": "sha512-K6n2Ib6CcXHVYVWTv/CxqlYcqCHot5DBjgWV86tyl1wDbYvtY4cxRw221bqXOwKym29tP3ZUhCIT5y+e5YLv+g==",
++      "version": "0.1.4",
++      "resolved": "https://registry.npmjs.org/stylelint-config-htmlacademy/-/stylelint-config-htmlacademy-0.1.4.tgz",
++      "integrity": "sha512-79OQX2dLRdanjXdprzaWp39j/QvVzCDEQFu4UdepG2eCMn+ezOqkNC3tYXMn5lBu0YOxQJR5XG/dk4ZOXk4bMQ==",
+       "dev": true
+     },
+     "sugarss": {
+@@ -7943,6 +7650,12 @@
+         "through2": "^2.0.3"
+       }
+     },
++    "toidentifier": {
++      "version": "1.0.0",
++      "resolved": "https://registry.npmjs.org/toidentifier/-/toidentifier-1.0.0.tgz",
++      "integrity": "sha512-yaOH/Pk/VEhBWWTlhI+qXxDFXlejDGcQipMlyxda9nthulaxLZUNcUqFxokp0vcYnvteJln5FNQDRrxj3YcbVw==",
++      "dev": true
++    },
+     "tough-cookie": {
+       "version": "2.4.3",
+       "resolved": "https://registry.npmjs.org/tough-cookie/-/tough-cookie-2.4.3.tgz",
+@@ -8050,9 +7763,9 @@
+       "dev": true
+     },
+     "undertaker": {
+-      "version": "1.2.0",
+-      "resolved": "https://registry.npmjs.org/undertaker/-/undertaker-1.2.0.tgz",
+-      "integrity": "sha1-M52kZGJS0ILcN45wgGcpl1DhG0k=",
++      "version": "1.2.1",
++      "resolved": "https://registry.npmjs.org/undertaker/-/undertaker-1.2.1.tgz",
++      "integrity": "sha512-71WxIzDkgYk9ZS+spIB8iZXchFhAdEo2YU8xYqBYJ39DIUIqziK78ftm26eecoIY49X0J2MLhG4hr18Yp6/CMA==",
+       "dev": true,
+       "requires": {
+         "arr-flatten": "^1.0.1",
+@@ -8259,9 +7972,9 @@
+       }
+     },
+     "upath": {
+-      "version": "1.1.2",
+-      "resolved": "https://registry.npmjs.org/upath/-/upath-1.1.2.tgz",
+-      "integrity": "sha512-kXpym8nmDmlCBr7nKdIx8P2jNBa+pBpIUFRnKJ4dr8htyYGJFokkr2ZvERRtUN+9SY+JqXouNgUPtv6JQva/2Q==",
++      "version": "1.2.0",
++      "resolved": "https://registry.npmjs.org/upath/-/upath-1.2.0.tgz",
++      "integrity": "sha512-aZwGpamFO61g3OlfT7OQCHqhGnW43ieH9WZeP7QxN/G/jS4jfqUkZxoryvJgVPEcrl5NL/ggHsSmLMHuH64Lhg==",
+       "dev": true
+     },
+     "uri-js": {
+@@ -8304,9 +8017,9 @@
+       "dev": true
+     },
+     "v8flags": {
+-      "version": "3.1.2",
+-      "resolved": "https://registry.npmjs.org/v8flags/-/v8flags-3.1.2.tgz",
+-      "integrity": "sha512-MtivA7GF24yMPte9Rp/BWGCYQNaUj86zeYxV/x2RRJMKagImbbv3u8iJC57lNhWLPcGLJmHcHmFWkNsplbbLWw==",
++      "version": "3.1.3",
++      "resolved": "https://registry.npmjs.org/v8flags/-/v8flags-3.1.3.tgz",
++      "integrity": "sha512-amh9CCg3ZxkzQ48Mhcb8iX7xpAfYJgePHxWMQCBWECpOSqJUXgY26ncA61UTV0BkPqfhcy6mzwCIoP4ygxpW8w==",
+       "dev": true,
+       "requires": {
+         "homedir-polyfill": "^1.0.1"
+Index: package.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- package.json	(date 1575743650000)
++++ package.json	(date 1576172506000)
+@@ -5,15 +5,15 @@
+   "description": "Личный проект «Седона» от HTML Academy",
+   "devDependencies": {
+     "@htmlacademy/editorconfig-cli": "1.x",
+-    "autoprefixer": "9.5.x",
+-    "browser-sync": "2.26.x",
+-    "gulp": "4.0.x",
++    "autoprefixer": "^9.5.1",
++    "browser-sync": "^2.26.7",
++    "gulp": "^4.0.2",
+     "gulp-plumber": "1.2.x",
+     "gulp-postcss": "8.0.x",
+     "gulp-sass": "^4.0.2",
+     "gulp-sourcemaps": "2.6.x",
+     "stylelint": "10.1.x",
+-    "stylelint-config-htmlacademy": "0.1.x"
++    "stylelint-config-htmlacademy": "^0.1.4"
+   },
+   "scripts": {
+     "editorconfig": "editorconfig-cli",
+Index: source/form.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- source/form.html	(date 1575743650000)
++++ source/form.html	(date 1576172506000)
+@@ -7,7 +7,7 @@
+   <title>HTML Academy: Седона</title>
+   <link rel="stylesheet" href="css/style.css">
+ </head>
+-<body class="page">
++<body class="page page--img--small">
+ <div class="container">
+ 
+ <header class="page__header header header--image">
+@@ -19,27 +19,28 @@
+ 
+   <nav class="header__nav main-nav">
+     <button class="main-nav__button main-nav__button--open main-nav__button--close" type="button">Открыть и закрыть меню</button>
+-    <ul class="main-nav__list site-list">
+-      <li class="main-nav__item">
+-        <a class="main-nav__link title title--white title--lead--large" href="index.html">Главная</a>
+-      </li>
+-      <li class="main-nav__item">
+-        <a class="main-nav__link title title--white title--lead--large" href="photo.html">Фото и видео</a>
+-      </li>
+-      <li class="main-nav__item">
+-        <a class="main-nav__link title title--white title--lead--large">Форма отзыва</a>
+-      </li>
+-      <li class="main-nav__item">
+-        <a class="main-nav__link title title--white title--lead--large" href="https://htmlacademy.ru/">HTML academy</a>
+-      </li>
+-    </ul>
++    <div class="main-nav__wrapper">
++      <ul class="main-nav__list site-list nav-flex">
++        <li class="main-nav__item">
++          <a class="main-nav__link" href="index.html">Главная</a>
++        </li>
++        <li class="main-nav__item">
++          <a class="main-nav__link" href="photo.html">Фото и видео</a>
++        </li>
++        <li class="main-nav__item">
++          <a class="main-nav__link">Форма отзыва</a>
++        </li>
++        <li class="main-nav__item">
++          <a class="main-nav__link" href="https://htmlacademy.ru/">HTML academy</a>
++        </li>
++      </ul>
++    </div>
+   </nav>
+ </header>
+ 
+ <main class="page__main main">
+   <section class="main__intro intro intro--smaller">
+     <h1 class="intro__title title wrapper">Оставьте свой отзыв</h1>
+-    <img class="intro__image intro__image--smaller" width="320" height="389" src="img/bg-back-mobile@1x.jpg" alt="Welcome to Sedona">
+     <p class="intro__text intro__text--smaller intro__text--padding text text--lead--medium wrapper">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
+       достопримечательностях</p>
+   </section>
+Index: source/index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- source/index.html	(date 1575743650000)
++++ source/index.html	(date 1576172506000)
+@@ -20,29 +20,30 @@
+ 
+   <nav class="header__nav main-nav">
+     <button class="main-nav__button main-nav__button--open main-nav__button--close" type="button">Открыть и закрыть меню</button>
+-    <ul class="main-nav__list site-list">
+-      <li class="main-nav__item">
+-        <a class="main-nav__link title title--white title--lead--large">Главная</a>
+-      </li>
+-      <li class="main-nav__item">
+-        <a class="main-nav__link title title--white title--lead--large" href="photo.html">Фото и видео</a>
+-      </li>
+-      <li class="main-nav__item">
+-        <a class="main-nav__link title title--white title--lead--large" href="form.html">Форма отзыва</a>
+-      </li>
+-      <li class="main-nav__item">
+-        <a class="main-nav__link title title--white title--lead--large" href="https://htmlacademy.ru/">HTML academy</a>
+-      </li>
+-    </ul>
++    <div class="main-nav__wrapper">
++      <ul class="main-nav__list site-list nav-flex">
++        <li class="main-nav__item">
++          <a class="main-nav__link">Главная</a>
++        </li>
++        <li class="main-nav__item">
++          <a class="main-nav__link" href="photo.html">Фото и видео</a>
++        </li>
++        <li class="main-nav__item">
++          <a class="main-nav__link" href="form.html">Форма отзыва</a>
++        </li>
++        <li class="main-nav__item">
++          <a class="main-nav__link" href="https://htmlacademy.ru/">HTML academy</a>
++        </li>
++      </ul>
++    </div>
+   </nav>
+ </header>
+ 
+ <main class="page__main main">
+   <section class="main__intro intro">
+-    <h1 class="visually-hidden">Седона — онлайн бронирование отелей</h1>
+-    <img class="intro__image" src="img/bg-back-mobile@1x.jpg" width="320" height="389" alt="Welcome to Sedona">
+-    <div class="wrapper">
+-      <p class="intro__title title">Cедона — небольшой городок в Аризоне, заслуживающий большего!</p>
++    <h1 class="visually-hidden">Седона &ndash; онлайн бронирование отелей</h1>
++    <div class="intro__wrapper">
++      <p class="intro__title title">Cедона &ndash; небольшой городок в Аризоне, заслуживающий большего!</p>
+       <p class="intro__text text text--lead--large">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+     </div>
+   </section>
+@@ -51,18 +52,20 @@
+     <h2 class="visually-hidden">Преимущества</h2>
+ 
+     <ol class="feature__list advantages site-list">
+-      <li class="advantages__item advantages__item--left">
++      <li class="advantages__item">
+         <div class="advantages-wrapper">
+-          <div class="wrapper">
+-            <h3 class="advantages__title advantages__title--high title title--white">Настоящий городок</h3>
+-            <p class="advantages__text text text--white">— №1 —</p>
+-            <p class="advantages__text advantages__text--high text text--white">Седона не аттракцион для туристов, там течет своя жизнь</p>
+-          </div>
++          <div class="advantages__flex">
++            <div class="advantages__wrapper">
++              <h3 class="advantages__title advantages__title--high title title--white">Настоящий городок</h3>
++              <p class="advantages__text text text--white">&ndash; №1 &ndash;</p>
++              <p class="advantages__text advantages__text--high text text--white">Седона не аттракцион для туристов, там течет своя жизнь</p>
++            </div>
+             <img class="advantages__image" width="320" height="260" src="img/main-city-mobile@1x.jpg" alt="Настоящий городок">
++          </div>
+         </div>
+ 
+         <ul class="advantages__list-sublist advantages__list-sublist--second site-list">
+-          <div class="wrapper">
++          <div class="wrapper advantages__wrapper-sublist">
+             <li class="advantages__item advantages__item--sublist advantages__item--live">
+               <h3 class="advantages__title advantages__title--sublist--first title">Жилье</h3>
+               <p class="advantages__text advantages__text--none text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+@@ -79,37 +82,37 @@
+         </ul>
+ 
+       </li>
+-      <li class="advantages__item advantages__item--right">
++      <li class="advantages__item">
+         <div class="advantages-wrapper">
+-          <div class="wrapper">
++          <div class="advantages__flex">
++            <div class="advantages__wrapper advantages__wrapper--right">
+             <h3 class="advantages__title advantages__title--medium title title--white">Там есть Мост дьявола</h3>
+-            <p class="advantages__text text text--white">— №2 —</p>
++            <p class="advantages__text text text--white">&ndash; №2 &ndash;</p>
+             <p class="advantages__text advantages__text--high text text--white">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+           </div>
+             <img class="advantages__image" width="320" height="260" src="img/photo-bridge-mobile@1x.jpg" alt="Мост дьявола">
++          </div>
+         </div>
+       </li>
+-      <li class="advantages__item advantages-grey">
+-        <div class="wrapper">
+-          <h3 class="advantages__title title">Небольшая площадь</h3>
+-          <p class="advantages__text text">— №3 —</p>
+-          <p class="advantages__text advantages__text--grey text">Все интересные места находятся очень близко</p>
+-        </div>
+-      </li>
+-      <li class="advantages__item advantages-grey">
+-        <div class="wrapper">
+-          <h3 class="advantages__title title">Красивая дорога</h3>
+-          <p class="advantages__text text">— №4 —</p>
+-          <p class="advantages__text advantages__text--grey text">Ехать в седону из лас-вегаса совсем не скучно!</p>
+-        </div>
+-      </li>
+-      <li class="advantages__item advantages-grey">
+-        <div class="wrapper">
+-          <h3 class="advantages__title advantages__title--large title">Мало туристов</h3>
+-          <p class="advantages__text text">— №5 —</p>
+-          <p class="advantages__text advantages__text--grey text">Большинство едет в гранд каньон и толпится там</p>
+-        </div>
+-      </li>
++      <div class="advantages-grey">
++        <div class="advantages-grey__flex">
++          <li class="advantages__item advantages-grey__wrapper">
++            <h3 class="advantages__title title">Небольшая площадь</h3>
++            <p class="advantages__text text">&ndash; №3 &ndash;</p>
++            <p class="advantages__text advantages__text--grey text">Все интересные места находятся очень близко</p>
++          </li>
++          <li class="advantages__item advantages-grey__wrapper">
++            <h3 class="advantages__title title">Красивая дорога</h3>
++            <p class="advantages__text text">&ndash; №4 &ndash;</p>
++            <p class="advantages__text advantages__text--grey text">Ехать в седону из лас-вегаса совсем не скучно!</p>
++          </li>
++          <li class="advantages__item advantages-grey__wrapper">
++            <h3 class="advantages__title advantages__title--large title">Мало туристов</h3>
++            <p class="advantages__text text">&ndash; №5 &ndash;</p>
++            <p class="advantages__text advantages__text--grey text">Большинство едет в гранд каньон и толпится там</p>
++          </li>
++        </div>
++      </div>
+     </ol>
+   </section>
+ 
+@@ -125,26 +128,28 @@
+   </section>
+ </main>
+ 
+-<footer class="page__footer footer wrapper">
+-  <p class="footer__hashtag hashtag">
+-    <a class="hashtag__link title title--size--large" href="#">#visitsedona</a>
+-  </p>
++<footer class="page__footer footer footer__wrapper">
++  <div class="footer__flex">
++    <p class="footer__hashtag hashtag">
++      <a class="hashtag__link title title--size--large" href="#">#visitsedona</a>
++    </p>
+ 
+-  <ul class="footer__list social site-list">
+-    <li class="social__item">
+-      <a class="social__link social__link--vkontakte" href="https://vk.com/" aria-label="Мы в Контакте">Мы в Контакте</a>
+-    </li>
+-    <li class="social__item">
+-      <a class="social__link social__link--facebook" href="https://www.facebook.com/" aria-label="Мы в Фейсбуке">Мы в Фейсбуке</a>
+-    </li>
+-    <li class="social__item">
+-      <a class="social__link social__link--instagram" href="https://instagram.com/" aria-label="Мы в Инстаграме">Мы в Инстаграме</a>
+-    </li>
+-  </ul>
++    <ul class="footer__list social site-list">
++      <li class="social__item">
++        <a class="social__link social__link--vkontakte" href="https://vk.com/" aria-label="Мы в Контакте">Мы в Контакте</a>
++      </li>
++      <li class="social__item">
++        <a class="social__link social__link--facebook" href="https://www.facebook.com/" aria-label="Мы в Фейсбуке">Мы в Фейсбуке</a>
++      </li>
++      <li class="social__item">
++        <a class="social__link social__link--instagram" href="https://instagram.com/" aria-label="Мы в Инстаграме">Мы в Инстаграме</a>
++      </li>
++    </ul>
+ 
+-  <p class="footer__text copyright text text--black text--lead--large">Разработано
+-    <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+-  </p>
++    <p class="footer__text copyright text text--black text--lead--large">Разработано
++      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
++    </p>
++  </div>
+ </footer>
+ </div>
+ </body>
+Index: source/photo.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- source/photo.html	(date 1575743650000)
++++ source/photo.html	(date 1576172506000)
+@@ -7,7 +7,7 @@
+   <title>HTML Academy: Седона</title>
+   <link rel="stylesheet" href="css/style.css">
+ </head>
+-<body class="page">
++<body class="page page--img--small">
+ <div class="container">
+ 
+   <header class="page__header header header--image">
+@@ -19,27 +19,28 @@
+ 
+     <nav class="header__nav main-nav">
+       <button class="main-nav__button main-nav__button--open main-nav__button--close" type="button">Открыть и закрыть меню</button>
+-      <ul class="main-nav__list site-list">
+-        <li class="main-nav__item">
+-          <a class="main-nav__link title title--white title--lead--large" href="index.html">Главная</a>
+-        </li>
+-        <li class="main-nav__item">
+-          <a class="main-nav__link title title--white title--lead--large">Фото и видео</a>
+-        </li>
+-        <li class="main-nav__item">
+-          <a class="main-nav__link title title--white title--lead--large" href="form.html">Форма отзыва</a>
+-        </li>
+-        <li class="main-nav__item">
+-          <a class="main-nav__link title title--white title--lead--large" href="https://htmlacademy.ru/">HTML academy</a>
+-        </li>
+-      </ul>
++      <div class="main-nav__wrapper">
++        <ul class="main-nav__list site-list nav-flex">
++          <li class="main-nav__item">
++            <a class="main-nav__link" href="index.html">Главная</a>
++          </li>
++          <li class="main-nav__item">
++            <a class="main-nav__link">Фото и видео</a>
++          </li>
++          <li class="main-nav__item">
++            <a class="main-nav__link" href="form.html">Форма отзыва</a>
++          </li>
++          <li class="main-nav__item">
++            <a class="main-nav__link" href="https://htmlacademy.ru/">HTML academy</a>
++          </li>
++        </ul>
++      </div>
+     </nav>
+   </header>
+ 
+   <main class="page__main main">
+     <section class="main__intro intro intro--smaller">
+       <h1 class="intro__title title wrapper">Фото и видео</h1>
+-      <img class="intro__image intro__image--smaller" width="320" height="389" src="img/bg-back-mobile@1x.jpg" alt="Welcome to Sedona">
+       <p class="intro__text intro__text--smaller text text--lead--medium wrapper">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и
+         экономике.</p>
+     </section>
+Index: source/sass/advantages.scss
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- source/sass/advantages.scss	(date 1575743650000)
++++ source/sass/advantages.scss	(date 1576172506000)
+@@ -2,19 +2,114 @@
+   background-color: $light-blue;
+ }
+ 
++.advantages__flex {
++  @include mobile-container;
++  padding: 0;
++
++  @media (min-width: $tablet-width) {
++    width: $tablet-width;
++    padding: 0;
++
++    display: flex;
++  }
++
++  @media (min-width: $desktop-width) {
++    width: $desktop-width;
++    padding: 0;
++
++    display: flex;
++  }
++}
++
++@media (min-width: $tablet-width) {
++  .advantages__wrapper {
++    max-width: 256px;
++    padding: 45px;
++
++    &--right {
++      order: 2;
++    }
++  }
++
++  .advantages__image {
++    width: 512px;
++    height: 256px;
++  }
++
++  .advantages__wrapper-sublist {
++    padding-top: 145px;
++    padding-bottom: 50px;
++
++    display: flex;
++    justify-content: space-between;
++  }
++}
++
++@media (min-width: $desktop-width) {
++  .advantages__wrapper {
++    max-width: 400px;
++    padding: 60px;
++  }
++
++  .advantages__image {
++    width: 800px;
++    height: 256px;
++  }
++}
++
+ .advantages__item {
+   text-align: center;
++}
+ 
+-  &--sublist {
++@media (max-width: 767px) {
++  .advantages__item--sublist {
+     padding-left: 50px;
+     text-align: left;
+   }
+ }
+ 
++@media (min-width: $tablet-width) {
++  .advantages__item--sublist {
++    width: 165px;
++  }
++
++  .advantages__item--souvenirs {
++    order: 2;
++  }
++}
++
+ .advantages-grey {
+   background-color: $grey;
+ }
+ 
++.advantages-grey__flex {
++  @media (min-width: $tablet-width) {
++    margin: 0 auto;
++
++    display: flex;
++    flex-wrap: wrap;
++    width: $tablet-width;
++  }
++
++  @media (min-width: $desktop-width) {
++    width: $desktop-width;
++  }
++}
++
++.advantages-grey__wrapper {
++  @include mobile-container;
++
++  @media (min-width: $tablet-width) {
++    width: 256px;
++    padding: 12px 40px;
++  }
++
++  @media (min-width: $desktop-width) {
++    width: 400px;
++    padding: 12px 40px;
++  }
++}
++
+ .advantages__title {
+   margin: 0;
+   padding-top: 27px;
+@@ -22,10 +117,18 @@
+ 
+   &--high {
+     padding-top: 55px;
++
++    @media (min-width: $tablet-width) {
++      padding-top: 0;
++    }
+   }
+ 
+   &--medium {
+     padding-top: 40px;
++
++    @media (min-width: $tablet-width) {
++      padding-top: 0;
++    }
+   }
+ 
+   &--large {
+@@ -35,6 +138,10 @@
+   &--sublist--first {
+     padding-top: 35px;
+     margin-bottom: 13px;
++
++    @media (min-width: $tablet-width) {
++      padding-top: 13px;
++    }
+   }
+ 
+   &--sublist {
+@@ -45,10 +152,18 @@
+ 
+ .advantages__text {
+   margin: 0;
+-  padding-bottom: 16px;
++  margin-bottom: 16px;
++
++  @media (min-width: $tablet-width) {
++    margin-bottom: 25px;
++  }
+ 
+   &--high {
+     margin-bottom: 25px;
++
++    @media (min-width: $tablet-width) {
++      margin-bottom: 0;
++    }
+   }
+ 
+   &--none {
+@@ -60,6 +175,11 @@
+     padding-left: 15px;
+     padding-right: 15px;
+     border-bottom: 1px solid #e5e5e5;
++    margin-bottom: 0;
++
++    @media (min-width: $tablet-width) {
++      border-bottom: none;
++    }
+   }
+ 
+   &--medium {
+Index: source/sass/footer.scss
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- source/sass/footer.scss	(date 1575743650000)
++++ source/sass/footer.scss	(date 1576172506000)
+@@ -1,3 +1,27 @@
+-.footer {
++.footer__wrapper {
+   text-align: center;
++
++  background-color: #fefefe;
++}
++
++.footer__flex {
++  @include mobile-container;
++
++  @media (min-width: $tablet-width) {
++    width: $tablet-width;
++    padding: 60px;
++
++    display: flex;
++    justify-content: space-between;
++    flex-wrap: wrap;
++  }
++
++  @media (min-width: $desktop-width) {
++    width: $desktop-width;
++    padding: 60px;
++
++    display: flex;
++    justify-content: space-between;
++    flex-wrap: wrap;
++  }
+ }
+Index: source/sass/intro.scss
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- source/sass/intro.scss	(date 1575743650000)
++++ source/sass/intro.scss	(date 1576172506000)
+@@ -2,6 +2,36 @@
+   text-align: center;
+   display: flex;
+   flex-direction: column;
++
++  @media (min-width: $tablet-width) {
++    margin-top: 475px;
++
++    &--smaller {
++      margin-top: 335px;
++    }
++  }
++
++  @media (min-width: $desktop-width) {
++    margin-top: 475px;
++
++    &--smaller {
++      margin-top: 380px;
++    }
++  }
++}
++
++.intro__wrapper {
++  @include mobile-container;
++
++  @media (min-width: $tablet-width) {
++    width: $tablet-container;
++    padding: 0 60px;
++  }
++
++  @media (min-width: $desktop-width) {
++    width: $desktop-container;
++    padding: 0 250px;
++  }
+ }
+ 
+ .intro__title {
+@@ -16,6 +46,10 @@
+   letter-spacing: 0.2px;
+   order: 3;
+ 
++  @media (min-width: $tablet-width) {
++    margin-bottom: 50px;
++  }
++
+   &--smaller {
+     margin-top: 10px;
+   }
+@@ -24,9 +58,3 @@
+     padding: 0 10px;
+   }
+ }
+-
+-.intro__image {
+-  object-fit: cover;
+-
+-  @include centered-block;
+-}
+Index: source/sass/logo.scss
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- source/sass/logo.scss	(date 1575743650000)
++++ source/sass/logo.scss	(date 1576172506000)
+@@ -1,14 +1,20 @@
+ .logo {
+-  width: 320px;
+   height: 56px;
+ 
+   order: 2;
+-  z-index: 1;
+-
+-  margin: 0 auto;
++  z-index: 2;
+   background-color: #ffffff;
++
++  @media (min-width: $tablet-width) {
++    margin: 0 auto;
++    background-color: transparent;
++  }
+ }
+ 
+ .logo__image {
+   @include centered-block;
++
++  @media (min-width: $tablet-width) {
++    margin-top: -55px;
++  }
+ }
+Index: source/sass/main-nav.scss
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- source/sass/main-nav.scss	(date 1575743650000)
++++ source/sass/main-nav.scss	(date 1576172506000)
+@@ -1,8 +1,26 @@
+ .main-nav {
+   text-align: center;
++  font-family: $font-important;
++  font-size: 18px;
++  line-height: 40px;
++  text-transform: uppercase;
+ 
+   background-color: $light-blue;
+   z-index: 1;
++
++  @media (min-width: $tablet-width) {
++    background-color: #ffffff;
++
++    font-size: 14px;
++    line-height: 26px;
++  }
++
++  @media (min-width: $desktop-width) {
++    background-color: #ffffff;
++
++    font-size: 14px;
++    line-height: 26px;
++  }
+ }
+ 
+ .main-nav__link {
+@@ -12,11 +30,67 @@
+   padding-top: 8px;
+   padding-bottom: 8px;
+   letter-spacing: 0.3px;
++
++  @media (min-width: $tablet-width) {
++    color: #000000;
++
++    padding-top: 14px;
++    padding-bottom: 14px;
++    padding-left: 20px;
++    padding-right: 15px;
++    letter-spacing: 0.5px;
++  }
++
++  @media (min-width: $desktop-width) {
++    color: #000000;
++
++    padding: 14px 20px;
++    letter-spacing: 0.5px;
++  }
+ }
+ 
+-.main-nav__item:not(:last-child) {
+-  box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.2),
+-    inset 0 -1px 0 0 rgba(255, 255, 255, 0.2);
++@media (max-width: 767px) {
++  .main-nav__item:not(:last-child) {
++    box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.2),
++      inset 0 -1px 0 0 rgba(255, 255, 255, 0.2);
++  }
++}
++
++.nav-flex {
++  @media (min-width: $tablet-width) {
++    display: flex;
++    justify-content: space-start;
++    flex-wrap: wrap;
++  }
++}
++
++
++.main-nav__item {
++  @media (min-width: $tablet-width) {
++    width: 153px;
++  }
++
++  @media (min-width: $desktop-width) {
++    width: 239px;
++  }
++}
++
++@media (min-width: $tablet-width) {
++  .main-nav__item:nth-child(3) {
++    margin-left: auto;
++  }
++}
++
++.main-nav__wrapper {
++  margin: 0 auto;
++
++  @media (min-width: $tablet-width) {
++    width: $tablet-width;
++  }
++
++  @media (min-width: $desktop-width) {
++    width: $desktop-width;
++  }
+ }
+ 
+ .main-nav__button {
+Index: source/sass/main.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- source/sass/main.css	(date 1576172506000)
++++ source/sass/main.css	(date 1576172506000)
+@@ -0,0 +1,5 @@
++.main__intro {
++  margin-top: 390px;
++}
++
++/*# sourceMappingURL=main.css.map */
+Index: source/sass/main.css.map
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- source/sass/main.css.map	(date 1576172506000)
++++ source/sass/main.css.map	(date 1576172506000)
+@@ -0,0 +1,1 @@
++{"version":3,"sourceRoot":"","sources":["../../../../../../%D1%81%D0%B2%D0%B5%D1%82%D0%B0/htmlacademy/html_css_2/18838-sedona-18/source/sass/main.scss"],"names":[],"mappings":"AAAA;EACE","file":"main.css"}
+\ No newline at end of file
+Index: source/sass/main.scss
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- source/sass/main.scss	(date 1576172506000)
++++ source/sass/main.scss	(date 1576172506000)
+@@ -0,0 +1,7 @@
++.main__intro {
++  margin-top: 390px;
++
++  @media (min-width: $tablet-width) {
++    margin-top: 480px;
++  }
++}
+Index: source/sass/mixins.scss
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- source/sass/mixins.scss	(date 1575743650000)
++++ source/sass/mixins.scss	(date 1576172506000)
+@@ -2,3 +2,9 @@
+   display: block;
+   margin: 0 auto;
+ }
++
++@mixin mobile-container {
++  width: 320px;
++  margin: 0 auto;
++  padding: 0 20px;
++}
+Index: source/sass/page.scss
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- source/sass/page.scss	(date 1575743650000)
++++ source/sass/page.scss	(date 1576172506000)
+@@ -4,4 +4,29 @@
+ 
+   font-family: $font-stack;
+   color: #000000;
++
++  background: url("../img/bg-back-mobile@1x.jpg") no-repeat center 280px;
++  background-size: 768px 389px;
++
++  &--img--small {
++    background: url("../img/bg-back-mobile@1x.jpg") no-repeat center 53px;
++  }
++
++  @media (min-width: $tablet-width) {
++    background: url("../img/bg-back-tablet@1x.jpg") no-repeat center 56px;
++    background-size: 768px 518px;
++
++    &--img--small {
++      background: url("../img/bg-back-tablet@1x.jpg") no-repeat center -170px;
++    }
++  }
++
++  @media (min-width: $desktop-width) {
++    background: url("../img/bg-back-desktop@1x.jpg") no-repeat center 57px;
++    background-size: 1200px 518px;
++
++    &--img--small {
++      background: url("../img/bg-back-desktop@1x.jpg") no-repeat center -161px;
++    }
++  }
+ }
+Index: source/sass/style.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- source/sass/style.css	(date 1575743650000)
++++ source/sass/style.css	(date 1576172506000)
+@@ -31,13 +31,6 @@
+   overflow: hidden;
+ }
+ 
+-.page {
+-  margin: 0;
+-  padding: 0;
+-  font-family: "PT Sans", "Arial", sans-serif;
+-  color: #000000;
+-}
+-
+ .container {
+   min-width: 320px;
+   margin: 0 auto;
+@@ -53,16 +46,95 @@
+   }
+ }
+ 
++.wrapper {
++  width: 320px;
++  margin: 0 auto;
++  padding: 0 20px;
++}
++@media (min-width: 768px) {
++  .wrapper {
++    width: 728px;
++  }
++}
++@media (min-width: 1200px) {
++  .wrapper {
++    width: 1100px;
++    padding: 0 50px;
++  }
++}
++
++.page {
++  margin: 0;
++  padding: 0;
++  font-family: "PT Sans", "Arial", sans-serif;
++  color: #000000;
++  background: url("../img/bg-back-mobile@1x.jpg") no-repeat center 280px;
++  background-size: 768px 389px;
++}
++.page--img--small {
++  background: url("../img/bg-back-mobile@1x.jpg") no-repeat center 53px;
++}
++@media (min-width: 768px) {
++  .page {
++    background: url("../img/bg-back-tablet@1x.jpg") no-repeat center 56px;
++    background-size: 768px 518px;
++  }
++  .page--img--small {
++    background: url("../img/bg-back-tablet@1x.jpg") no-repeat center -170px;
++  }
++}
++@media (min-width: 1200px) {
++  .page {
++    background: url("../img/bg-back-desktop@1x.jpg") no-repeat center 57px;
++    background-size: 1200px 518px;
++  }
++  .page--img--small {
++    background: url("../img/bg-back-desktop@1x.jpg") no-repeat center -161px;
++  }
++}
++
+ .header {
+   display: flex;
+   flex-direction: column;
+ }
++.header--image {
++  position: relative;
++  top: 0;
++  height: 48px;
++}
++
++.main__intro {
++  margin-top: 390px;
++}
++@media (min-width: 768px) {
++  .main__intro {
++    margin-top: 480px;
++  }
++}
+ 
+ .main-nav {
+   text-align: center;
++  font-family: "PT Sans Bold", "Arial Black", sans-serif;
++  font-size: 18px;
++  line-height: 40px;
++  text-transform: uppercase;
+   background-color: #81b3d2;
+   z-index: 1;
+ }
++@media (min-width: 768px) {
++  .main-nav {
++    background-color: #ffffff;
++    font-size: 14px;
++    line-height: 26px;
++  }
++}
++@media (min-width: 1200px) {
++  .main-nav {
++    background-color: #ffffff;
++    font-size: 14px;
++    line-height: 26px;
++  }
++}
+ 
+ .main-nav__link {
+   color: #ffffff;
+@@ -71,9 +143,72 @@
+   padding-bottom: 8px;
+   letter-spacing: 0.3px;
+ }
++@media (min-width: 768px) {
++  .main-nav__link {
++    color: #000000;
++    padding-top: 14px;
++    padding-bottom: 14px;
++    padding-left: 20px;
++    padding-right: 15px;
++    letter-spacing: 0.5px;
++  }
++}
++@media (min-width: 1200px) {
++  .main-nav__link {
++    color: #000000;
++    padding: 14px 20px;
++    letter-spacing: 0.5px;
++  }
++}
+ 
+-.main-nav__item:not(:last-child) {
+-  box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.2), inset 0 -1px 0 0 rgba(255, 255, 255, 0.2);
++@media (max-width: 767px) {
++  .main-nav__item:not(:last-child) {
++    box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.2), inset 0 -1px 0 0 rgba(255, 255, 255, 0.2);
++  }
++}
++@media (min-width: 768px) {
++  .nav-flex {
++    display: flex;
++    justify-content: space-start;
++    flex-wrap: wrap;
++  }
++}
++
++@media (min-width: 768px) {
++  .main-nav__item {
++    width: 153px;
++  }
++}
++@media (min-width: 1200px) {
++  .main-nav__item {
++    width: 239px;
++  }
++}
++
++@media (min-width: 768px) {
++  .main-nav__item:nth-child(3) {
++    margin-left: auto;
++  }
++}
++.main-nav__wrapper {
++  margin: 0 auto;
++}
++@media (min-width: 768px) {
++  .main-nav__wrapper {
++    width: 768px;
++  }
++}
++@media (min-width: 1200px) {
++  .main-nav__wrapper {
++    width: 1200px;
++  }
++}
++
++.main-nav__button {
++  font-size: 0;
++  border: 0;
++  background-color: transparent;
++  position: absolute;
+ }
+ 
+ .site-list {
+@@ -89,6 +224,11 @@
+   text-transform: uppercase;
+   color: #000000;
+ }
++@media (min-width: 768px) {
++  .title {
++    font-size: 21px;
++  }
++}
+ .title--white {
+   color: #ffffff;
+ }
+@@ -126,69 +266,194 @@
+   background-color: #81b3d2;
+ }
+ 
++.advantages__flex {
++  width: 320px;
++  margin: 0 auto;
++  padding: 0 20px;
++  padding: 0;
++}
++@media (min-width: 768px) {
++  .advantages__flex {
++    width: 768px;
++    padding: 0;
++    display: flex;
++  }
++}
++@media (min-width: 1200px) {
++  .advantages__flex {
++    width: 1200px;
++    padding: 0;
++    display: flex;
++  }
++}
++
++@media (min-width: 768px) {
++  .advantages__wrapper {
++    max-width: 256px;
++    padding: 45px;
++  }
++  .advantages__wrapper--right {
++    order: 2;
++  }
++
++  .advantages__image {
++    width: 512px;
++    height: 256px;
++  }
++
++  .advantages__wrapper-sublist {
++    padding-top: 145px;
++    padding-bottom: 50px;
++    display: flex;
++    justify-content: space-between;
++  }
++}
++@media (min-width: 1200px) {
++  .advantages__wrapper {
++    max-width: 400px;
++    padding: 60px;
++  }
++
++  .advantages__image {
++    width: 800px;
++    height: 256px;
++  }
++}
+ .advantages__item {
+   text-align: center;
+ }
+ 
+-.advantages__list-sublist .advantages__item {
+-  padding-left: 50px;
+-  text-align: left;
++@media (max-width: 767px) {
++  .advantages__item--sublist {
++    padding-left: 50px;
++    text-align: left;
++  }
+ }
++@media (min-width: 768px) {
++  .advantages__item--sublist {
++    width: 165px;
++  }
+ 
++  .advantages__item--souvenirs {
++    order: 2;
++  }
++}
+ .advantages-grey {
+   background-color: #eeeeee;
+ }
+ 
++@media (min-width: 768px) {
++  .advantages-grey__flex {
++    margin: 0 auto;
++    display: flex;
++    flex-wrap: wrap;
++    width: 768px;
++  }
++}
++@media (min-width: 1200px) {
++  .advantages-grey__flex {
++    width: 1200px;
++  }
++}
++
++.advantages-grey__wrapper {
++  width: 320px;
++  margin: 0 auto;
++  padding: 0 20px;
++}
++@media (min-width: 768px) {
++  .advantages-grey__wrapper {
++    width: 256px;
++    padding: 12px 40px;
++  }
++}
++@media (min-width: 1200px) {
++  .advantages-grey__wrapper {
++    width: 400px;
++    padding: 12px 40px;
++  }
++}
++
+ .advantages__title {
+   margin: 0;
+   padding-top: 27px;
+-  padding-bottom: 8px;
++  margin-bottom: 8px;
+ }
+ .advantages__title--high {
+   padding-top: 55px;
+ }
++@media (min-width: 768px) {
++  .advantages__title--high {
++    padding-top: 0;
++  }
++}
+ .advantages__title--medium {
+   padding-top: 40px;
+ }
++@media (min-width: 768px) {
++  .advantages__title--medium {
++    padding-top: 0;
++  }
++}
+ .advantages__title--large {
+-  padding-bottom: 12px;
++  margin-bottom: 12px;
+ }
+ .advantages__title--sublist--first {
+   padding-top: 35px;
+-  padding-bottom: 13px;
++  margin-bottom: 13px;
++}
++@media (min-width: 768px) {
++  .advantages__title--sublist--first {
++    padding-top: 13px;
++  }
+ }
+ .advantages__title--sublist {
+-  padding-top: 30px;
+-  padding-bottom: 13px;
++  padding-top: 13px;
++  margin-bottom: 13px;
+ }
+ 
+ .advantages__text {
+   margin: 0;
+-  padding-bottom: 16px;
++  margin-bottom: 16px;
+ }
+-.advantages__text--high {
+-  padding-bottom: 40px;
++@media (min-width: 768px) {
++  .advantages__text {
++    margin-bottom: 25px;
++  }
++}
++.advantages__text--high {
++  margin-bottom: 25px;
++}
++@media (min-width: 768px) {
++  .advantages__text--high {
++    margin-bottom: 0;
++  }
+ }
+ .advantages__text--none {
+-  padding-bottom: 0;
++  margin-bottom: 0;
+ }
+ .advantages__text--grey {
+   padding-bottom: 25px;
+   padding-left: 15px;
+   padding-right: 15px;
+   border-bottom: 1px solid #e5e5e5;
++  margin-bottom: 0;
++}
++@media (min-width: 768px) {
++  .advantages__text--grey {
++    border-bottom: none;
++  }
+ }
+ .advantages__text--medium {
+-  padding-bottom: 35px;
++  margin-bottom: 20px;
+ }
+ .advantages__text--small {
+-  padding-bottom: 30px;
++  margin-bottom: 30px;
+ }
+ 
+ .advantages__image {
+   display: block;
+   margin: 0 auto;
+-  opacity: 0.5;
+ }
+ 
+ .button {
+@@ -197,28 +462,35 @@
+ 
+ .copyright {
+   color: #000000;
+-  margin-top: 45px;
+-  margin-bottom: 35px;
++  padding-top: 45px;
++  padding-bottom: 35px;
+ }
+ 
+-.header__button {
+-  font-size: 0;
+-  border: 0;
+-  background-color: transparent;
++.footer__text {
++  margin: 0;
+ }
+ 
+ .logo {
+-  text-align: center;
+   height: 56px;
+-  background-color: #ffffff;
+   order: 2;
+-  z-index: 1;
++  z-index: 2;
++  background-color: #ffffff;
++}
++@media (min-width: 768px) {
++  .logo {
++    margin: 0 auto;
++    background-color: transparent;
++  }
+ }
+ 
+ .logo__image {
+-  position: absolute;
+-  top: 244px;
+-  left: 901px;
++  display: block;
++  margin: 0 auto;
++}
++@media (min-width: 768px) {
++  .logo__image {
++    margin-top: -55px;
++  }
+ }
+ 
+ .intro {
+@@ -226,10 +498,39 @@
+   display: flex;
+   flex-direction: column;
+ }
+-.intro--smaller {
+-  position: relative;
+-  bottom: 232px;
+-  margin-bottom: -230px;
++@media (min-width: 768px) {
++  .intro {
++    margin-top: 475px;
++  }
++  .intro--smaller {
++    margin-top: 335px;
++  }
++}
++@media (min-width: 1200px) {
++  .intro {
++    margin-top: 475px;
++  }
++  .intro--smaller {
++    margin-top: 380px;
++  }
++}
++
++.intro__wrapper {
++  width: 320px;
++  margin: 0 auto;
++  padding: 0 20px;
++}
++@media (min-width: 768px) {
++  .intro__wrapper {
++    width: 728px;
++    padding: 0 60px;
++  }
++}
++@media (min-width: 1200px) {
++  .intro__wrapper {
++    width: 1100px;
++    padding: 0 250px;
++  }
+ }
+ 
+ .intro__title {
+@@ -244,6 +545,11 @@
+   letter-spacing: 0.2px;
+   order: 3;
+ }
++@media (min-width: 768px) {
++  .intro__text {
++    margin-bottom: 50px;
++  }
++}
+ .intro__text--smaller {
+   margin-top: 10px;
+ }
+@@ -251,13 +557,6 @@
+   padding: 0 10px;
+ }
+ 
+-.intro__image {
+-  object-fit: cover;
+-  display: block;
+-  margin: 0 auto;
+-  opacity: 0.5;
+-}
+-
+ .checkin {
+   text-align: center;
+ }
+@@ -276,7 +575,6 @@
+ .map__image {
+   display: block;
+   margin: 0 auto;
+-  opacity: 0.5;
+ }
+ 
+ .hashtag {
+@@ -317,8 +615,38 @@
+   padding-left: 36px;
+ }
+ 
+-.footer {
++.presentation__image {
++  display: block;
++  margin: 0 auto;
++}
++
++.footer__wrapper {
+   text-align: center;
++  background-color: #fefefe;
++}
++
++.footer__flex {
++  width: 320px;
++  margin: 0 auto;
++  padding: 0 20px;
++}
++@media (min-width: 768px) {
++  .footer__flex {
++    width: 768px;
++    padding: 60px;
++    display: flex;
++    justify-content: space-between;
++    flex-wrap: wrap;
++  }
++}
++@media (min-width: 1200px) {
++  .footer__flex {
++    width: 1200px;
++    padding: 60px;
++    display: flex;
++    justify-content: space-between;
++    flex-wrap: wrap;
++  }
+ }
+ 
+ /*# sourceMappingURL=style.css.map */
+Index: source/sass/style.css.map
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- source/sass/style.css.map	(date 1575743650000)
++++ source/sass/style.css.map	(date 1576172506000)
+@@ -1,1 +1,1 @@
+-{"version":3,"sourceRoot":"","sources":["../../../../../../%D1%81%D0%B2%D0%B5%D1%82%D0%B0/htmlacademy/html_css_2/18838-sedona-18/source/sass/style.scss","../../../../../../%D1%81%D0%B2%D0%B5%D1%82%D0%B0/htmlacademy/html_css_2/18838-sedona-18/source/sass/page.scss","../../../../../../%D1%81%D0%B2%D0%B5%D1%82%D0%B0/htmlacademy/html_css_2/18838-sedona-18/source/sass/container.scss","../../../../../../%D1%81%D0%B2%D0%B5%D1%82%D0%B0/htmlacademy/html_css_2/18838-sedona-18/source/sass/header.scss","../../../../../../%D1%81%D0%B2%D0%B5%D1%82%D0%B0/htmlacademy/html_css_2/18838-sedona-18/source/sass/main-nav.scss","../../../../../../%D1%81%D0%B2%D0%B5%D1%82%D0%B0/htmlacademy/html_css_2/18838-sedona-18/source/sass/site-list.scss","../../../../../../%D1%81%D0%B2%D0%B5%D1%82%D0%B0/htmlacademy/html_css_2/18838-sedona-18/source/sass/title.scss","../../../../../../%D1%81%D0%B2%D0%B5%D1%82%D0%B0/htmlacademy/html_css_2/18838-sedona-18/source/sass/text.scss","../../../../../../%D1%81%D0%B2%D0%B5%D1%82%D0%B0/htmlacademy/html_css_2/18838-sedona-18/source/sass/advantages.scss","../../../../../../%D1%81%D0%B2%D0%B5%D1%82%D0%B0/htmlacademy/html_css_2/18838-sedona-18/source/sass/mixins.scss","../../../../../../%D1%81%D0%B2%D0%B5%D1%82%D0%B0/htmlacademy/html_css_2/18838-sedona-18/source/sass/button.scss","../../../../../../%D1%81%D0%B2%D0%B5%D1%82%D0%B0/htmlacademy/html_css_2/18838-sedona-18/source/sass/copyright.scss","../../../../../../%D1%81%D0%B2%D0%B5%D1%82%D0%B0/htmlacademy/html_css_2/18838-sedona-18/source/sass/logo.scss","../../../../../../%D1%81%D0%B2%D0%B5%D1%82%D0%B0/htmlacademy/html_css_2/18838-sedona-18/source/sass/intro.scss","../../../../../../%D1%81%D0%B2%D0%B5%D1%82%D0%B0/htmlacademy/html_css_2/18838-sedona-18/source/sass/checkin.scss","../../../../../../%D1%81%D0%B2%D0%B5%D1%82%D0%B0/htmlacademy/html_css_2/18838-sedona-18/source/sass/map.scss","../../../../../../%D1%81%D0%B2%D0%B5%D1%82%D0%B0/htmlacademy/html_css_2/18838-sedona-18/source/sass/hashtag.scss","../../../../../../%D1%81%D0%B2%D0%B5%D1%82%D0%B0/htmlacademy/html_css_2/18838-sedona-18/source/sass/photo.scss","../../../../../../%D1%81%D0%B2%D0%B5%D1%82%D0%B0/htmlacademy/html_css_2/18838-sedona-18/source/sass/footer.scss"],"names":[],"mappings":"AAOA;EACE;;;AAGF;EACE;EACA;EACA;;AAIF;EACE;EACA;EACA;;AAIF;EACE;;;AAGF;AAAA;AAAA;EAGE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;ACzCF;EACE;EACA;EAEA,aDJW;ECKX;;;ACLF;EACE;EACA;;AAEA;EAJF;IAKI,WFDW;;;AEIb;EARF;IASI,WFJY;;;;AGLhB;EACE;EACA;;;ACFF;EACE;EAEA,kBJDW;EIEX;;;AAGF;EACE;EAEA;EACA;EACA;EACA;;;AAGF;EACE;;;ACjBF;EACE;EACA;EACA;;;ACHF;EACE;EACA;EACA;EACA;EACA;;AAEA;EACE;;AAGF;EACE;;AAGF;EACE;;;AChBJ;EACE;EACA;EACA;EACA;;AAEA;EACE;;AAGF;EACE;;AAGF;EACE;;AAGF;EACE;;AAGF;EACE,aPtBa;EOuBb;;;ACxBJ;EACE,kBRCW;;;AQEb;EACE;;;AAGF;EACE;EACA;;;AAGF;EACE,kBRXK;;;AQcP;EACE;EACA;EACA;;AAEA;EACE;;AAGF;EACE;;AAGF;EACE;;AAGF;EACE;EACA;;AAGF;EACE;EACA;;;AAIJ;EACE;EACA;;AAEA;EACE;;AAGF;EACE;;AAGF;EACE;EACA;EACA;EACA;;AAGF;EACE;;AAGF;EACE;;;AAIJ;ECxEE;EACA;EACA;;;ACHF;EACE,kBVCW;;;AWFb;EACE;EACA;EACA;;;ACHF;EACE;EACA;EACA;;;AAGF;EACE;EAEA;EACA;EACA;EACA;;;AAGF;EACE;EACA;EACA;;;AClBF;EACE;EACA;EACA;;AAEA;EACE;EACA;EACA;;;AAIJ;EACE;EACA;EACA;;;AAGF;EACE;EACA;EACA;EACA;;AAEA;EACE;;AAGF;EACE;;;AAIJ;EACE;EJjCA;EACA;EACA;;;AKHF;EACE;;;AAGF;EACE;EACA;;;AAGF;EACE;EACA;EACA;;;ACZF;ENCE;EACA;EACA;;;AOHF;EACE;EACA;;;ACFF;EACE;EACA;EACA;;;AAGF;EACE;EACA;;;AAGF;EACE;EACA;EACA;;;AAGF;EACE;EACA;;;AAGF;EACE;EACA;;;AAGF;EACE;EACA;EACA;;;AC9BF;EACE","file":"style.css"}
+\ No newline at end of file
++{"version":3,"sourceRoot":"","sources":["../../../../../../%D1%81%D0%B2%D0%B5%D1%82%D0%B0/htmlacademy/html_css_2/18838-sedona-18/source/sass/style.scss","../../../../../../%D1%81%D0%B2%D0%B5%D1%82%D0%B0/htmlacademy/html_css_2/18838-sedona-18/source/sass/container.scss","../../../../../../%D1%81%D0%B2%D0%B5%D1%82%D0%B0/htmlacademy/html_css_2/18838-sedona-18/source/sass/variables.scss","../../../../../../%D1%81%D0%B2%D0%B5%D1%82%D0%B0/htmlacademy/html_css_2/18838-sedona-18/source/sass/wrapper.scss","../../../../../../%D1%81%D0%B2%D0%B5%D1%82%D0%B0/htmlacademy/html_css_2/18838-sedona-18/source/sass/page.scss","../../../../../../%D1%81%D0%B2%D0%B5%D1%82%D0%B0/htmlacademy/html_css_2/18838-sedona-18/source/sass/header.scss","../../../../../../%D1%81%D0%B2%D0%B5%D1%82%D0%B0/htmlacademy/html_css_2/18838-sedona-18/source/sass/main.scss","../../../../../../%D1%81%D0%B2%D0%B5%D1%82%D0%B0/htmlacademy/html_css_2/18838-sedona-18/source/sass/main-nav.scss","../../../../../../%D1%81%D0%B2%D0%B5%D1%82%D0%B0/htmlacademy/html_css_2/18838-sedona-18/source/sass/site-list.scss","../../../../../../%D1%81%D0%B2%D0%B5%D1%82%D0%B0/htmlacademy/html_css_2/18838-sedona-18/source/sass/title.scss","../../../../../../%D1%81%D0%B2%D0%B5%D1%82%D0%B0/htmlacademy/html_css_2/18838-sedona-18/source/sass/text.scss","../../../../../../%D1%81%D0%B2%D0%B5%D1%82%D0%B0/htmlacademy/html_css_2/18838-sedona-18/source/sass/advantages.scss","../../../../../../%D1%81%D0%B2%D0%B5%D1%82%D0%B0/htmlacademy/html_css_2/18838-sedona-18/source/sass/mixins.scss","../../../../../../%D1%81%D0%B2%D0%B5%D1%82%D0%B0/htmlacademy/html_css_2/18838-sedona-18/source/sass/button.scss","../../../../../../%D1%81%D0%B2%D0%B5%D1%82%D0%B0/htmlacademy/html_css_2/18838-sedona-18/source/sass/copyright.scss","../../../../../../%D1%81%D0%B2%D0%B5%D1%82%D0%B0/htmlacademy/html_css_2/18838-sedona-18/source/sass/logo.scss","../../../../../../%D1%81%D0%B2%D0%B5%D1%82%D0%B0/htmlacademy/html_css_2/18838-sedona-18/source/sass/intro.scss","../../../../../../%D1%81%D0%B2%D0%B5%D1%82%D0%B0/htmlacademy/html_css_2/18838-sedona-18/source/sass/checkin.scss","../../../../../../%D1%81%D0%B2%D0%B5%D1%82%D0%B0/htmlacademy/html_css_2/18838-sedona-18/source/sass/map.scss","../../../../../../%D1%81%D0%B2%D0%B5%D1%82%D0%B0/htmlacademy/html_css_2/18838-sedona-18/source/sass/hashtag.scss","../../../../../../%D1%81%D0%B2%D0%B5%D1%82%D0%B0/htmlacademy/html_css_2/18838-sedona-18/source/sass/photo.scss","../../../../../../%D1%81%D0%B2%D0%B5%D1%82%D0%B0/htmlacademy/html_css_2/18838-sedona-18/source/sass/presentation.scss","../../../../../../%D1%81%D0%B2%D0%B5%D1%82%D0%B0/htmlacademy/html_css_2/18838-sedona-18/source/sass/footer.scss"],"names":[],"mappings":"AAAA;EACE;;;AAGF;EACE;EACA;EACA;;AAIF;EACE;EACA;EACA;;AAIF;EACE;;;AAGF;AAAA;AAAA;EAGE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AClCF;EACE;EACA;;AAEA;EAJF;IAKI;;;AAGF;EARF;IASI,WCHY;;;;ACNhB;EACE;EACA;EACA;;AAEA;EALF;IAMI;;;AAGF;EATF;IAUI;IACA;;;;ACXJ;EACE;EACA;EAEA,aFJW;EEKX;EAEA;EACA;;AAEA;EACE;;AAGF;EAdF;IAeI;IACA;;EAEA;IACE;;;AAIJ;EAvBF;IAwBI;IACA;;EAEA;IACE;;;;AC5BN;EACE;EACA;;AAEA;EACE;EACA;EACA;;;ACPJ;EACE;;AAEA;EAHF;IAII;;;;ACJJ;EACE;EACA,aLDe;EKEf;EACA;EACA;EAEA,kBLLW;EKMX;;AAEA;EAVF;IAWI;IAEA;IACA;;;AAGF;EAjBF;IAkBI;IAEA;IACA;;;;AAIJ;EACE;EAEA;EACA;EACA;EACA;;AAEA;EARF;IASI;IAEA;IACA;IACA;IACA;IACA;;;AAGF;EAlBF;IAmBI;IAEA;IACA;;;;AAIJ;EACE;IACE;;;AAMF;EADF;IAEI;IACA;IACA;;;;AAMF;EADF;IAEI;;;AAGF;EALF;IAMI;;;;AAIJ;EACE;IACE;;;AAIJ;EACE;;AAEA;EAHF;IAII,OLlFW;;;AKqFb;EAPF;IAQI,OLrFY;;;;AKyFhB;EACE;EACA;EACA;EAEA;;;ACpGF;EACE;EACA;EACA;;;ACHF;EACE;EACA;EACA;EACA;EACA;;AAEA;EAPF;IAQI;;;AAGF;EACE;;AAGF;EACE;;AAGF;EACE;;;ACpBJ;EACE;EACA;EACA;EACA;;AAEA;EACE;;AAGF;EACE;;AAGF;EACE;;AAGF;EACE;;AAGF;EACE,aRtBa;EQuBb;;;ACxBJ;EACE,kBTCW;;;ASEb;ECEE;EACA;EACA;EDFA;;AAEA;EAJF;IAKI,OTJW;ISKX;IAEA;;;AAGF;EAXF;IAYI,OTVY;ISWZ;IAEA;;;;AAIJ;EACE;IACE;IACA;;EAEA;IACE;;;EAIJ;IACE;IACA;;;EAGF;IACE;IACA;IAEA;IACA;;;AAIJ;EACE;IACE;IACA;;;EAGF;IACE;IACA;;;AAIJ;EACE;;;AAGF;EACE;IACE;IACA;;;AAIJ;EACE;IACE;;;EAGF;IACE;;;AAIJ;EACE,kBT9EK;;;ASkFL;EADF;IAEI;IAEA;IACA;IACA,OTrFW;;;ASwFb;EATF;IAUI,OTxFY;;;;AS4FhB;EC5FE;EACA;EACA;;AD6FA;EAHF;IAII;IACA;;;AAGF;EARF;IASI;IACA;;;;AAIJ;EACE;EACA;EACA;;AAEA;EACE;;AAEA;EAHF;IAII;;;AAIJ;EACE;;AAEA;EAHF;IAII;;;AAIJ;EACE;;AAGF;EACE;EACA;;AAEA;EAJF;IAKI;;;AAIJ;EACE;EACA;;;AAIJ;EACE;EACA;;AAEA;EAJF;IAKI;;;AAGF;EACE;;AAEA;EAHF;IAII;;;AAIJ;EACE;;AAGF;EACE;EACA;EACA;EACA;EACA;;AAEA;EAPF;IAQI;;;AAIJ;EACE;;AAGF;EACE;;;AAIJ;EChME;EACA;;;ACFF;EACE,kBXCW;;;AYFb;EACE;EACA;EACA;;;AAGF;EACE;;;ACPF;EACE;EAEA;EACA;EACA;;AAEA;EAPF;IAQI;IACA;;;;AAIJ;EHZE;EACA;;AGcA;EAHF;IAII;;;;ACjBJ;EACE;EACA;EACA;;AAEA;EALF;IAMI;;EAEA;IACE;;;AAIJ;EAbF;IAcI;;EAEA;IACE;;;;AAKN;EJhBE;EACA;EACA;;AIiBA;EAHF;IAII,OdnBe;IcoBf;;;AAGF;EARF;IASI,OdvBgB;IcwBhB;;;;AAIJ;EACE;EACA;EACA;;;AAGF;EACE;EACA;EACA;EACA;;AAEA;EANF;IAOI;;;AAGF;EACE;;AAGF;EACE;;;ACzDJ;EACE;;;AAGF;EACE;EACA;;;AAGF;EACE;EACA;EACA;;;ACZF;ENCE;EACA;;;AOFF;EACE;EACA;;;ACFF;EACE;EACA;EACA;;;AAGF;EACE;EACA;;;AAGF;EACE;EACA;EACA;;;AAGF;EACE;EACA;;;AAGF;EACE;EACA;;;AAGF;EACE;EACA;EACA;;;AC9BF;ETCE;EACA;;;AUFF;EACE;EAEA;;;AAGF;EVAE;EACA;EACA;;AUCA;EAHF;IAII,OpBLW;IoBMX;IAEA;IACA;IACA;;;AAGF;EAZF;IAaI,OpBbY;IoBcZ;IAEA;IACA;IACA","file":"style.css"}
+\ No newline at end of file
+Index: source/sass/style.scss
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- source/sass/style.scss	(date 1575743650000)
++++ source/sass/style.scss	(date 1576172506000)
+@@ -1,10 +1,3 @@
+-$font-stack: "PT Sans", "Arial", sans-serif;
+-$font-important: "PT Sans Bold", "Arial Black", sans-serif;
+-$light-blue: #81b3d2;
+-$grey: #eeeeee;
+-$tablet-width: 768px;
+-$desktop-width: 1200px;
+-
+ * {
+   box-sizing: border-box;
+ }
+@@ -42,11 +35,13 @@
+   overflow: hidden;
+ }
+ 
++@import "variables.scss";
+ @import "mixins.scss";
+ @import "container.scss";
+ @import "wrapper.scss";
+ @import "page.scss";
+ @import "header.scss";
++@import "main.scss";
+ @import "main-nav.scss";
+ @import "site-list.scss";
+ @import "title.scss";
+Index: source/sass/title.scss
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- source/sass/title.scss	(date 1575743650000)
++++ source/sass/title.scss	(date 1576172506000)
+@@ -5,6 +5,10 @@
+   text-transform: uppercase;
+   color: #000000;
+ 
++  @media (min-width: $tablet-width) {
++    font-size: 21px;
++  }
++
+   &--white {
+     color: #ffffff;
+   }
+Index: source/sass/variables.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- source/sass/variables.css	(date 1576172506000)
++++ source/sass/variables.css	(date 1576172506000)
+@@ -0,0 +1,3 @@
++
++
++/*# sourceMappingURL=variables.css.map */
+Index: source/sass/variables.css.map
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- source/sass/variables.css.map	(date 1576172506000)
++++ source/sass/variables.css.map	(date 1576172506000)
+@@ -0,0 +1,1 @@
++{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"variables.css"}
+\ No newline at end of file
+Index: source/sass/variables.scss
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- source/sass/variables.scss	(date 1576172506000)
++++ source/sass/variables.scss	(date 1576172506000)
+@@ -0,0 +1,9 @@
++$font-stack: "PT Sans", "Arial", sans-serif;
++$font-important: "PT Sans Bold", "Arial Black", sans-serif;
++$light-blue: #81b3d2;
++$grey: #eeeeee;
++$mobile-width: 320px;
++$tablet-width: 768px;
++$desktop-width: 1200px;
++$tablet-container: 728px;
++$desktop-container: 1100px;
+Index: source/sass/wrapper.scss
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- source/sass/wrapper.scss	(date 1575743650000)
++++ source/sass/wrapper.scss	(date 1576172506000)
+@@ -2,4 +2,13 @@
+   width: 320px;
+   margin: 0 auto;
+   padding: 0 20px;
++
++  @media (min-width: $tablet-width) {
++    width: 728px;
++  }
++
++  @media (min-width: $desktop-width) {
++    width: 1100px;
++    padding: 0 50px;
++  }
+ }
