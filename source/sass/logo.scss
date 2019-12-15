@@ -5,16 +5,15 @@
   z-index: 2;
   background-color: #ffffff;
 
+  position: relative;
+
   @media (min-width: $tablet-width) {
     margin: 0 auto;
     background-color: transparent;
+    top: -56px;
   }
 }
 
 .logo__image {
   @include centered-block;
-
-  @media (min-width: $tablet-width) {
-    margin-top: -55px;
-  }
 }

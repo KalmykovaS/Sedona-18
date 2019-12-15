@@ -32,6 +32,22 @@
     width: $desktop-container;
     padding: 0 250px;
   }
+
+  &--smaller {
+    @include mobile-container;
+
+    @media (min-width: $tablet-width) {
+      width: $tablet-container;
+      margin: 0 auto;
+      padding: 0 165px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: $desktop-container;
+      margin: 0 auto;
+      padding: 0 325px;
+    }
+  }
 }
 
 .intro__title {
@@ -52,6 +68,14 @@
 
   &--smaller {
     margin-top: 10px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 5px;
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-top: 35px;
+    }
   }
 
   &--padding {

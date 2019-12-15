@@ -2,17 +2,52 @@
   min-height: 415px;
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
-}
 
-.photo-flex {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    background-color: #f2f2f2;
+    width: auto;
+    min-height: 347px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: transparent;
+    width: auto;
+    border: none;
+  }
 }
 
 .photo__image {
   margin-top: 20px;
   display: block;
   order: -1;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    min-height: 267px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+    min-height: 267px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .photo__image--first {
+    width: 648px;
+    height: 400px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo__image--first {
+    width: 1200px;
+    height: 400px;
+  }
 }
 
 .photo__title {

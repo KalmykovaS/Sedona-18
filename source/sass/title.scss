@@ -20,4 +20,10 @@
   &--lead--large {
     line-height: 40px;
   }
+
+  &--large--screen {
+    @media (min-width: $tablet-width) {
+      font-size: 30px;
+    }
+  }
 }
