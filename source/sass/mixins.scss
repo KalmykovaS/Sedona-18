@@ -8,3 +8,11 @@
   margin: 0 auto;
   padding: 0 20px;
 }
+
+@mixin form-text {
+  font-family: $font-important;
+  font-size: 18px;
+  line-height: 26px;
+
+  color: #000000;
+}

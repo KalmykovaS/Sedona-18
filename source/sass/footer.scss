@@ -1,6 +1,4 @@
-.footer__wrapper {
-  text-align: center;
-
+.footer {
   background-color: #fefefe;
 }
 
@@ -8,8 +6,8 @@
   @include mobile-container;
 
   @media (min-width: $tablet-width) {
-    width: $tablet-width;
-    padding: 60px;
+    width: 648px;
+    padding: 0;
 
     display: flex;
     justify-content: space-between;
@@ -17,11 +15,15 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: $desktop-width;
-    padding: 60px;
+    width: 960px;
+    padding: 0;
 
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
   }
+}
+
+.footer__text {
+  margin: 0;
 }

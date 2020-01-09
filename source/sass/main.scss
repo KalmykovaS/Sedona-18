@@ -2,6 +2,22 @@
   margin-top: 390px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 480px;
+    margin-top: 532px;
+
+    &--smaller {
+      margin-top: 325px;
+    }
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 532px;
+
+    &--smaller {
+      margin-top: 400px;
+    }
+  }
+}
+
+.main__checkin {
+  margin-top: 85px;
 }

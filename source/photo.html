@@ -7,8 +7,8 @@
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="page page--img--small">
-<div class="container">
+<body class="page">
+<div class="container container--img--small">
 
   <header class="page__header header header--image">
     <div class="header__logo logo">
@@ -39,7 +39,7 @@
   </header>
 
   <main class="page__main main">
-    <section class="main__intro intro intro--smaller">
+    <section class="main__intro main__intro--smaller intro">
       <div class="intro__wrapper--smaller">
         <h1 class="intro__title title title--large--screen">Фото и видео</h1>
         <p class="intro__text intro__text--smaller text text--lead--medium">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и
@@ -48,38 +48,46 @@
     </section>
 
     <section class="main__gallery gallery">
-      <h2 class="visually-hidden">Галлерея</h2>
+      <h2 class="visually-hidden">Галерея</h2>
       <ul class="gallery__list gallery-list site-list">
         <li class="gallery-list__item">
-          <article class="gallery-list__inner photo">
+          <article class="gallery-list__inner gallery-list__inner--first photo">
             <h3 class="photo__title text text--bold">Народные просторы</h3>
             <img class="photo__image photo__image--first" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Народные просторы">
-            <p class="photo__text text text text--transform--none">Автор фото: Борис</p>
-            <p class="photo__text-likes text text--bold">1350</p>
+            <div class="photo__text-wrapper">
+              <p class="photo__text text text text--white--desktop text--transform--none">Автор фото: Борис</p>
+              <p class="photo__text-likes text text--white--desktop text--bold">1350</p>
+            </div>
           </article>
         </li>
         <li class="gallery-list__item">
           <article class="gallery-list__inner photo">
             <h3 class="photo__title text text--bold">Местная растительность</h3>
             <img class="photo__image" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Местная растительность">
-            <p class="photo__text text text--transform--none">Автор фото: Сергей</p>
-            <p class="photo__text-likes text text--bold">143</p>
+            <div class="photo__text-wrapper">
+              <p class="photo__text text text--white--desktop text--transform--none">Автор фото: Сергей</p>
+              <p class="photo__text-likes text text--white--desktop text--bold">143</p>
+            </div>
           </article>
         </li>
         <li class="gallery-list__item">
           <article class="gallery-list__inner photo">
             <h3 class="photo__title text text--bold">Дорога на север</h3>
             <img class="photo__image" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Дорога на север">
-            <p class="photo__text text text--transform--none">Автор фото: Петр</p>
-            <p class="photo__text-likes text text--bold">96</p>
+            <div class="photo__text-wrapper">
+              <p class="photo__text text text--white--desktop text--transform--none">Автор фото: Петр</p>
+              <p class="photo__text-likes text text--white--desktop text--bold">96</p>
+            </div>
           </article>
         </li>
         <li class="gallery-list__item">
           <article class="gallery-list__inner photo">
             <h3 class="photo__title text text--bold">Мост дьявола</h3>
             <img class="photo__image" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Мост дьявола">
-            <p class="photo__text text text--transform--none">Автор фото: Антон</p>
-            <p class="photo__text-likes text text--bold">254</p>
+            <div class="photo__text-wrapper">
+              <p class="photo__text text text--white--desktop text--transform--none">Автор фото: Антон</p>
+              <p class="photo__text-likes text text--white--desktop text--bold">254</p>
+            </div>
           </article>
         </li>
       </ul>
@@ -107,7 +115,7 @@
     </section>
   </main>
 
-  <footer class="page__footer footer footer__wrapper">
+  <footer class="page__footer footer">
     <div class="footer__flex">
       <p class="footer__hashtag hashtag">
         <a class="hashtag__link title title--size--large" href="#">#visitsedona</a>
@@ -115,13 +123,13 @@
 
       <ul class="footer__list social site-list">
         <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="https://vk.com/" aria-label="Мы в Контакте">Мы в Контакте</a>
+          <a class="social__link social__link--vkontakte" href="https://vk.com/" aria-label="Мы в Контакте"></a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com/" aria-label="Мы в Фейсбуке">Мы в Фейсбуке</a>
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/" aria-label="Мы в Фейсбуке"></a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--instagram" href="https://instagram.com/" aria-label="Мы в Инстаграме">Мы в Инстаграме</a>
+          <a class="social__link social__link--instagram" href="https://instagram.com/" aria-label="Мы в Инстаграме"></a>
         </li>
       </ul>
 
