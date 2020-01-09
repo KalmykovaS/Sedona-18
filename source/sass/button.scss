@@ -1,3 +1,8 @@
 .button {
-  background-color: $light-blue;
+  @media (min-width: $tablet-width) {
+    background-color: $light-blue;
+    display: inline-block;
+    width: 458px;
+    padding: 16px;
+  }
 }

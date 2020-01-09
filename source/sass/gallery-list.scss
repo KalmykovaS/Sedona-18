@@ -2,17 +2,34 @@
   display: flex;
   flex-direction: column;
 
-  @include mobile-container;
-
   @media (min-width: $tablet-width) {
-    width: $tablet-width;
     padding: 0 60px;
+
     flex-direction: row;
     flex-wrap: wrap;
   }
 
   @media (min-width: $desktop-width) {
-    width: $desktop-width;
     padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gallery-list__inner {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+
+      width: 400px;
+      height: 100px;
+      background-color: rgba(0, 0, 0, 0.3);
+      bottom: 0;
+    }
+
+    &--first::after {
+      width: 1200px;
+    }
   }
 }

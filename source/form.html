@@ -7,8 +7,8 @@
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="page page--img--small">
-<div class="container">
+<body class="page">
+<div class="container container--img--small">
 
 <header class="page__header header header--image">
   <div class="header__logo logo">
@@ -39,7 +39,7 @@
 </header>
 
 <main class="page__main main">
-  <section class="main__intro intro intro--smaller">
+  <section class="main__intro main__intro--smaller intro">
     <div class="intro__wrapper--smaller">
       <h1 class="intro__title title title--large--screen">Оставьте свой отзыв</h1>
       <p class="intro__text intro__text--smaller text text--lead--medium">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
@@ -47,90 +47,90 @@
     </div>
   </section>
 
-  <section class="main__feedback feedback wrapper">
+  <section class="main__feedback feedback">
     <h2 class="visually-hidden">Обратная связь</h2>
 
     <form class="feedback__wrapper feedback-form" action="https://echo.htmlacademy.ru" method="post">
-      <div class="feedback-form__inner form form--name">
+      <div class="feedback-form__inner common-form form--name">
         <h3 class="form__title title">Представьтесь:</h3>
         <p class="form__text field">
           <label class="field__label text text--lead--large">Имя*:
-            <input type="text" name="name" placeholder="Петр"></label>
+            <input class="input-about field__input" type="text" name="name" placeholder="Петр"></label>
         </p>
         <p class="form__text field">
           <label class="field__label text text--lead--large">Фамилия*:
-            <input type="text" name="last-name" placeholder="Иванов"></label>
+            <input class="input-about field__input" type="text" name="last-name" placeholder="Иванов"></label>
         </p>
         <p class="form__text field">
           <label class="field__label text text--lead--large">Отчество:
-            <input type="text" name="second-name" placeholder="Александрович"></label>
+            <input class="input-about field__input" type="text" name="second-name" placeholder="Александрович"></label>
         </p>
       </div>
 
-      <div class="feedback-form__inner form form--information">
+      <div class="feedback-form__inner common-form form--information">
         <h3 class="form__title title">Контактная информация</h3>
         <p class="form__text field">
           <label class="field__label text text--lead--large">Контактный телефон*:
-            <input type="text" placeholder="Введите телефон">
+            <input class="input-about field__input" type="text" placeholder="Введите телефон">
           </label>
         </p>
         <p class="form__text field">
           <label class="field__label text text--lead--large">Электронная почта*:
-            <input type="text" placeholder="Введите e-mail">
+            <input class="input-about field__input" type="text" placeholder="Введите e-mail">
           </label>
         </p>
       </div>
 
-      <div class="feedback-form__inner form form--impression">
+      <div class="feedback-form__inner common-form form--impression">
         <h3 class="form__title title">Ваше общее впечатление:</h3>
-        <ul class="form__list form__list--radio">
+        <ul class="form__list form__list--radio site-list">
           <li class="form__item field">
-            <label class="field__label">Скорее положительное
+            <label class="field__label choise-text">Скорее положительное
               <input class="field__input" type="radio" name="impression" value="rather-yes" checked>
             </label>
           </li>
           <li class="form__item field">
-            <label class="field__label">Скорее отрицательное
+            <label class="field__label choise-text">Скорее отрицательное
               <input class="field__input" type="radio" name="impression" value="rather-no">
             </label>
           </li>
           <li class="form__item field">
-            <label class="field__label">Затрудняюсь ответить
+            <label class="field__label choise-text">Затрудняюсь ответить
               <input class="field__input" type="radio" name="impression" value="difficult-to-answer">
             </label>
           </li>
         </ul>
       </div>
 
-      <div class="feedback-form__inner form form--attractions">
+      <div class="feedback-form__inner common-form form--attractions">
         <h3 class="form__title title">Посещенные достопримечательности:</h3>
-        <ul class="form__list form__list--checkbox">
+        <ul class="form__list form__list--checkbox site-list">
           <li class="form__item field">
-            <label class="field__label">Мост Дьявола
+            <label class="field__label choise-text">Мост Дьявола
               <input class="field__input" type="checkbox" name="bridge" checked>
             </label>
           </li>
           <li class="form__item field">
-            <label class="field__label">Гора Колокол
+            <label class="field__label choise-text">Гора Колокол
               <input class="field__input" type="checkbox" name="mountain" checked>
             </label>
           </li>
           <li class="form__item field">
-            <label class="field__label">Слайд-парк
+            <label class="field__label choise-text">Слайд-парк
               <input class="field__input" type="checkbox" name="slide-park" checked>
             </label>
           </li>
           <li class="form__item field">
-            <label class="field__label">Красные скалы
+            <label class="field__label choise-text">Красные скалы
               <input class="field__input" type="checkbox" name="red-rock">
             </label>
           </li>
         </ul>
       </div>
 
-      <div class="feedback-form__inner form form--emotions">
+      <div class="feedback-form__inner common-form form--emotions">
           <label class="form__label title">Опишите свои эмоции:
-            <textarea placeholder="Опишите все свои восторги"></textarea>
+            <textarea class="input-about field__input"  placeholder="Опишите все свои восторги"></textarea>
           </label>
       </div>
 
@@ -139,7 +139,7 @@
   </section>
 </main>
 
-  <footer class="page__footer footer footer__wrapper">
+  <footer class="page__footer footer">
     <div class="footer__flex">
       <p class="footer__hashtag hashtag">
         <a class="hashtag__link title title--size--large" href="#">#visitsedona</a>
@@ -147,13 +147,13 @@
 
       <ul class="footer__list social site-list">
         <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="https://vk.com/" aria-label="Мы в Контакте">Мы в Контакте</a>
+          <a class="social__link social__link--vkontakte" href="https://vk.com/" aria-label="Мы в Контакте"></a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com/" aria-label="Мы в Фейсбуке">Мы в Фейсбуке</a>
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/" aria-label="Мы в Фейсбуке"></a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--instagram" href="https://instagram.com/" aria-label="Мы в Инстаграме">Мы в Инстаграме</a>
+          <a class="social__link social__link--instagram" href="https://instagram.com/" aria-label="Мы в Инстаграме"></a>
         </li>
       </ul>
 

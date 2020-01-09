@@ -76,8 +76,22 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main-nav__item:nth-child(3) {
-    margin-left: auto;
+  .main-nav__item:nth-child(2) {
+    margin-right: 156px;
+  }
+
+  .main-nav__item:nth-child(6) {
+    margin-right: 156px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__item:nth-child(2) {
+    margin-right: 244px;
+  }
+
+  .main-nav__item:nth-child(6) {
+    margin-right: 244px;
   }
 }
 
