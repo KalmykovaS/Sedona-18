@@ -1,0 +1,157 @@
+.field {
+  padding: 0 20px;
+  border-top: 1px solid #e5e5e5;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    border: 0;
+
+    &--contacts {
+      width: 324px;
+      border-left: 1px solid #e5e5e5;
+    }
+
+    &--impression {
+      width: 324px;
+      order: -1;
+    }
+
+    &--attractions,
+    &--emotions,
+    &--information {
+      width: 648px;
+      position: relative;
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+
+        width: 125px;
+        height: 1px;
+
+        top: 32px;
+        border-top: 1px solid #dbdbdb;
+      }
+
+      &::before {
+        left: 0;
+      }
+
+      &::after {
+        right: 0;
+      }
+    }
+
+    &__list--checkbox {
+      display: flex;
+      flex-wrap: wrap;
+
+      width: 462px;
+      margin: 0 auto;
+    }
+
+    &__item--choice {
+      min-width: 200px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--contacts {
+      width: 400px;
+      border-left: 1px solid #e5e5e5;
+    }
+
+    &--impression {
+      width: 400px;
+    }
+
+    &--attractions,
+    &--emotions,
+    &--information {
+      width: 960px;
+    }
+
+    &__flex {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__label {
+    padding-right: 10px;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__input-textarea {
+    min-height: 160px;
+  }
+}
+
+.field__wrapper {
+  display: flex;
+  align-items: center;
+
+  &-column {
+    flex-direction: column;
+  }
+}
+
+.field__icon {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    width: 58px;
+    height: 58px;
+    background-color: #e6e6e6;
+
+    right: 0;
+  }
+}
+
+.field__item--choice {
+  padding-top: 15px;
+  padding-bottom: 27px;
+}
+
+.field__title-attractions {
+  @media (min-width: $tablet-width) {
+    width: 278px;
+    margin: 0 auto;
+  }
+}
+
+.field__input-radio:checked ~ .choise-text__radio::after {
+  content: "";
+  position: absolute;
+
+  width: 22px;
+  height: 22px;
+
+  border-radius: 50%;
+  background-color: #333333;
+
+  top: 3px;
+  left: 21px;
+}
+
+.field__input-checkbox:checked ~ .choise-text__checkbox::after {
+  content: "";
+  position: absolute;
+
+  width: 25px;
+  height: 19px;
+
+  background-image: url("../img/icon-tick.svg");
+  background-size: 25px 19px;
+
+  top: 5px;
+  left: 22px;
+}

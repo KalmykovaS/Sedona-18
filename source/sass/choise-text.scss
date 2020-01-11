@@ -1,0 +1,28 @@
+.choise-text {
+  @include form-text;
+
+  position: relative;
+  cursor: pointer;
+
+  padding-left: 80px;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    width: 56px;
+    height: 56px;
+
+    background-color: $light-grey;
+    left: 5px;
+    top: -14px;
+  }
+
+  &__radio::before {
+    border-radius: 50%;
+  }
+
+  &__checkbox::before {
+    border-radius: 5px;
+  }
+}
