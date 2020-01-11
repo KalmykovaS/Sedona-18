@@ -9,7 +9,7 @@
   border-bottom: 1px solid #e5e5e5;
 
   @media (min-width: $tablet-width) {
-    background-color: #f2f2f2;
+    background-color: $light-grey;
     width: auto;
     min-height: 347px;
     padding: 0;

@@ -20,6 +20,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -38,6 +43,7 @@ input[type="radio"].visually-hidden {
 @import "variables.scss";
 @import "mixins.scss";
 @import "container.scss";
+@import "promo.scss";
 @import "wrapper.scss";
 @import "page.scss";
 @import "header.scss";
@@ -57,7 +63,9 @@ input[type="radio"].visually-hidden {
 @import "gallery-list.scss";
 @import "presentation.scss";
 @import "feedback.scss";
-@import "common-form.scss";
+@import "feedback-form.scss";
+@import "field.scss";
 @import "input-about.scss";
+@import "choise-text.scss";
 @import "footer.scss";
 @import "social.scss";
