@@ -2,6 +2,14 @@
   background-color: $light-blue;
 }
 
+.advantages__image {
+  @include centered-block;
+
+  width: 320px;
+  height: 260px;
+  object-fit: cover;
+}
+
 .advantages__flex {
   @include mobile-container;
   padding: 0;
@@ -187,8 +195,4 @@
   &--small {
     margin-bottom: 30px;
   }
-}
-
-.advantages__image {
-  @include centered-block;
 }

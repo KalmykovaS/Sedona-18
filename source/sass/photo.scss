@@ -32,30 +32,31 @@
   display: block;
   order: -1;
 
+  width: 280px;
+  height: 280px;
+
   @media (min-width: $tablet-width) {
     margin-top: 0;
     width: 324px;
-    min-height: 267px;
+    height: 267px;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: 0;
     width: 400px;
-    min-height: 267px;
+    height: 267px;
   }
-}
 
-@media (min-width: $tablet-width) {
-  .photo__image--first {
-    width: 648px;
-    height: 400px;
-  }
-}
+  &--first {
+    @media (min-width: $tablet-width) {
+      width: 648px;
+      height: 400px;
+    }
 
-@media (min-width: $desktop-width) {
-  .photo__image--first {
-    width: 1200px;
-    height: 400px;
+    @media (min-width: $desktop-width) {
+      width: 1200px;
+      height: 400px;
+    }
   }
 }
 
@@ -68,6 +69,7 @@
   @media (min-width: $tablet-width) {
     margin-top: 18px;
     padding-left: 20px;
+    order: 1;
   }
 
   @media (min-width: $desktop-width) {
@@ -80,6 +82,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    order: 2;
 
     padding-left: 20px;
     padding-right: 20px;

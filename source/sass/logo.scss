@@ -14,4 +14,9 @@
 
 .logo__image {
   @include centered-block;
+
+  @media (min-width: $desktop-width) {
+    width: 187px;
+    height: auto;
+  }
 }
