@@ -74,6 +74,9 @@ input[type=radio].visually-hidden {
 .promo__logo-text, .promo__logo-text-small {
   max-width: 100%;
 }
+.promo__logo-text {
+  margin-top: 20px;
+}
 .promo__logo-text-small {
   margin-top: 50px;
   margin-bottom: 60px;
