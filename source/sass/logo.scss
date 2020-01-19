@@ -10,6 +10,10 @@
     position: absolute;
     margin-left: calc(50% - 54px);
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: calc(50% - 93px);
+  }
 }
 
 .logo__image {

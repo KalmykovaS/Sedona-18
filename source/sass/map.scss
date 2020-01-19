@@ -1,3 +1,26 @@
+.map {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon-map-marker.svg");
+
+    width: 27px;
+    height: 27px;
+
+    left: calc(50% - 15px);
+    top: calc(50% - 15px);
+  }
+
+  &__interactive {
+    z-index: 2;
+    border: none;
+    width: 100%;
+    height: 350px;
+  }
+}
+
 .map__image {
   @include centered-block;
 

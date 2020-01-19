@@ -1,3 +1,28 @@
 .copyright {
   color: #000000;
+
+  @media (max-width: 767px) {
+    width: 130px;
+    text-align: left;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 170px;
+  }
+}
+
+.copyright__link {
+  position: relative;
+}
+
+.copyright__icon {
+  content: "";
+  position: absolute;
+
+  fill: #000000;
+  left: 15px;
+
+  @media (min-width: $tablet-width) {
+    top: -10px;
+  }
 }
