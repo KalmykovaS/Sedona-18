@@ -8,15 +8,15 @@
     color: #ffffff;
   }
 
-  &--lead--medium {
+  &--lead-medium {
     line-height: 24px;
   }
 
-  &--lead--large {
+  &--lead-large {
     line-height: 26px;
   }
 
-  &--transform--none {
+  &--transform-none {
     text-transform: none;
   }
 
@@ -25,7 +25,7 @@
     color: #000000;
   }
 
-  &--white--desktop {
+  &--white-desktop {
     @media (min-width: $desktop-width) {
       color: #ffffff;
     }

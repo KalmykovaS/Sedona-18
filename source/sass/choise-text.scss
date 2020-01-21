@@ -14,7 +14,7 @@
     height: 56px;
 
     background-color: $light-grey;
-    left: 5px;
+    left: 0;
     top: -14px;
   }
 
@@ -25,4 +25,17 @@
   &__checkbox::before {
     border-radius: 5px;
   }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 80px;
+  }
+}
+
+.choise-text:hover::before,
+.choise-text:focus::before {
+  background-color: #e5e5e5;
+}
+
+.choise-text:active::before {
+  background-color: #d5d5d5;
 }

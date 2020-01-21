@@ -25,4 +25,14 @@
   @media (min-width: $tablet-width) {
     top: -10px;
   }
+
+  &:hover,
+  &:focus {
+    fill: $light-blue;
+  }
+
+  &:active {
+    fill: #000000;
+    opacity: 0.3;
+  }
 }

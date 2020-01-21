@@ -18,6 +18,15 @@
   background-color: $light-blue;
   position: relative;
 
+  &:hover,
+  &:focus {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
+
   @media (min-width: $tablet-width) {
     margin-left: 5px;
   }
@@ -34,5 +43,9 @@
   &--facebook {
     top: 13px;
     left: 18px;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

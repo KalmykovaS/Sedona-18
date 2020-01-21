@@ -35,7 +35,7 @@
   .advantages__wrapper {
     max-width: 256px;
     padding: 45px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 
     &--right {
       order: 2;
@@ -62,7 +62,7 @@
     padding: 50px 60px;
 
     &--right {
-      padding: 50px 90px;
+      padding: 42px 90px;
     }
   }
 
@@ -228,7 +228,7 @@
 
   @media (min-width: $tablet-width) {
     &--width {
-      width: 160px;
+      width: 165px;
       margin: 0 auto;
     }
   }
