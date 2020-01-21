@@ -71,6 +71,11 @@
     &--information {
       padding-top: 50px;
       padding-bottom: 50px;
+
+      &::before,
+      &::after {
+        top: 58px;
+      }
     }
 
     &--attractions,
@@ -100,12 +105,6 @@
       }
     }
 
-    &--information {
-      &::before,
-      &::after {
-      top: 58px;
-      }
-    }
 
     &--attractions {
       &::before,
@@ -169,6 +168,11 @@
 
     &--impression {
       width: 400px;
+
+      &::after {
+        top: 9px;
+        right: -83px;
+      }
     }
 
     &--information {
@@ -180,6 +184,11 @@
     &--emotions,
     &--information {
       width: 960px;
+
+      &::before,
+      &::after {
+        width: 277px;
+      }
     }
 
     &__flex {
@@ -189,13 +198,6 @@
 
     &__title--impression {
       margin-left: 80px;
-    }
-
-    &--impression {
-      &::after {
-        top: 9px;
-        right: -83px;
-      }
     }
 
     &__hidden-text {
@@ -214,16 +216,6 @@
 
     &--emotions {
       padding-bottom: 36px;
-    }
-
-    &--attractions,
-    &--emotions,
-    &--information {
-
-      &::before,
-      &::after {
-        width: 277px;
-      }
     }
   }
 }

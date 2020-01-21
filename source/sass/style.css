@@ -1452,6 +1452,9 @@ input[type=radio].visually-hidden {
     padding-top: 50px;
     padding-bottom: 50px;
   }
+  .field--information::before, .field--information::after {
+    top: 58px;
+  }
   .field--attractions, .field--emotions, .field--information {
     width: 648px;
     position: relative;
@@ -1469,9 +1472,6 @@ input[type=radio].visually-hidden {
   }
   .field--attractions::after, .field--emotions::after, .field--information::after {
     right: 0;
-  }
-  .field--information::before, .field--information::after {
-    top: 58px;
   }
   .field--attractions::before, .field--attractions::after {
     top: 28px;
@@ -1520,6 +1520,10 @@ input[type=radio].visually-hidden {
   .field--impression {
     width: 400px;
   }
+  .field--impression::after {
+    top: 9px;
+    right: -83px;
+  }
   .field--information {
     padding-top: 42px;
     padding-bottom: 37px;
@@ -1527,16 +1531,15 @@ input[type=radio].visually-hidden {
   .field--attractions, .field--emotions, .field--information {
     width: 960px;
   }
+  .field--attractions::before, .field--attractions::after, .field--emotions::before, .field--emotions::after, .field--information::before, .field--information::after {
+    width: 277px;
+  }
   .field__flex {
     display: flex;
     justify-content: space-between;
   }
   .field__title--impression {
     margin-left: 80px;
-  }
-  .field--impression::after {
-    top: 9px;
-    right: -83px;
   }
   .field__hidden-text {
     display: none;
@@ -1551,9 +1554,6 @@ input[type=radio].visually-hidden {
   }
   .field--emotions {
     padding-bottom: 36px;
-  }
-  .field--attractions::before, .field--attractions::after, .field--emotions::before, .field--emotions::after, .field--information::before, .field--information::after {
-    width: 277px;
   }
 }
 
