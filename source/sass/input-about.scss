@@ -1,14 +1,61 @@
 .input-about {
   @include form-text;
   width: 100%;
-  padding: 15px 20px;
+  padding: 14px 25px;
 
   background-color: $light-grey;
-  border: 1px solid $light-grey;
-
-  outline: none;
+  border: 4px solid $light-grey;
 
   &::placeholder {
     color: #000000;
+  }
+
+  &--textarea {
+    padding: 10px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    &--information {
+      width: 316px;
+    }
+  }
+
+  &:hover {
+    background-color: #e5e5e5;
+    border: 4px solid #e5e5e5;
+  }
+
+  &:focus {
+    background-color: #ffffff;
+  }
+}
+
+@media (max-width: 767px) {
+  .input-about--contacts-first {
+    width: 230px;
+  }
+
+  .input-about--contacts {
+    width: 192px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .input-about--contacts-first {
+    width: 216px;
+  }
+
+  .input-about--contacts {
+    width: 180px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .input-about--contacts-first {
+    width: 350px;
+  }
+
+  .input-about--contacts {
+    width: 314px;
   }
 }

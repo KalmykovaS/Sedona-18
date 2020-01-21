@@ -5,11 +5,29 @@
   padding: 16px;
   border: 0;
 
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:focus,
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
+
   @media (min-width: $tablet-width) {
     background-color: $light-blue;
     display: inline-block;
     width: 458px;
     padding: 16px;
     border: 0;
+  }
+
+  &--smaller {
+    width: 180px;
   }
 }

@@ -4,3 +4,14 @@
     flex-wrap: wrap;
   }
 }
+
+.feedback-form__button {
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 325px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 480px;
+  }
+}

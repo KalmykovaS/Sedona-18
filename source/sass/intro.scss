@@ -15,11 +15,17 @@
 
   &--smaller {
     @media (min-width: $tablet-width) {
-      padding: 0 165px 40px;
+      padding: 0 156px 40px;
     }
 
     @media (min-width: $desktop-width) {
       padding: 0 325px;
+    }
+  }
+
+  &-form--smaller {
+    @media (max-width: 767px) {
+      padding: 0 13px;
     }
   }
 }
@@ -72,11 +78,26 @@
     }
 
     @media (min-width: $desktop-width) {
-      width: 445px;
+      width: 450px;
       margin-right: auto;
       margin-left: auto;
       margin-bottom: 72px;
     }
+  }
+
+  &--smaller-form {
+    @media (max-width: 767px) {
+      margin-bottom: 17px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 60px;
+    }
+  }
+
+  &--form {
+    width: 285px;
+    margin-bottom: 15px;
   }
 
   &--padding {

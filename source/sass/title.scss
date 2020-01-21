@@ -13,17 +13,24 @@
     color: #ffffff;
   }
 
-  &--size--large {
+  &--size-large {
     font-size: 21px;
   }
 
-  &--lead--large {
+  &--lead-large {
     line-height: 40px;
   }
 
-  &--large--screen {
+  &--large-screen {
     @media (min-width: $tablet-width) {
       font-size: 30px;
+    }
+  }
+
+  &--large-screen-other {
+    @media (min-width: $tablet-width) {
+      font-size: 30px;
+      line-height: 40px;
     }
   }
 }

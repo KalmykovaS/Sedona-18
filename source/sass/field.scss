@@ -1,20 +1,81 @@
 .field {
-  padding: 0 20px;
+  padding: 20px;
   border-top: 1px solid #e5e5e5;
   margin: 0 auto;
+
+  &:last-child {
+    border: 0;
+  }
+
+  &__label {
+    margin-right: 10px;
+
+    &--information {
+      margin-left: 20px;
+      margin-bottom: 6px;
+      display: block;
+    }
+
+    &--last {
+      margin-right: 15px;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    margin: 0 0 23px;
+  }
+
+  &__input-textarea {
+    min-height: 160px;
+  }
+
+  @media (max-width: 767px) {
+    &--button {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     padding: 0;
     border: 0;
 
+    &__label--checkbox {
+      margin: 0;
+    }
+
     &--contacts {
-      width: 324px;
-      border-left: 1px solid #e5e5e5;
+      width: 268px;
+      margin: 0;
+      margin-left: auto;
     }
 
     &--impression {
       width: 324px;
       order: -1;
+      margin: 0;
+      position: relative;
+
+      &::after {
+        position: absolute;
+        content: "";
+        top: 55px;
+        right: 2px;
+        width: 1px;
+        height: 292px;
+        border-left: 1px solid #dbdbdb;
+      }
+    }
+
+    &--information {
+      padding-top: 50px;
+      padding-bottom: 50px;
+
+      &::before,
+      &::after {
+        top: 58px;
+      }
     }
 
     &--attractions,
@@ -44,60 +105,150 @@
       }
     }
 
+
+    &--attractions {
+      &::before,
+      &::after {
+        top: 28px;
+      }
+    }
+
+    &--emotions {
+      padding-bottom: 30px;
+
+      &::before,
+      &::after {
+        top: 8px;
+      }
+    }
+
+    &__title--contacts,
+    &__title--impression {
+      text-align: left;
+      margin-bottom: 60px;
+    }
+
     &__list--checkbox {
       display: flex;
       flex-wrap: wrap;
+      justify-content: space-between;
 
       width: 462px;
-      margin: 0 auto;
+      margin: 55px auto 45px;
     }
 
     &__item--choice {
       min-width: 200px;
+    }
+
+    &--button {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-grow: 1;
+
+      padding-bottom: 60px;
+
+      &::after {
+        content: "* - обязательные поля";
+        background-color: #ffffff;
+        border: 0;
+        color: #333333;
+        font-size: 14px;
+        text-transform: uppercase;
+        line-height: 26px;
+      }
     }
   }
 
   @media (min-width: $desktop-width) {
     &--contacts {
       width: 400px;
-      border-left: 1px solid #e5e5e5;
     }
 
     &--impression {
       width: 400px;
+
+      &::after {
+        top: 9px;
+        right: -83px;
+      }
+    }
+
+    &--information {
+      padding-top: 42px;
+      padding-bottom: 37px;
     }
 
     &--attractions,
     &--emotions,
     &--information {
       width: 960px;
+
+      &::before,
+      &::after {
+        width: 277px;
+      }
     }
 
     &__flex {
       display: flex;
-      flex-wrap: wrap;
+      justify-content: space-between;
     }
-  }
 
-  &__label {
-    padding-right: 10px;
-  }
+    &__title--impression {
+      margin-left: 80px;
+    }
 
-  &__title {
-    text-align: center;
-  }
+    &__hidden-text {
+      display: none;
+    }
 
-  &__input-textarea {
-    min-height: 160px;
+    &__label--information {
+      margin-left: 0;
+    }
+
+    &__list--checkbox {
+      width: 960px;
+      margin-top: 50px;
+      margin-bottom: 35px;
+    }
+
+    &--emotions {
+      padding-bottom: 36px;
+    }
   }
 }
 
 .field__wrapper {
   display: flex;
   align-items: center;
+  margin-bottom: 23px;
+
+  &--indent {
+    margin-bottom: 0;
+  }
 
   &-column {
     flex-direction: column;
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  &-column--indent {
+    margin-bottom: 3px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 26px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 5px;
+    }
   }
 }
 
@@ -108,17 +259,69 @@
     content: "";
     position: absolute;
 
-    width: 58px;
-    height: 58px;
+    width: 60px;
+    height: 60px;
     background-color: #e6e6e6;
 
     right: 0;
+    top: -20px;
+
+    @media (min-width: $desktop-width) {
+      top: 0;
+    }
+  }
+}
+
+.field__input-icon {
+  position: absolute;
+  top: 0;
+  right: 21px;
+  width: 16px;
+  height: 16px;
+  z-index: 1;
+
+  @media (min-width: $desktop-width) {
+    top: 21px;
+    right: 19px;
   }
 }
 
 .field__item--choice {
   padding-top: 15px;
   padding-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 38px;
+  }
+}
+
+.field__item--checkbox {
+  padding-top: 6px;
+  padding-bottom: 48px;
+
+  &-last {
+    padding-bottom: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-width: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    &:nth-child(1) {
+      margin-right: 23px;
+    }
+
+    &:nth-child(2) {
+      margin-right: 18px;
+    }
+  }
+}
+
+.field__item--textarea {
+  @media (min-width: $tablet-width) {
+    margin-top: 60px;
+  }
 }
 
 .field__title-attractions {
@@ -128,30 +331,48 @@
   }
 }
 
-.field__input-radio:checked ~ .choise-text__radio::after {
-  content: "";
-  position: absolute;
-
-  width: 22px;
-  height: 22px;
-
-  border-radius: 50%;
-  background-color: #333333;
-
-  top: 3px;
-  left: 21px;
+.field__title--information {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 60px;
+  }
 }
 
-.field__input-checkbox:checked ~ .choise-text__checkbox::after {
-  content: "";
-  position: absolute;
+.field__input-radio:checked ~ .choise-text__radio {
+  &::after {
+    content: "";
+    position: absolute;
 
-  width: 25px;
-  height: 19px;
+    width: 22px;
+    height: 22px;
 
-  background-image: url("../img/icon-tick.svg");
-  background-size: 25px 19px;
+    border-radius: 50%;
+    background-color: #333333;
 
-  top: 5px;
-  left: 22px;
+    top: 3px;
+    left: 18px;
+  }
+
+  &:active::after {
+    opacity: 0.3;
+  }
+}
+
+.field__input-checkbox:checked ~ .choise-text__checkbox {
+  &::after {
+    content: "";
+    position: absolute;
+
+    width: 25px;
+    height: 19px;
+
+    background-image: url("../img/icon-tick.svg");
+    background-size: 25px 19px;
+
+    top: 5px;
+    left: 16px;
+  }
+
+  &:active::after {
+    opacity: 0.3;
+  }
 }
