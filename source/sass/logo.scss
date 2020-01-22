@@ -2,12 +2,14 @@
   height: 56px;
 
   order: 2;
-  z-index: 2;
+  z-index: 1;
+  background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
     background-color: transparent;
     position: absolute;
     margin-left: calc(50% - 54px);
+    z-index: 2;
   }
 
   @media (min-width: $desktop-width) {
