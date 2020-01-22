@@ -79,8 +79,8 @@ input[type=radio].visually-hidden {
   }
 }
 .promo--img-small {
-  height: 158px;
   padding: 0 45px;
+  margin-top: -232px;
   background-size: cover;
 }
 .promo__logo-text, .promo__logo-text-small {
@@ -90,7 +90,7 @@ input[type=radio].visually-hidden {
   margin-top: 20px;
 }
 .promo__logo-text-small {
-  margin-top: 30px;
+  margin-top: 260px;
   margin-bottom: 60px;
 }
 
@@ -120,6 +120,7 @@ input[type=radio].visually-hidden {
 @media (min-width: 768px) {
   .promo--img-small {
     height: 290px;
+    margin-top: 0;
   }
 }
 @media (min-width: 768px) {
@@ -203,11 +204,12 @@ input[type=radio].visually-hidden {
   line-height: 40px;
   text-transform: uppercase;
   background-color: #81b3d2;
-  z-index: 1;
+  z-index: 2;
 }
 @media (min-width: 768px) {
   .main-nav {
     background-color: #ffffff;
+    z-index: 1;
     font-size: 14px;
     line-height: 26px;
   }
@@ -344,23 +346,27 @@ input[type=radio].visually-hidden {
   background-color: transparent;
   cursor: pointer;
   position: absolute;
+  z-index: 3;
 }
-
 @media (max-width: 767px) {
-  .main-nav__close-icon {
-    position: absolute;
-    left: 118px;
-    top: 17px;
+  .main-nav__button--close {
+    display: none;
+    right: 17px;
+    top: 16px;
     fill: #ffffff;
   }
-
-  .main-nav__open-icon {
-    position: absolute;
-    top: 240px;
-    left: 117px;
+  .main-nav__button--open {
+    top: 238px;
+    right: 14px;
     fill: #81b3d2;
   }
 }
+@media (min-width: 768px) {
+  .main-nav__button--open {
+    display: none;
+  }
+}
+
 .site-list {
   list-style: none;
   margin: 0;
@@ -801,13 +807,15 @@ input[type=radio].visually-hidden {
 .logo {
   height: 56px;
   order: 2;
-  z-index: 2;
+  z-index: 1;
+  background-color: #ffffff;
 }
 @media (min-width: 768px) {
   .logo {
     background-color: transparent;
     position: absolute;
     margin-left: calc(50% - 54px);
+    z-index: 2;
   }
 }
 @media (min-width: 1200px) {

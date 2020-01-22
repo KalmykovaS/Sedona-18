@@ -28,8 +28,8 @@
   }
 
   &--img-small {
-    height: 158px;
     padding: 0 45px;
+    margin-top: -232px;
 
     background-size: cover;
   }
@@ -44,7 +44,7 @@
   }
 
   &__logo-text-small {
-    margin-top: 30px;
+    margin-top: 260px;
     margin-bottom: 60px;
   }
 }
@@ -76,6 +76,7 @@
 
     &--img-small {
       height: 290px;
+      margin-top: 0;
     }
 
     &__logo-text {
