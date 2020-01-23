@@ -267,10 +267,6 @@
 
     right: 0;
     top: -20px;
-
-    @media (min-width: $desktop-width) {
-      top: 0;
-    }
   }
 }
 
@@ -281,11 +277,6 @@
   width: 16px;
   height: 16px;
   z-index: 1;
-
-  @media (min-width: $desktop-width) {
-    top: 21px;
-    right: 19px;
-  }
 }
 
 .field__item--choice {

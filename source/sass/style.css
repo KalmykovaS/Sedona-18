@@ -1633,11 +1633,6 @@ input[type=radio].visually-hidden {
   right: 0;
   top: -20px;
 }
-@media (min-width: 1200px) {
-  .field__icon::after {
-    top: 0;
-  }
-}
 
 .field__input-icon {
   position: absolute;
@@ -1646,12 +1641,6 @@ input[type=radio].visually-hidden {
   width: 16px;
   height: 16px;
   z-index: 1;
-}
-@media (min-width: 1200px) {
-  .field__input-icon {
-    top: 21px;
-    right: 19px;
-  }
 }
 
 .field__item--choice {
