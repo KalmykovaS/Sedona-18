@@ -434,10 +434,6 @@ input[type=radio].visually-hidden {
   }
 }
 
-.advantages-wrapper {
-  background-color: #81b3d2;
-}
-
 .advantages__image {
   display: block;
   margin: 0 auto;
@@ -451,6 +447,7 @@ input[type=radio].visually-hidden {
   margin: 0 auto;
   padding: 0 20px;
   padding: 0;
+  background-color: #81b3d2;
   position: relative;
 }
 @media (min-width: 768px) {
@@ -483,11 +480,12 @@ input[type=radio].visually-hidden {
     height: 256px;
   }
 
-  .advantages__wrapper-sublist {
-    padding-top: 145px;
-    padding-bottom: 27px;
+  .advantages__list-sublist {
+    padding: 46px 20px 26px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
   }
 }
 @media (min-width: 1200px) {
@@ -504,8 +502,8 @@ input[type=radio].visually-hidden {
     height: 256px;
   }
 
-  .advantages__wrapper-sublist {
-    padding-bottom: 50px;
+  .advantages__list-sublist {
+    padding-bottom: 53px;
   }
 }
 .advantages__item {
@@ -532,6 +530,7 @@ input[type=radio].visually-hidden {
 @media (min-width: 768px) {
   .advantages__item--sublist {
     width: 165px;
+    margin-top: 100px;
   }
 
   .advantages__item--souvenirs {
@@ -862,7 +861,7 @@ input[type=radio].visually-hidden {
   }
 }
 @media (max-width: 767px) {
-  .intro-form--smaller {
+  .intro .intro__form-smaller {
     padding: 0 13px;
   }
 }
@@ -1075,13 +1074,18 @@ input[type=radio].visually-hidden {
 
 .photo__title {
   margin: 15px 0 0;
+  width: 280px;
   order: 1;
   z-index: 1;
 }
 @media (min-width: 768px) {
   .photo__title {
+    width: 320px;
     margin-top: 18px;
     padding-left: 20px;
+  }
+  .photo__title--first {
+    width: 649px;
   }
 }
 @media (min-width: 1200px) {
@@ -1093,7 +1097,7 @@ input[type=radio].visually-hidden {
 
 .photo__text-wrapper {
   order: 2;
-  position: relative;
+  width: 280px;
 }
 @media (min-width: 768px) {
   .photo__text-wrapper {
@@ -1102,12 +1106,20 @@ input[type=radio].visually-hidden {
     padding-left: 20px;
     padding-right: 30px;
     margin-bottom: 18px;
+    width: 320px;
+  }
+  .photo__text-wrapper--first {
+    width: 649px;
   }
 }
 @media (min-width: 1200px) {
   .photo__text-wrapper {
     color: #ffffff;
+    width: 398px;
     z-index: 1;
+  }
+  .photo__text-wrapper--first {
+    width: 1190px;
   }
 }
 
@@ -1120,6 +1132,7 @@ input[type=radio].visually-hidden {
   margin: 0;
   margin-top: 10px;
   padding-left: 36px;
+  position: relative;
 }
 @media (min-width: 768px) {
   .photo__text-likes {
@@ -1129,12 +1142,13 @@ input[type=radio].visually-hidden {
 
 .photo__likes-icon {
   position: absolute;
-  top: 32px;
+  top: -2px;
+  left: 6px;
   opacity: 0.3;
 }
 @media (min-width: 768px) {
   .photo__likes-icon {
-    top: -11px;
+    top: -3px;
     right: 62px;
   }
   .photo__likes-icon--first {
@@ -1404,22 +1418,22 @@ input[type=radio].visually-hidden {
 .field:last-child {
   border: 0;
 }
-.field__label {
+.field .field__label {
   margin-right: 10px;
 }
-.field__label--information {
+.field .field__label--information {
   margin-left: 20px;
   margin-bottom: 6px;
   display: block;
 }
-.field__label--last {
+.field .field__label--last {
   margin-right: 15px;
 }
-.field__title {
+.field .field__title {
   text-align: center;
   margin: 0 0 23px;
 }
-.field__input-textarea {
+.field .field__input-textarea {
   min-height: 160px;
 }
 @media (max-width: 767px) {
@@ -1433,7 +1447,7 @@ input[type=radio].visually-hidden {
     padding: 0;
     border: 0;
   }
-  .field__label--checkbox {
+  .field .field__label--checkbox {
     margin: 0;
   }
   .field--contacts {
@@ -1490,18 +1504,19 @@ input[type=radio].visually-hidden {
   .field--emotions::before, .field--emotions::after {
     top: 8px;
   }
-  .field__title--contacts, .field__title--impression {
+  .field .field__title--contacts,
+.field .field__title--impression {
     text-align: left;
     margin-bottom: 60px;
   }
-  .field__list--checkbox {
+  .field .field__list--checkbox {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 462px;
     margin: 55px auto 45px;
   }
-  .field__item--choice {
+  .field .field__item--choice {
     min-width: 200px;
   }
   .field--button {
@@ -1542,20 +1557,21 @@ input[type=radio].visually-hidden {
   .field--attractions::before, .field--attractions::after, .field--emotions::before, .field--emotions::after, .field--information::before, .field--information::after {
     width: 277px;
   }
-  .field__flex {
+  .field .field__flex {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
-  .field__title--impression {
+  .field .field__title--impression {
     margin-left: 80px;
   }
-  .field__hidden-text {
+  .field .field__hidden-text {
     display: none;
   }
-  .field__label--information {
+  .field .field__label--information {
     margin-left: 0;
   }
-  .field__list--checkbox {
+  .field .field__list--checkbox {
     width: 960px;
     margin-top: 50px;
     margin-bottom: 35px;
@@ -1573,26 +1589,27 @@ input[type=radio].visually-hidden {
 .field__wrapper--indent {
   margin-bottom: 0;
 }
-.field__wrapper-column {
+.field__wrapper .field-column {
   flex-direction: column;
 }
 @media (min-width: 1200px) {
-  .field__wrapper-column {
+  .field__wrapper .field-column {
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
   }
 }
-.field__wrapper-column--indent {
+.field__wrapper .field-column--indent {
   margin-bottom: 3px;
 }
 @media (min-width: 768px) {
-  .field__wrapper-column--indent {
+  .field__wrapper .field-column--indent {
     margin-top: 26px;
   }
 }
 @media (min-width: 1200px) {
-  .field__wrapper-column--indent {
+  .field__wrapper .field-column--indent {
     margin-top: 5px;
   }
 }
@@ -1736,12 +1753,10 @@ input[type=radio].visually-hidden {
 .input-about:focus {
   background-color: #ffffff;
 }
-
 @media (max-width: 767px) {
   .input-about--contacts-first {
     width: 230px;
   }
-
   .input-about--contacts {
     width: 192px;
   }
@@ -1750,7 +1765,6 @@ input[type=radio].visually-hidden {
   .input-about--contacts-first {
     width: 216px;
   }
-
   .input-about--contacts {
     width: 180px;
   }
@@ -1759,11 +1773,11 @@ input[type=radio].visually-hidden {
   .input-about--contacts-first {
     width: 350px;
   }
-
   .input-about--contacts {
     width: 314px;
   }
 }
+
 .choise-text {
   font-family: "PT Sans Bold", "Arial Black", sans-serif;
   font-size: 18px;
@@ -1856,10 +1870,11 @@ input[type=radio].visually-hidden {
 }
 
 .social {
-  width: 155px;
+  width: 175px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 @media (min-width: 768px) {
   .social {

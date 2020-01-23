@@ -28,34 +28,34 @@
   &:focus {
     background-color: #ffffff;
   }
-}
 
-@media (max-width: 767px) {
-  .input-about--contacts-first {
-    width: 230px;
+  @media (max-width: 767px) {
+    &--contacts-first {
+      width: 230px;
+    }
+
+    &--contacts {
+      width: 192px;
+    }
   }
 
-  .input-about--contacts {
-    width: 192px;
-  }
-}
+  @media (min-width: $tablet-width) {
+    &--contacts-first {
+      width: 216px;
+    }
 
-@media (min-width: $tablet-width) {
-  .input-about--contacts-first {
-    width: 216px;
-  }
-
-  .input-about--contacts {
-    width: 180px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .input-about--contacts-first {
-    width: 350px;
+    &--contacts {
+      width: 180px;
+    }
   }
 
-  .input-about--contacts {
-    width: 314px;
+  @media (min-width: $desktop-width) {
+    &--contacts-first {
+      width: 350px;
+    }
+
+    &--contacts {
+      width: 314px;
+    }
   }
 }
