@@ -91,14 +91,17 @@ input[type=radio].visually-hidden {
   margin-top: -232px;
   background-size: cover;
 }
-.promo .promo__logo-text,
-.promo .promo__logo-text-small {
+
+.promo__logo-text,
+.promo__logo-text-small {
   max-width: 100%;
 }
-.promo .promo__logo-text {
+
+.promo__logo-text {
   margin-top: 20px;
 }
-.promo .promo__logo-text-small {
+
+.promo__logo-text-small {
   margin-top: 260px;
   margin-bottom: 60px;
 }
@@ -133,12 +136,12 @@ input[type=radio].visually-hidden {
   }
 }
 @media (min-width: 768px) {
-  .promo .promo__logo-text {
+  .promo__logo-text {
     margin-top: 75px;
   }
 }
 @media (min-width: 768px) {
-  .promo .promo__logo-text-small {
+  .promo__logo-text-small {
     margin-top: 95px;
   }
 }
@@ -165,13 +168,13 @@ input[type=radio].visually-hidden {
   }
 }
 @media (min-width: 1200px) {
-  .promo .promo__logo-text-small {
-    margin-top: 100px;
+  .promo--img-small {
+    height: 300px;
   }
 }
 @media (min-width: 1200px) {
-  .promo--img-small {
-    height: 300px;
+  .promo__logo-text-small {
+    margin-top: 100px;
   }
 }
 .wrapper {
@@ -1717,19 +1720,6 @@ input[type=radio].visually-hidden {
   }
 }
 
-@media (min-width: 768px) {
-  .field__title-attractions {
-    width: 278px;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: 1200px) {
-  .field__title--information {
-    margin-bottom: 71px;
-  }
-}
-
 .field__input-radio:checked ~ .choise-text--radio::after {
   content: "";
   position: absolute;
@@ -1789,6 +1779,11 @@ input[type=radio].visually-hidden {
   .field__item--choice {
     min-width: 200px;
   }
+
+  .field__title-attractions {
+    width: 278px;
+    margin: 0 auto;
+  }
 }
 @media (min-width: 1200px) {
   .field__flex {
@@ -1813,6 +1808,10 @@ input[type=radio].visually-hidden {
     width: 960px;
     margin-top: 50px;
     margin-bottom: 26px;
+  }
+
+  .field__title--information {
+    margin-bottom: 71px;
   }
 
   .field__input-radio:checked ~ .choise-text--radio::after {
@@ -1903,12 +1902,9 @@ input[type=radio].visually-hidden {
 .choise-text--checkbox::before {
   border-radius: 5px;
 }
-
-.choise-text:hover::before,
-.choise-text:focus::before {
+.choise-text:hover::before, .choise-text:focus::before {
   background-color: #e5e5e5;
 }
-
 .choise-text:active::before {
   background-color: #d5d5d5;
 }

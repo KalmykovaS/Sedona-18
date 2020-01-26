@@ -48,8 +48,8 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-@import "blocks/variables.scss";
-@import "blocks/mixins.scss";
+@import "variables";
+@import "mixins";
 @import "blocks/container.scss";
 @import "blocks/promo.scss";
 @import "blocks/wrapper.scss";

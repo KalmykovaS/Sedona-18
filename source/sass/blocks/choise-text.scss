@@ -29,13 +29,13 @@
   &--checkbox::before {
     border-radius: 5px;
   }
-}
 
-.choise-text:hover::before,
-.choise-text:focus::before {
-  background-color: #e5e5e5;
-}
+  &:hover::before,
+  &:focus::before {
+    background-color: #e5e5e5;
+  }
 
-.choise-text:active::before {
-  background-color: #d5d5d5;
+  &:active::before {
+    background-color: #d5d5d5;
+  }
 }
