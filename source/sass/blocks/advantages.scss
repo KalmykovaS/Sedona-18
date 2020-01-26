@@ -45,7 +45,7 @@
   }
 
   .advantages__list-sublist {
-    padding: 46px 20px 26px;
+    padding: 46px 25px 26px;
 
     display: flex;
     justify-content: space-between;
@@ -57,11 +57,15 @@
 @media (min-width: $desktop-width) {
   .advantages__wrapper {
     max-width: 400px;
-    padding: 50px 60px;
+    padding: 53px 60px 45px;
 
     &--right {
-      padding: 42px 90px;
+      padding: 50px 90px 35px;
     }
+  }
+
+  .advantages__nowrap {
+    white-space: nowrap;
   }
 
   .advantages__image {
@@ -70,7 +74,7 @@
   }
 
   .advantages__list-sublist {
-    padding-bottom: 53px;
+    padding: 46px 0 50px;
   }
 }
 
@@ -91,7 +95,7 @@
     content: "";
     position: absolute;
 
-    background-image: url("../img/bg-triangle.svg");
+    background-image: url("../../img/bg-triangle.svg");
 
     width: 320px;
     height: 37px;
@@ -113,7 +117,7 @@
 
 @media (min-width: $desktop-width) {
   .advantages__item--sublist {
-    width: 260px;
+    width: 300px;
   }
 }
 
@@ -191,7 +195,7 @@
     margin-bottom: 13px;
 
     @media (min-width: $tablet-width) {
-      padding-top: 10px;
+      padding-top: 12px;
       margin-bottom: 22px;
     }
   }
@@ -201,7 +205,7 @@
     margin-bottom: 13px;
 
     @media (min-width: $tablet-width) {
-      padding-top: 10px;
+      padding-top: 12px;
       margin-bottom: 22px;
     }
   }
@@ -237,10 +241,15 @@
     &--width {
       width: 280px;
     }
+
+    &--width-sublist {
+      width: 220px;
+      margin: 0 auto;
+    }
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 20px;
+    margin-bottom: 22px;
   }
 
   &--high {
@@ -256,23 +265,21 @@
   }
 
   &--grey {
-    padding-bottom: 25px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 2px 15px 25px;
     border-bottom: 1px solid #e5e5e5;
     margin-bottom: 0;
 
     @media (min-width: $tablet-width) {
       border-bottom: none;
     }
+
+    @media (min-width: $desktop-width) {
+      padding: 0 4px 25px;
+    }
   }
 
   &--medium {
     margin-bottom: 35px;
-
-    @media (min-width: $desktop-width) {
-      width: 285px;
-    }
   }
 
   &--small {
@@ -290,7 +297,7 @@
 
   @media (min-width: $tablet-width) {
     top: -87px;
-    left: 46px;
+    left: 45px;
 
     &--house {
       width: 75px;
@@ -300,6 +307,8 @@
     &--present {
       width: 64px;
       height: 75px;
+      top: -90px;
+      left: 50px;
     }
 
     &--burger {
@@ -309,6 +318,17 @@
   }
 
   @media (min-width: $desktop-width) {
-    left: 95px;
+    &--house {
+      left: 110px;
+    }
+
+    &--burger {
+      left: 111px;
+      top: -81px;
+    }
+
+    &--present {
+      left: 116px;
+    }
   }
 }

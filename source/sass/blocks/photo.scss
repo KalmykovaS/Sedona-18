@@ -93,11 +93,11 @@
 
     padding-left: 20px;
     padding-right: 30px;
-    margin-bottom: 18px;
-    width: 320px;
+    margin-bottom: 17px;
+    width: 322px;
 
     &--first {
-      width: 649px;
+      width: 657px;
     }
   }
 
@@ -108,7 +108,7 @@
     z-index: 1;
 
     &--first {
-      width: 1190px;
+      width: 1208px;
     }
   }
 }
@@ -125,7 +125,7 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    margin-top: -8px;
+    margin-top: -10px;
   }
 }
 

@@ -20,11 +20,9 @@
   position: absolute;
 
   fill: #000000;
-  left: 15px;
 
-  @media (min-width: $tablet-width) {
-    top: -10px;
-  }
+  top: -8px;
+  left: 15px;
 
   &:hover,
   &:focus {

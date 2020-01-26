@@ -34,16 +34,16 @@
     background-size: cover;
   }
 
-  &__logo-text,
-  &__logo-text-small {
+  .promo__logo-text,
+  .promo__logo-text-small {
     max-width: 100%;
   }
 
-  &__logo-text {
+  .promo__logo-text {
     margin-top: 20px;
   }
 
-  &__logo-text-small {
+  .promo__logo-text-small {
     margin-top: 260px;
     margin-bottom: 60px;
   }
@@ -79,11 +79,11 @@
       margin-top: 0;
     }
 
-    &__logo-text {
+    .promo__logo-text {
       margin-top: 75px;
     }
 
-    &__logo-text-small {
+    .promo__logo-text-small {
       margin-top: 95px;
     }
   }
@@ -113,7 +113,7 @@
       background-size: cover;
     }
 
-    &__logo-text-small {
+    .promo__logo-text-small {
       margin-top: 100px;
     }
 

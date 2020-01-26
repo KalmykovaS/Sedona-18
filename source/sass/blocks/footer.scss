@@ -1,13 +1,13 @@
 .footer {
   background-color: #fefefe;
 
-  padding-top: 30px;
+  padding-top: 32px;
   padding-bottom: 20px;
 
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    padding: 35px;
+    padding: 25px 35px 35px;
   }
 }
 
@@ -30,7 +30,7 @@
 }
 
 .footer__text {
-  margin: 35px auto 20px;
+  margin: 3px auto 20px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -39,7 +39,7 @@
 
 .footer__hashtag {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 33px;
 
   @media (min-width: $tablet-width) {
     margin: 0;

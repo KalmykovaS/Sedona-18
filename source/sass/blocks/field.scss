@@ -7,43 +7,20 @@
     border: 0;
   }
 
-  .field__label {
-    margin-right: 10px;
-
-    &--information {
-      margin-left: 20px;
-      margin-bottom: 6px;
-      display: block;
-    }
-
-    &--last {
-      margin-right: 15px;
-    }
-  }
-
-  .field__title {
-    text-align: center;
-    margin: 0 0 23px;
-  }
-
-  .field__input-textarea {
-    min-height: 160px;
-  }
-
   @media (max-width: 767px) {
     &--button {
-      padding-top: 0;
+      padding-top: 8px;
       padding-bottom: 0;
+    }
+
+    &--attractions {
+      padding-top: 15px;
     }
   }
 
   @media (min-width: $tablet-width) {
     padding: 0;
     border: 0;
-
-    .field__label--checkbox {
-      margin: 0;
-    }
 
     &--contacts {
       width: 268px;
@@ -60,8 +37,8 @@
       &::after {
         position: absolute;
         content: "";
-        top: 55px;
-        right: 2px;
+        top: 9px;
+        right: 0;
         width: 1px;
         height: 292px;
         border-left: 1px solid #dbdbdb;
@@ -70,7 +47,7 @@
 
     &--information {
       padding-top: 50px;
-      padding-bottom: 50px;
+      padding-bottom: 45px;
 
       &::before,
       &::after {
@@ -92,7 +69,7 @@
         width: 125px;
         height: 1px;
 
-        top: 32px;
+        top: 63px;
         border-top: 1px solid #dbdbdb;
       }
 
@@ -105,40 +82,20 @@
       }
     }
 
-
     &--attractions {
       &::before,
       &::after {
-        top: 28px;
+        top: 24px;
       }
     }
 
     &--emotions {
-      padding-bottom: 30px;
+      padding-bottom: 37px;
 
       &::before,
       &::after {
-        top: 8px;
+        top: 13px;
       }
-    }
-
-    .field__title--contacts,
-    .field__title--impression {
-      text-align: left;
-      margin-bottom: 60px;
-    }
-
-    .field__list--checkbox {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-
-      width: 462px;
-      margin: 55px auto 45px;
-    }
-
-    .field__item--choice {
-      min-width: 200px;
     }
 
     &--button {
@@ -147,7 +104,7 @@
       justify-content: space-between;
       flex-grow: 1;
 
-      padding-bottom: 60px;
+      padding-bottom: 63px;
 
       &::after {
         content: "* - обязательные поля";
@@ -177,7 +134,12 @@
 
     &--information {
       padding-top: 42px;
-      padding-bottom: 37px;
+      padding-bottom: 44px;
+
+      &::before,
+      &::after {
+        top: 54px;
+      }
     }
 
     &--attractions,
@@ -191,58 +153,73 @@
       }
     }
 
-    .field__flex {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
-
-    .field__title--impression {
-      margin-left: 80px;
-    }
-
-    .field__hidden-text {
-      display: none;
-    }
-
-    .field__label--information {
-      margin-left: 0;
-    }
-
-    .field__list--checkbox {
-      width: 960px;
-      margin-top: 50px;
-      margin-bottom: 35px;
-    }
-
     &--emotions {
-      padding-bottom: 36px;
+      padding-bottom: 42px;
     }
   }
+}
+
+.field__label {
+  margin-right: 10px;
+
+  &--information {
+    margin-left: 20px;
+    margin-bottom: 6px;
+    display: block;
+
+    @media (min-width: $desktop-width) {
+      margin-left: 0;
+    }
+  }
+
+  &--last {
+    margin-right: 15px;
+  }
+
+  &--checkbox {
+    @media (min-width: $tablet-width) {
+      margin: 0;
+    }
+  }
+}
+
+.field__title {
+  text-align: center;
+  margin: 0 0 19px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    margin-bottom: 22px;
+  }
+}
+
+.field__input-textarea {
+  min-height: 160px;
 }
 
 .field__wrapper {
   display: flex;
   align-items: center;
-  margin-bottom: 23px;
 
   &--indent {
     margin-bottom: 0;
   }
+}
 
-  .field-column {
-    flex-direction: column;
+.field__wrapper-column {
+  flex-direction: column;
+  margin: 0;
 
-    @media (min-width: $desktop-width) {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      flex-wrap: wrap;
-    }
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
   }
 
-  .field-column--indent {
+  &--indent {
     margin-bottom: 3px;
+    margin-top: 9px;
 
     @media (min-width: $tablet-width) {
       margin-top: 26px;
@@ -261,12 +238,18 @@
     content: "";
     position: absolute;
 
-    width: 60px;
-    height: 60px;
+    width: 59px;
+    height: 59px;
     background-color: #e6e6e6;
 
     right: 0;
     top: -20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      top: 1px;
+    }
   }
 }
 
@@ -277,19 +260,32 @@
   width: 16px;
   height: 16px;
   z-index: 1;
+
+  @media (min-width: $desktop-width) {
+    top: 22px;
+  }
 }
 
 .field__item--choice {
-  padding-top: 15px;
+  padding-top: 17px;
+  padding-left: 80px;
   padding-bottom: 27px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 38px;
+    padding-bottom: 35px;
+    padding-left: 77px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 41px;
+    padding-left: 79px;
+    padding-top: 12px;
   }
 }
 
 .field__item--checkbox {
   padding-top: 6px;
+  padding-left: 80px;
   padding-bottom: 48px;
 
   &-last {
@@ -297,7 +293,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    min-width: 200px;
+    width: 202px;
   }
 
   @media (min-width: $desktop-width) {
@@ -315,6 +311,10 @@
   @media (min-width: $tablet-width) {
     margin-top: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 57px;
+  }
 }
 
 .field__title-attractions {
@@ -326,11 +326,11 @@
 
 .field__title--information {
   @media (min-width: $desktop-width) {
-    margin-bottom: 60px;
+    margin-bottom: 71px;
   }
 }
 
-.field__input-radio:checked ~ .choise-text__radio {
+.field__input-radio:checked ~ .choise-text--radio {
   &::after {
     content: "";
     position: absolute;
@@ -342,7 +342,7 @@
     background-color: #333333;
 
     top: 3px;
-    left: 18px;
+    left: -63px;
   }
 
   &:active::after {
@@ -350,7 +350,7 @@
   }
 }
 
-.field__input-checkbox:checked ~ .choise-text__checkbox {
+.field__input-checkbox:checked ~ .choise-text--checkbox {
   &::after {
     content: "";
     position: absolute;
@@ -362,10 +362,77 @@
     background-size: 25px 19px;
 
     top: 5px;
-    left: 16px;
+    left: -63px;
   }
 
   &:active::after {
     opacity: 0.3;
+  }
+}
+
+@media (max-width: 767px) {
+  .field__title-attractions {
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .field__label {
+    margin-right: 15px;
+  }
+
+  .field__item--checkbox {
+    padding-bottom: 30px;
+  }
+
+  .field__title--contacts,
+  .field__title--impression {
+    text-align: left;
+    margin-bottom: 60px;
+  }
+
+  .field__list--checkbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: 462px;
+    margin: 49px auto 53px;
+  }
+
+  .field__item--choice {
+    min-width: 200px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field__flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .field__title--contacts {
+    margin-bottom: 55px;
+  }
+
+  .field__title--impression {
+    margin-left: 80px;
+  }
+
+  .field__hidden-text {
+    display: none;
+  }
+
+  .field__list--checkbox {
+    width: 960px;
+    margin-top: 50px;
+    margin-bottom: 26px;
+  }
+
+  .field__input-radio:checked ~ .choise-text--radio {
+    &::after {
+      left: -61px;
+    }
   }
 }

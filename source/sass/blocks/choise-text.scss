@@ -4,8 +4,6 @@
   position: relative;
   cursor: pointer;
 
-  padding-left: 80px;
-
   &::before {
     content: "";
     position: absolute;
@@ -14,20 +12,22 @@
     height: 56px;
 
     background-color: $light-grey;
-    left: 0;
+    left: -81px;
     top: -14px;
   }
 
-  &__radio::before {
+  @media (min-width: $desktop-width) {
+    &::before {
+      left: -79px;
+    }
+  }
+
+  &--radio::before {
     border-radius: 50%;
   }
 
-  &__checkbox::before {
+  &--checkbox::before {
     border-radius: 5px;
-  }
-
-  @media (min-width: $tablet-width) {
-    padding-left: 80px;
   }
 }
 
